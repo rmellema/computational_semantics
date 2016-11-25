@@ -1,0 +1,10 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8,d9],
+[f(1,n_bench_1,[d1,d2]),
+f(1,n_person_1,[d3,d4,d5,d6]),
+f(1,n_water_1,[d7]),
+f(1,n_sand_1,[d8]),
+f(1,n_sky_1,[d9]),
+f(2,s_near,[(d1,d3),(d1,d4),(d3,d4),(d2,d5),(d2,d6),(d5,d6)]),
+f(1,a_blue_1,[d9,d7]),
+f(1,a_brown_1,[d1,d2])
+]).

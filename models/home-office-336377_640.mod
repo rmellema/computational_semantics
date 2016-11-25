@@ -1,0 +1,12 @@
+model([d1,d2,d3,d4,d5,d6],
+[f(1,n_laptop_1,[d1]),
+f(1,n_table_2,[d2]),
+f(1,n_pen_1,[d3]),
+f(1,n_notebook_1,[d4]),
+f(1,n_cellular_telephone_1,[d5]),
+f(1,n_espresso_1,[d6]),
+f(2,s_supports,[(d2,d1),(d2,d4),(d4,d3),(d2,d5),(d2,d6)]),
+f(1,a_brown_1,[d2]),
+f(1,a_white_1,[d3,d4,d6,d1]),
+f(1,a_black_1,[d5])
+]).

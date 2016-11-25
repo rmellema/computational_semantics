@@ -1,0 +1,12 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11],
+[
+	f(1,n_sky_1,[d1]),
+	f(1,n_sea_1,[d2]),
+	f(1,n_beach_1,[d3]),
+	f(1,n_man_1,[d4]),
+	f(1,n_girl_2,[d5]),
+	f(1,n_arm_1,[d6,d7,d8]),
+	f(1,n_hand_1,[d9,d10,d11]),
+	f(2,s_part_of,[(d9,d6),(d10,d7),(d11,d8),(d6,d4),(d7,d4),(d8,d5)]),
+	f(2,s_touches,[(d9,d8)])
+]).

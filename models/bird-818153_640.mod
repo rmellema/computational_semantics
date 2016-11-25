@@ -1,0 +1,12 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13],
+  [f(1,n_pigeon_1,[d1]),
+   f(1,n_bottle_1,[d2,d3,d4,d5]),
+   f(1,n_glass_2,[d6,d7,d8,d9]),
+   f(1,n_ashtray_1,[d10]),
+   f(1,n_hand_1,[d11]),
+   f(1,n_table_2,[d12]),
+   f(1,n_dispenser_1,[d13]),
+   f(1,a_brown_1,[d2,d3,d4]),
+   f(1,a_transparent_1,[d5,d6,d7,d8,d9,d10]),
+   f(1,a_gray_1,[d1]),
+   f(1,a_white_1,[d12])]).

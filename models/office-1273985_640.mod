@@ -1,0 +1,10 @@
+model([d1,d2,d3,d4,d5],
+ [f(1,n_plant_2,[d1]),
+ f(1,n_table_2,[d2]),
+ f(1,n_laptop_1,[d3]),
+ f(1,n_chair_1,[d4]),
+ f(1,n_pot_4,[d5]),
+ f(2,s_supports,[(d2,d3)]),
+ f(1,a_green_1,[d1]),
+ f(1,a_brown_1,[d4,d5]),
+ f(1,a_white_1,[d2])]).

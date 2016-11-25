@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4,d5,d6],
+      [f(1,n_man_1,[d1]),
+       f(1,n_soccer_player_1,[d1]),
+       f(1,n_football_1,[d2]),
+       f(1,n_field_8,[d3]),
+       f(1,n_shoe_1,[d5,d6]),
+       f(1,n_uniform_1,[d4]),
+       f(2,s_supports,[(d3,d1)])
+	  ]).

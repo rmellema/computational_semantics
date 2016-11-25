@@ -1,0 +1,13 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8],
+[
+	f(1,n_water_2,[d1]),
+	f(1,n_girl_1,[d2]),
+	f(1,n_skateboard_1,[d3]),
+	f(1,n_bench_1,[d4]),	
+	f(1,n_cap_1,[d6]),
+	f(1,n_hair_1,[d8]),
+	f(1,a_red_1,[d6,d3]),
+	f(1,n_grass_1,[d7]),
+	f(2,s_touches,[(d2,d4),(d3,d4),(d6,d2)]),
+	f(2,s_part_of,[(d8,d2)])
+]).

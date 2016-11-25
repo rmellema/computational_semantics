@@ -1,0 +1,16 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8,d9],
+      [f(1,n_man_1,[d1]),
+       f(1,n_soccer_player_1,[d1]),
+       f(1,n_goalkeeper_1,[d1]),
+       f(1,n_soccer_ball_1,[d2]),
+       f(1,n_pitch_1,[d3]),
+       f(1,n_jersey_3,[d4]),
+       f(1,n_trousers_2,[d5]),
+       f(1,n_shoe_1,[d6,d7]),
+       f(1,n_glove_2,[d8,d9]),
+       f(1,a_green_1,[d4]),
+       f(1,a_black_1,[d5,d8,d9]),
+       f(1,a_red_1,[d6,d7]),
+       f(2,s_supports,[(d3,d1),(d1,d4),(d3,d2)]),
+       f(2,s_touches,[(d1,d5),(d1,d6),(d1,d7),(d1,d8),(d1,d9)])]).
+       
