@@ -52,11 +52,16 @@ model2kb(model(_, F)) :- assert_f(F).
 check_touches(L) :- 
 	findall((D1, D2), (touches(D1, D2), \+ touches(D2, D1)), L).
 
-check_supports(L).
+check_supports(L):-
+	findall((D1,D2), (supports(D1,D2), \+ touches(D1,D2)), (supports(D1,D2),supports(D2,D2)),L).
 
 check_member_of(L).
-check_near(L).
-check_part_of(L).
+
+check_near(L):-
+	findall((D1,D2), (near(D1,D2), touches(D1,D2)),L). 
+	
+check_part_of(L):-
+	findall((D1,D2), (part_of(D1,D2), \+ touches(D1,D2)),L). 
 
 conflicts(F, L) :-
 	assert_f(F),
