@@ -47,35 +47,80 @@ model2kb(model(_, F)) :- assert_f(F).
 check_touches(L) :- 
 	findall((D1, D2), (touches(D1, D2), \+ touches(D2, D1)), L).
 
-check_supports(L):-
-	findall((D1,D2), 
-		((supports(D1,D2), \+ touches(D1,D2)), 
-			(supports(D1,D2),supports(D2,D1))),
-		L).
+check_supports_touches(L) :-
+	findall((D1, D2), (supports(D1,D2), \+ touches(D1,D2)), L).
+
+check_supports_symmetric(L):-
+	findall((D1,D2), (supports(D1,D2),supports(D2,D1)), L).
 
 check_member_of([]).
 
 check_near(L):-
-	findall((D1,D2), (near(D1,D2), touches(D1,D2)),L). 
-	
+	findall((D1, D2), (near(D1, D2), \+ near(D2, D1)), L).
+	%	findall((D1,D2), (near(D1,D2), touches(D1,D2)),L). 
+
 check_part_of(L):-
 	findall((D1,D2), (part_of(D1,D2), part_of(D2,D1)),L). 
 
 conflicts(F, L) :-
 	assert_f(F),
 	check_touches(TP),
-	L1 = [touches(TP)],
-	check_supports(SP),
-	L2 = [supports(SP) | L1],
+	check_supports_symmetric(SP),
+	check_supports_touches(STP),
 	check_near(NP),
-	L3 = [near(NP) | L2],
-	check_member_of(MP),
-	L4 = [member_of(MP) | L3],
 	check_part_of(PP),
-	L5 = [part_of(PP) | L4],
-	L = L5,
+	L = [touches(TP), supports_symmetric(SP), supports_touches(STP), 
+	     near(NP), part_of(PP)],
 	retractall(touches(_, _)),
 	retractall(supports(_, _)),
 	retractall(near(_, _)),
 	retractall(member_of(_, _)),
 	retractall(part_of(_, _)).
+
+swap_pairs([], []).
+swap_pairs([(H1, H2) | T], [(H2, H1) | T2]) :- swap_pairs(T, T2).
+
+fixed(model(D, F), [], model(D, F)).
+
+fixed(model(D, F), [part_of(PP) | CL], 
+	model(D, [f(2, s_part_of, PL) | FF])) :-
+	(select(f(2, s_part_of, PO), F, PF); (PO = [], PF = F)),
+	fixed(model(D, PF), CL, model(D, FF)),
+	subtract(PO, PP, TPL), 
+	swap_pairs(PP, RPP),
+	subtract(TPL, RPP, PL).
+
+fixed(model(D, F), [near(NP) | CL], model(D, [f(2, s_near, NL) | FF])) :-
+	(select(f(2, s_near, NO), F, NF);(NO = [], NF = F)),
+	fixed(model(D, NF), CL, model(D, FF)),
+	swap_pairs(NP, NNP),
+	append(NO, NNP, NL).
+
+fixed(model(D, F), [touches(TP) | CL], model(D, [f(2, s_touches, TL) |FF])) :-
+	write('bliep'), nl,
+	select(supports_touches(SP), CL, NCL),
+	%	select(near(NP), NCL, NNCL),
+	(select(f(2, s_touches, TO), F, NF); (TO = [], NF = F)),
+	fixed(model(D, NF), NCL, model(D, FF)),
+	write('blaap'), nl,
+	swap_pairs(SP, RSP),
+	write('RSP = '), write(RSP), nl,
+	append(SP, RSP, FSP),
+	write('FSP = '), write(FSP), nl,
+	swap_pairs(TP, RTP),
+	append(TO, RTP, TF),
+	write('FTF = '), write(FTF), nl,
+	append(TF, FSP, FTF),
+	%subtract(FTF, NP, NFTF),
+	list_to_set(FTF, TL).
+
+
+fixed(model(D, F), [supports_symmetric(SP) | CL], 
+	model(D, [f(2, s_supports, SL) | FF])) :-
+	select(f(2, s_supports, SO), F, NF),
+	fixed(model(D, NF), CL, model(D, FF)),
+	subtract(SO, SP, TSL), 
+	swap_pairs(SP, RSP),
+	subtract(TSL, RSP, SL).
+
+
