@@ -6,27 +6,22 @@
 assert_touches([]).
 assert_touches([(D1, D2) | T]) :-
 	assert(touches(D1, D2)),
-	write(D1),
 	assert_touches(T).
 assert_supports([]).
 assert_supports([(D1, D2) | T]) :-
 	assert(supports(D1, D2)),
-	write(D1),
 	assert_supports(T).
 assert_near([]).
 assert_near([(D1, D2) | T]) :-
 	assert(near(D1, D2)),
-	write(D1),
 	assert_near(T).
 assert_member_of([]).
 assert_member_of([(D1, D2) | T]) :-
 	assert(member_of(D1, D2)),
-	write(D1),
 	assert_member_of(T).
 assert_part_of([]).
 assert_part_of([(D1, D2) | T]) :-
 	assert(part_of(D1, D2)),
-	write(D1),
 	assert_part_of(T).
 
 assert_f([]).
@@ -53,28 +48,32 @@ check_touches(L) :-
 	findall((D1, D2), (touches(D1, D2), \+ touches(D2, D1)), L).
 
 check_supports(L):-
-	findall((D1,D2), (supports(D1,D2), \+ touches(D1,D2)), (supports(D1,D2),supports(D2,D2)),L).
+	findall((D1,D2), 
+		((supports(D1,D2), \+ touches(D1,D2)), 
+			(supports(D1,D2),supports(D2,D1))),
+		L).
 
-check_member_of(L).
+check_member_of([]).
 
 check_near(L):-
 	findall((D1,D2), (near(D1,D2), touches(D1,D2)),L). 
 	
 check_part_of(L):-
-	findall((D1,D2), (part_of(D1,D2), \+ touches(D1,D2)),L). 
+	findall((D1,D2), (part_of(D1,D2), part_of(D2,D1)),L). 
 
 conflicts(F, L) :-
 	assert_f(F),
 	check_touches(TP),
-	(TP = []; member(touches(TP), L)),
+	L1 = [touches(TP)],
 	check_supports(SP),
-	(SP = []; member(supports(SP), L)),
+	L2 = [supports(SP) | L1],
 	check_near(NP),
-	(NP = []; member(near(NP), L)),
+	L3 = [near(NP) | L2],
 	check_member_of(MP),
-	(MP = []; member(member_of(MP), L)),
+	L4 = [member_of(MP) | L3],
 	check_part_of(PP),
-	(PP = []; member(part_of(PP), L)),
+	L5 = [part_of(PP) | L4],
+	L = L5,
 	retractall(touches(_, _)),
 	retractall(supports(_, _)),
 	retractall(near(_, _)),
