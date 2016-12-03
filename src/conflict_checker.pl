@@ -158,6 +158,48 @@ map_absolute_file_name([Entry | Entries], Dir, [OutEntry | OutEntries]) :-
 map_absolute_file_name([_ | Entries], Dir, Out) :- 
 	map_absolute_file_name(Entries, Dir, Out).
 
+write_list_tail(Stream, [F]) :-
+	tab(Stream, 7),
+	write(Stream, F),
+	write(Stream, ']').
+
+write_list_tail(Stream, [F | T]) :-
+	tab(Stream, 7),
+	write(Stream, F),
+	write(Stream, ','),
+	nl(Stream),
+	write_list_tail(Stream, T).
+
+write_list(Stream, [F]) :-
+	tab(Stream, 6),
+	write(Stream, '['),
+	write(Stream, F),
+	write(Stream, ']').
+
+write_list(Stream, [F | T]) :-
+	tab(Stream, 6),
+	write(Stream, '['),
+	write(Stream, F),
+	write(Stream, ','),
+	nl(Stream),
+	write_list_tail(Stream, T).
+
+
+write_model(Stream, model(D, F)) :-
+	write(Stream, 'model('),
+	write(Stream, D), write(Stream, ','), nl(Stream),
+	write_list(Stream, F),
+	write(Stream, ').'),
+	nl(Stream).
+
+write_model(Stream, model(D, F, G)) :-
+	write(Stream, 'model('),
+	write(Stream, D), write(Stream, ','), nl(Stream),
+	write_list(Stream, F), write(Stream, ','), nl(Stream),
+	write_list(Stream, G),
+	write(Stream, ').'),
+	nl(Stream).
+
 process_file(File, OutFile) :-
 	file_base_name(File, Base),
 	open(File, read, Stream),
@@ -166,7 +208,7 @@ process_file(File, OutFile) :-
 	write('Processing: '), write(Base), nl,
 	fixed(Model, FModel),
 	open(OutFile, write, WStream),
-	write(WStream, FModel),
+	write_model(WStream, FModel),
 	nl(WStream),
 	close(WStream).
 
