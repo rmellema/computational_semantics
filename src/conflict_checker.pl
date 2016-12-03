@@ -160,12 +160,12 @@ map_absolute_file_name([_ | Entries], Dir, Out) :-
 
 write_list_tail(Stream, [F]) :-
 	tab(Stream, 7),
-	write(Stream, F),
+	writeq(Stream, F),
 	write(Stream, ']').
 
 write_list_tail(Stream, [F | T]) :-
 	tab(Stream, 7),
-	write(Stream, F),
+	writeq(Stream, F),
 	write(Stream, ','),
 	nl(Stream),
 	write_list_tail(Stream, T).
@@ -173,13 +173,13 @@ write_list_tail(Stream, [F | T]) :-
 write_list(Stream, [F]) :-
 	tab(Stream, 6),
 	write(Stream, '['),
-	write(Stream, F),
+	writeq(Stream, F),
 	write(Stream, ']').
 
 write_list(Stream, [F | T]) :-
 	tab(Stream, 6),
 	write(Stream, '['),
-	write(Stream, F),
+	writeq(Stream, F),
 	write(Stream, ','),
 	nl(Stream),
 	write_list_tail(Stream, T).
@@ -187,14 +187,14 @@ write_list(Stream, [F | T]) :-
 
 write_model(Stream, model(D, F)) :-
 	write(Stream, 'model('),
-	write(Stream, D), write(Stream, ','), nl(Stream),
+	writeq(Stream, D), write(Stream, ','), nl(Stream),
 	write_list(Stream, F),
 	write(Stream, ').'),
 	nl(Stream).
 
 write_model(Stream, model(D, F, G)) :-
 	write(Stream, 'model('),
-	write(Stream, D), write(Stream, ','), nl(Stream),
+	writeq(Stream, D), write(Stream, ','), nl(Stream),
 	write_list(Stream, F), write(Stream, ','), nl(Stream),
 	write_list(Stream, G),
 	write(Stream, ').'),
