@@ -85,7 +85,7 @@ conflicts(F, L) :-
 swap_pairs([], []).
 swap_pairs([(H1, H2) | T], [(H2, H1) | T2]) :- swap_pairs(T, T2).
 
-write_error_if_non_empty([], Header, Footer).
+write_error_if_non_empty([], _, _).
 write_error_if_non_empty(L, Header, Footer) :-
 	write('\t'), write(Header), nl,
 	write('\t\t'), write(L), nl,
@@ -117,13 +117,13 @@ fixed(model(D, F), [touches(TP) | CL], model(D, [f(2, s_touches, TL) |RNFF])) :-
 	append(TO, RTP, TF),
 	append(TF, FSP, FTF),
 	list_to_set(FTF, TL),
-	(select(f(2, s_near, NL), FF, NFF),
+	((select(f(2, s_near, NL), FF, NFF),
 		subtract(NL, TL, NNL),
 		intersection(NL, TL, I),
 		write_error_if_non_empty(I, 
 			'Found objects that are s_near and are s_touches.',
 			'Removing s_near relation.'),
-		RNFF = [f(2, s_near, NNL) | NFF]); RNFF = FF.
+		RNFF = [f(2, s_near, NNL) | NFF]); RNFF = FF).
 
 fixed(model(D, F), [supports_symmetric([]) | CL], model(D, FF)) :-
 	fixed(model(D, F), CL, model(D, FF)).
@@ -155,7 +155,7 @@ map_absolute_file_name([Entry | Entries], Dir, [OutEntry | OutEntries]) :-
 	file_name_extension(_, 'mod', Entry),
 	map_absolute_file_name(Entries, Dir, OutEntries),
 	absolute_file_name(Entry, OutEntry, [relative_to(Dir)]).
-map_absolute_file_name([Entry | Entries], Dir, Out) :- 
+map_absolute_file_name([_ | Entries], Dir, Out) :- 
 	map_absolute_file_name(Entries, Dir, Out).
 
 process_file(File, OutFile) :-
