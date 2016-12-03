@@ -1,3 +1,8 @@
+#!/usr/bin/env swipl
+
+:- initialization main.
+
+:- use_module(library(lists)).
 :- dynamic(touches/2).
 :- dynamic(supports/2).
 :- dynamic(near/2).
@@ -80,6 +85,12 @@ conflicts(F, L) :-
 swap_pairs([], []).
 swap_pairs([(H1, H2) | T], [(H2, H1) | T2]) :- swap_pairs(T, T2).
 
+write_error_if_non_empty([], Header, Footer).
+write_error_if_non_empty(L, Header, Footer) :-
+	write('\t'), write(Header), nl,
+	write('\t\t'), write(L), nl,
+	write('\t\t'), write(Footer),nl.
+
 fixed(model(D, F), [], model(D, F)).
 
 fixed(model(D, F), [part_of(PP) | CL], 
@@ -96,31 +107,97 @@ fixed(model(D, F), [near(NP) | CL], model(D, [f(2, s_near, NL) | FF])) :-
 	swap_pairs(NP, NNP),
 	append(NO, NNP, NL).
 
-fixed(model(D, F), [touches(TP) | CL], model(D, [f(2, s_touches, TL) |FF])) :-
-	write('bliep'), nl,
+fixed(model(D, F), [touches(TP) | CL], model(D, [f(2, s_touches, TL) |RNFF])) :-
 	select(supports_touches(SP), CL, NCL),
-	%	select(near(NP), NCL, NNCL),
 	(select(f(2, s_touches, TO), F, NF); (TO = [], NF = F)),
 	fixed(model(D, NF), NCL, model(D, FF)),
-	write('blaap'), nl,
 	swap_pairs(SP, RSP),
-	write('RSP = '), write(RSP), nl,
 	append(SP, RSP, FSP),
-	write('FSP = '), write(FSP), nl,
 	swap_pairs(TP, RTP),
 	append(TO, RTP, TF),
-	write('FTF = '), write(FTF), nl,
 	append(TF, FSP, FTF),
-	%subtract(FTF, NP, NFTF),
-	list_to_set(FTF, TL).
+	list_to_set(FTF, TL),
+	(select(f(2, s_near, NL), FF, NFF),
+		subtract(NL, TL, NNL),
+		intersection(NL, TL, I),
+		write_error_if_non_empty(I, 
+			'Found objects that are s_near and are s_touches.',
+			'Removing s_near relation.'),
+		RNFF = [f(2, s_near, NNL) | NFF]); RNFF = FF.
 
+fixed(model(D, F), [supports_symmetric([]) | CL], model(D, FF)) :-
+	fixed(model(D, F), CL, model(D, FF)).
 
 fixed(model(D, F), [supports_symmetric(SP) | CL], 
 	model(D, [f(2, s_supports, SL) | FF])) :-
 	select(f(2, s_supports, SO), F, NF),
 	fixed(model(D, NF), CL, model(D, FF)),
+	write('\tFound a pair of objects that support each other.'), nl,
+	write('\t\t'), write(SP), nl,
+	write('\t\tRemoving mutual support relations.'), nl,
 	subtract(SO, SP, TSL), 
 	swap_pairs(SP, RSP),
 	subtract(TSL, RSP, SL).
 
+fixed(model(D, F), model(D, RF)) :-
+	conflicts(F, CL),
+	fixed(model(D, F), CL, model(D, NF)),
+	delete(NF, f(2, _, []), RF).
+fixed(model(D, F, G), model(D, RF, G)) :-
+	fixed(model(D, F), model(D, RF)).
 
+map_absolute_file_name([], _, []).
+map_absolute_file_name(['..' | Entries], Dir, Out) :-
+	map_absolute_file_name(Entries, Dir, Out).
+map_absolute_file_name(['.' | Entries], Dir, Out) :-
+	map_absolute_file_name(Entries, Dir, Out).
+map_absolute_file_name([Entry | Entries], Dir, [OutEntry | OutEntries]) :-
+	file_name_extension(_, 'mod', Entry),
+	map_absolute_file_name(Entries, Dir, OutEntries),
+	absolute_file_name(Entry, OutEntry, [relative_to(Dir)]).
+map_absolute_file_name([Entry | Entries], Dir, Out) :- 
+	map_absolute_file_name(Entries, Dir, Out).
+
+process_file(File, OutFile) :-
+	file_base_name(File, Base),
+	open(File, read, Stream),
+	read(Stream, Model),
+	close(Stream),
+	write('Processing: '), write(Base), nl,
+	fixed(Model, FModel),
+	open(OutFile, write, WStream),
+	write(WStream, FModel),
+	nl(WStream),
+	close(WStream).
+
+processs_files([], _).
+
+processs_files([H | T], OutDir) :- 
+	file_name_extension(_, 'mod', H),
+	file_base_name(H, Base),
+	absolute_file_name(Base, OutFile, [relative_to(OutDir)]),
+	process_file(H, OutFile),
+	processs_files(T, OutDir).
+
+process_directory(Dir, OutDir) :-
+	directory_files(Dir, Entries),
+	map_absolute_file_name(Entries, Dir, AbsEntries),
+	processs_files(AbsEntries, OutDir).
+
+setup(Dir, OutDir) :-
+	exists_directory(Dir),
+	exists_directory(OutDir).
+
+setup(Dir, OutDir) :-
+	exists_directory(Dir),
+	make_directory(OutDir).
+
+main :-
+	current_prolog_flag(argv, [Dir, OutDir]),
+	setup(Dir, OutDir),
+	process_directory(Dir, OutDir),
+	halt.
+
+main :-
+	write('Usage: conflict_checker.pl input_dir output_dir'), nl,
+	halt.
