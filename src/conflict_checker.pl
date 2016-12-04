@@ -94,6 +94,9 @@ fixed(model(D, F), [part_of(PP) | CL],
 	model(D, [f(2, s_part_of, PL) | FF])) :-
 	(select(f(2, s_part_of, PO), F, PF); (PO = [], PF = F)),
 	fixed(model(D, PF), CL, model(D, FF)),
+	write_error_if_non_empty(PP, 
+		'Found objects that are s_part_of eachother.',
+		'Removing s_part_of relation.'),
 	subtract(PO, PP, TPL), 
 	swap_pairs(PP, RPP),
 	subtract(TPL, RPP, PL).
@@ -129,9 +132,9 @@ fixed(model(D, F), [supports_symmetric(SP) | CL],
 	model(D, [f(2, s_supports, SL) | FF])) :-
 	select(f(2, s_supports, SO), F, NF),
 	fixed(model(D, NF), CL, model(D, FF)),
-	write('\tFound a pair of objects that support each other.'), nl,
-	write('\t\t'), write(SP), nl,
-	write('\t\tRemoving mutual support relations.'), nl,
+	write_error_if_non_empty(SP,
+		'Found a pair of objects that support each other.',
+		'Removing mutual support relations.'),
 	subtract(SO, SP, TSL), 
 	swap_pairs(SP, RSP),
 	subtract(TSL, RSP, SL).
@@ -180,7 +183,6 @@ write_list(Stream, [F | T]) :-
 	write(Stream, ','),
 	nl(Stream),
 	write_list_tail(Stream, T).
-
 
 write_model(Stream, model(D, F)) :-
 	write(Stream, 'model('),
