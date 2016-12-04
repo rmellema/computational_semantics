@@ -58,11 +58,8 @@ check_supports_touches(L) :-
 check_supports_symmetric(L):-
 	findall((D1,D2), (supports(D1,D2),supports(D2,D1)), L).
 
-check_member_of([]).
-
 check_near(L):-
 	findall((D1, D2), (near(D1, D2), \+ near(D2, D1)), L).
-	%	findall((D1,D2), (near(D1,D2), touches(D1,D2)),L). 
 
 check_part_of(L):-
 	findall((D1,D2), (part_of(D1,D2), part_of(D2,D1)),L). 
