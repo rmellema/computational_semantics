@@ -1,0 +1,1 @@
+some(X,and(n_cat_1(X),some(Y,and(n_mouth_1(Y),and(s_part_of(Y,X),a_open_1(Y))))))

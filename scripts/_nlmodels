@@ -1,0 +1,39 @@
+#!/bin/bash
+
+GRIM="$PWD"
+CHECKER='prolog/model_checker.pl'
+PARSER='prolog/semdcg.pl'
+
+parse()
+{
+    SENTENCE=$1
+    TMP=out.txt
+    swipl -g "['${PARSER}'],parse('${SENTENCE}','${TMP}'), halt."
+    FORMULA=`cat ${TMP}`
+    echo "\\documentclass{article}" 
+    echo "\\usepackage{graphicx}" 
+    echo "\\begin{document}" 
+    echo "\\begin{quote}" 
+    echo "${SENTENCE}"
+    echo "\\end{quote}" 
+    echo "\\begin{quote}" 
+    echo "\\verb+${FORMULA}+" 
+    echo "\\end{quote}" 
+    for MODEL in `ls ${GRIM}/data/*.mod`; do 
+	swipl -g "['${CHECKER}'],main(${FORMULA},'${MODEL}'),halt." | sed "s/mod'/jpg'/" | tr -d "'"
+    done
+    echo "\\end{document}"
+    rm -fr ${TMP}
+}
+
+if [ -e $CHECKER ]; then
+    if [ $# -eq 1 ]; then
+        parse "$1"
+    else
+	echo "usage: _nlmodels <SENTENCE>"
+	echo "usage: _nlmodels <SENTENCE> > output.tex; pdflatex output"
+    fi
+else
+    echo "$CHECKER not found"
+fi
+exit 0

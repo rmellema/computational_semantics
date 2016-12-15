@@ -1,0 +1,32 @@
+#!/bin/bash
+
+GRIM="$PWD"
+
+CHECKER="$GRIM/prolog/model_checker.pl"
+
+check()
+{
+    FORMULA=$1
+    echo "\\documentclass{article}" 
+    echo "\\usepackage{graphicx}" 
+    echo "\\begin{document}" 
+    echo "\\begin{quote}" 
+    echo "\\verb+${FORMULA}+" 
+    echo "\\end{quote}" 
+    for MODEL in `ls ${GRIM}/data/*.mod`; do 
+	swipl -g "['${CHECKER}'],main(${FORMULA},'${MODEL}'),halt." | sed "s/mod'/jpg'/" | tr -d "'"
+    done
+    echo "\\end{document}" 
+}
+
+if [ -e $CHECKER ]; then
+    if [ $# -eq 1 ]; then
+	check "$1"
+    else
+	echo "usage: scripts/_checkmodels <FORMULA>"
+	echo "usage: scripts/_checkmodels <FORMULA> > output.tex; pdflatex output"
+    fi
+else
+    echo "$CHECKER not found"
+fi
+exit 0
