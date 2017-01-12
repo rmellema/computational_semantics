@@ -1,0 +1,17 @@
+#!/bin/bash
+
+GRIM="$PWD"
+
+PARSER="$GRIM/prolog/semdcg.pl"
+
+try_parse() {
+	TMP=parsed_corpus.txt
+	swipl -g "['${PARSER}'], parse_from_file('${GRIM}/data/corpus.txt', '$TMP'), halt."
+	NUM_SENTS=`grep -v '^-----$' $TMP | wc -l`
+	printf "Total number of sentences: %d\n" $NUM_SENTS
+	INCORR_SENTS=`grep -v '^-----$' $TMP | grep '^no parse' | wc -l`
+	printf "Not parsed sentences: %d\n" $INCORR_SENTS
+}
+
+try_parse
+exit 0
