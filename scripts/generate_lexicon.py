@@ -6,24 +6,30 @@ def is_plural(word, synset):
     return word not in synset.lemma_names()
 
 def main(max_forms = None):
+    vowels = 'aeiou'
     noun_template = "n0({pl}, {det}, lam(X, {pred})) --> {words}."
     adj_template  = "a0({det}, lam(P, {pred})) --> {words}."
     for line in sys.stdin:
         line = line.strip().split(' ')
         word = '_'.join(line)
-        synsets = wn.synsets(word, pos = [wn.NOUN, wn.ADJ])
-        num = max_forms if max_forms else len(synsets)
-        for synset in synsets[:num]:
-            lemma, pos, num = synset.name().split('.')
+        synsets =  wn.synsets(word, pos = wn.ADJ)[:max_forms]
+        synsets += wn.synsets(word, pos = wn.NOUN)[:max_forms]
+        for synset in synsets:
+            lemma, pos, num = synset.name() \
+                .replace("'", "") \
+                .replace("-", "_") \
+                .split('.')
             plural = is_plural(word, synset)
+            pred = "{}_{}_{}(X)".format(pos, lemma, num.lstrip('0'))
             if pos == 'n':
                 template = noun_template
             else:
                 template = adj_template
-            pred = "{}_{}_{}".format(pos, lemma, num.lstrip('0'))
+                pred = "lam(X, and({}, app(P, X)))".format(pred)
+            det = 'an' if word[0] in vowels else 'a'
             print(template.format(
                 pl = "pl" if plural else "sg",
-                det = "_" if plural else "a",
+                det = "_" if plural else det,
                 pred = pred,
                 words = '[' + ', '.join(line) + ']'))
 
