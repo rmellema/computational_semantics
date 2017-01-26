@@ -1,9 +1,9 @@
 :- [model_checker].
 
 take(_, [], []).
-take(0, _, []).
+take(0, _, []) :- !.
 take(N, [H | T], [H | ST]) :-
-	M is N -1,
+	M is N - 1,
 	take(M, T, ST).
 
 write_list([]).
