@@ -34,6 +34,7 @@ av(Mood,Number,Tense,lam(P,lam(X,not(app(P,X))))) --> av0(Mood,Number,Tense), [n
 % noun phrases
 %
 np(Num,Sem) --> np1(Num,Sem).
+np(Num, lam(P, app(NP, lam(X, and(app(VP, X), app(P, X)))))) --> np1(Num, NP), vp1(prp, Num, VP).
 np(Num,lam(P,app(app(Sem,app(NP1,P)),app(NP2,P)))) --> np1(Num,NP1), conj(Sem), np(Num,NP2).
 
 np1(Num,app(Det,N)) --> det(Num,Vowel,Det), n2(Num,Vowel,N).
