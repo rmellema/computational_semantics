@@ -61,6 +61,7 @@ def output_results(options, sentence, formula, paths):
                     f.write('\n')
                 to_latex(writer, paths)
     if options.display:
+        print(formula)
         command = shlex.split(options.display)
         for path in paths:
             c = command[:]
