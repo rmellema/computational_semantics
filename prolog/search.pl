@@ -69,6 +69,7 @@ search(Stream, Models, SortedPaths) :-
 	read_query(Stream, Query),
 	filter_models(Query, Models, TrueModels),
 	\+ length(TrueModels, 0), !,
+	write(Query), nl,
 	sort_models(Query, TrueModels, SortedPaths).
 search(_, _, []).
 search(Models, RelMods) :-

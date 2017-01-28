@@ -46,8 +46,8 @@ def to_latex(printer, paths):
         printer("\\includegraphics[width=120pt,height=90pt]{{{}}}".format(path))
     printer(r"\end{document}")
 
-def output_results(options, paths):
-    if paths[0] == '' or paths[0] == '% halt':
+def output_results(options, sentence, formula, paths):
+    if formula == '' or formula == '% halt':
         sys.stderr.write("No results found.\n")
         return
     if options.latex:
@@ -67,6 +67,7 @@ def output_results(options, paths):
             c.append(path)
             run(c)
     else:
+        print(formula)
         for path in paths:
             print(path)
 
@@ -83,7 +84,8 @@ def single_run(options, grim_search, command):
     result = run(command,
             input  = str(correct_line) + '.', encoding = 'utf-8',
             stdout = PIPE, stderr= STDOUT)
-    output_results(options, result.stdout.strip().split('\n'))
+    res = result.stdout.strip().split('\n')
+    output_results(options, line.strip(), res[0], res[1:])
 
 def main(options):
     grim_search = os.path.join(options.grim, "prolog", "search.pl")
