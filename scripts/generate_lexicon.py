@@ -50,7 +50,8 @@ def process_word(nouns, adjectives, line, max_forms):
 def print_clause(head, wordset):
     print(head, end = '')
     print(" --> ", end = '')
-    print("; ".join('[' + ', '.join(word.split(' ')) + ']' for word in wordset))
+    print("; ".join('[' + ', '.join(word.split(' ')) + ']' for word in wordset), end = '')
+    print('.')
 
 def main(max_forms = None):
     nouns      = defaultdict(lambda: set())
@@ -61,12 +62,16 @@ def main(max_forms = None):
     adj_template  = "a0({det}, lam(P, {pred}))"
     for line in sys.stdin:
         line = line.strip()
+        sys.stderr.write(line)
+        sys.stderr.write('\n')
+        if line == '':
+            continue
         if ' ' not in line:
             words = [[line]]
-            words.extend([w] for w in similar(line, 10))
+            words.extend([w] for w in similar(line, 5))
         else:
             words = [line.split(' ')]
-            words.extend(itertools.product((word for word in words[0]), 10))
+            words.extend(itertools.product((word for word in words[0]), 5))
         for word in words:
             if ' '.join(word) not in processed:
                 process_word(nouns, adjectives, word, max_forms)
