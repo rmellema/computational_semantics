@@ -239,6 +239,7 @@ A man is drawing with oils.
 A man is driving a car.
 A man is flying through the air.
 A man is holding his bike.
+A man is jumping
 A man is lying in the grass.
 A man is not holding a guitar.
 A man is petting the dog.
@@ -260,6 +261,7 @@ A man is standing.
 A man is stroking a cat.
 A man is stting.
 A man is touching a cheetah.
+A man is touching the ball 
 A man is walking down the road.
 A man is walking in a field.
 A man is wearing a cap.
@@ -345,6 +347,7 @@ A woman is cycling near a building.
 A woman is cycling on the road.
 A woman is earing shorts.
 A woman is eating an orange.
+A woman is going to kick a ball
 A woman is holding a camera.
 A woman is holding a green apple.
 A woman is photographing a cheetah.
@@ -390,7 +393,7 @@ An old couple is walking through the street.
 An old man and an old woman.
 An old man is playing soccer.
 An old woman is walking with and old man.
-An orange sky and a flock of sheep and ahorseman.
+An orange sky and a flock of sheep and a horseman.
 An osprey is eating a fish.
 An osprey is eating a fish.
 An osprey is flying over a lake.
@@ -558,6 +561,7 @@ The baby has brown eyes.
 The bald eagle has a white head.
 The bald eagle has a yellow beak.
 The ball is blue.
+The ball is floating 
 The ball is green and the dog is brown.
 The banana is brown.
 The beggar is wearing a hat.
@@ -663,6 +667,7 @@ The boy wears a striped shirt.
 The boy wears an orange helmet.
 The boy wears blue shorts.
 The boy wears brown pants.
+The boy wears white pants.
 The boy with a black shirt is touching a cat.
 The boy with a white shirt is touching a cat.
 The bride has blonde hair.
@@ -836,6 +841,7 @@ The fish is not alive.
 The fish is out of the water.
 The fish is swimming.
 The flower pot is on the grass.
+The football is floating 
 The frog is green.
 The frog is lying in the grass.
 The frog is lying on the gravel path.
@@ -872,6 +878,7 @@ The goat is bleating.
 The goslings are brown.
 The goslings are flying.
 The grass is blue.
+The grass is green
 The grass is to the dog's and the cyclist's left.
 The green bike has flat tires.
 The grey car is not running.
@@ -921,6 +928,7 @@ The man is not wearing a hat.
 The man is petting a cow.
 The man is playing a accordion. 
 The man is standing next to his bicycle.
+The man is touching a dog
 The man is touching a white bird.
 The man is walking in a park.
 The man is wearing a green jersey.
@@ -931,6 +939,7 @@ The man sits in front of the suitcase.
 The man wears a grey t-shirt
 The man wears a pair of blue pants. 
 The mat is on the grass.
+The men are not touching each other
 The men are swimming in the lake.
 The monkey has brown eyes.
 The monkey has green eyes.
@@ -990,6 +999,7 @@ The sheep are white and the dog is white.
 The shepherd is holding a staff. 
 The shepherd is holding a whip.
 The shirt of the boy is red.
+The skateboard is purple
 The sky is blue.
 The sky is sunny.
 The stork is on the nest.
@@ -1000,8 +1010,10 @@ The swan is black.
 The swan is in the water.
 The swan is on the beach.
 The sweater of the girl is purple.
+The t-shirt is red
 The table is round.
 The thea is poured into cups.
+The tomatoes are green
 The tree has leaves.
 The tree has no branches.
 The tree has no leaves.
@@ -1093,6 +1105,7 @@ There are no goslings.
 There are no men wearing hats.
 There are no men.
 There are no pictures in the book.
+There are no tomatoes touching each other
 There are no trees.
 There are no trees.
 There are no white animals.
@@ -1122,6 +1135,8 @@ There are three soccer players.
 There are three storks.
 There are three swanlings.
 There are three yellow boots.
+There are tomatoes in the bowl
+There are tomatoes on the table
 There are trees and bushes.
 There are trees on the grass.
 There are trees.
@@ -1360,18 +1375,3 @@ Two woman are jumping in the air.
 Wearing a cap, the girl is eating something.
 While looking annoyed, the goat has a carrot in its mouth, as if it were a cigar.
 White shoes are worn by the dog.
-a man is jumping
-a man is touching the ball 
-a woman is going to kick a ball
-the ball is floating 
-the boy wears white pants.
-the football is floating 
-the grass is green
-the man is touching a dog
-the men are not touching each other
-the skateboard is purple
-the t-shirt is red
-the tomatoes are green
-there are no tomatoes touching each other
-there are tomatoes in the bowl
-there are tomatoes on the table
