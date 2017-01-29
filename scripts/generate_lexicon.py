@@ -43,7 +43,7 @@ def process_word(nouns, adjectives, line, max_forms):
         det = "_" if plural else det
         if pos == 'n':
             nouns[(pl, det, pred)].add(' '.join(line))
-        else:
+        elif pos == 'a' and lemma not in ['all', 'some']:
             pred = "lam(X, and({}, app(P, X)))".format(pred)
             adjectives[(det, pred)].add(' '.join(line))
 

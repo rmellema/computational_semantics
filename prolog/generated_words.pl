@@ -2,7 +2,6 @@ a0(a,  lam(P,lam(X,and(not(some(Y,s_supports(Y,X))),app(P,X))))) --> [flying].
 a0(a,  lam(P,lam(X,and(Sem, app(P, X))))) --> iv(prp, _, lam(X, Sem)).
 
 a0(a, lam(P, lam(X, and(a_kind_1(X), app(P, X))))) --> [kind].
-a0(a, lam(P, lam(X, and(a_some_1(X), app(P, X))))) --> [some].
 a0(_, lam(P, lam(X, and(a_low_1(X), app(P, X))))) --> [lower].
 a0(_, lam(P, lam(X, and(a_low_2(X), app(P, X))))) --> [lower].
 a0(a, lam(P, lam(X, and(a_same_1(X), app(P, X))))) --> [same].
@@ -21,7 +20,6 @@ a0(an, lam(P, lam(X, and(a_animated_1(X), app(P, X))))) --> [alive].
 a0(a, lam(P, lam(X, and(a_dying_1(X), app(P, X))))) --> [dying].
 a0(a, lam(P, lam(X, and(a_dead_1(X), app(P, X))))) --> [dead].
 a0(a, lam(P, lam(X, and(a_dead_2(X), app(P, X))))) --> [dead].
-a0(an, lam(P, lam(X, and(a_all_1(X), app(P, X))))) --> [all].
 a0(an, lam(P, lam(X, and(a_other_1(X), app(P, X))))) --> [other].
 a0(a, lam(P, lam(X, and(a_many_1(X), app(P, X))))) --> [many].
 a0(_, lam(P, lam(X, and(a_british_1(X), app(P, X))))) --> [british].
