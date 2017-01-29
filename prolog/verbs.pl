@@ -54,6 +54,8 @@ iv(dcl, pl, lam(X, some(Y, eq(Y, X)))) --> [are].
 iv(bse, _, lam(X, some(Y, eq(Y, X)))) --> [am].
 iv(psp, _, lam(X, some(Y, eq(Y, X)))) --> [were].
 
+iv(Sense, Num, app(Sem, lam(P, some(Y,app(P, Y))))) --> tv(Sense, Num, Sem).
+
 % transitive verbs
 %
 tv(prp,_,  lam(P,lam(X,app(P,lam(Y,s_supports(Y,X)))))) --> [riding].
