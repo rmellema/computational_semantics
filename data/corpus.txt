@@ -855,6 +855,7 @@ The girl is eating nothing.
 The girl is holding a dog in her arms.
 The girl is looking at the cat.
 The girl is not wearing shoes.
+The girl is playing with her cat.
 The girl is sitting.
 The girl is taking the dog for a ride.
 The girl is wearing a red dress.
@@ -1374,4 +1375,3 @@ the tomatoes are green
 there are no tomatoes touching each other
 there are tomatoes in the bowl
 there are tomatoes on the table
-﻿The girl is playing with her cat.
