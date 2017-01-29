@@ -1,9 +1,18 @@
 a0(a,  lam(P,lam(X,and(not(some(Y,s_supports(Y,X))),app(P,X))))) --> [flying].
 a0(a,  lam(P,lam(X,and(Sem, app(P, X))))) --> iv(prp, _, lam(X, Sem)).
 
+a0(an, lam(P, lam(X, and(a_another_1(X), app(P, X))))) --> [another].
+a0(an, lam(P, lam(X, and(a_one_1(X), app(P, X))))) --> [one].
+a0(an, lam(P, lam(X, and(a_one_2(X), app(P, X))))) --> [one].
+a0(an, lam(P, lam(X, and(a_one_3(X), app(P, X))))) --> [one].
 a0(a, lam(P, lam(X, and(a_kind_1(X), app(P, X))))) --> [kind].
+a0(a, lam(P, lam(X, and(a_kind_2(X), app(P, X))))) --> [kind].
+a0(a, lam(P, lam(X, and(a_kind_3(X), app(P, X))))) --> [kind].
+a0(an, lam(P, lam(X, and(a_about_1(X), app(P, X))))) --> [about].
+a0(an, lam(P, lam(X, and(a_above_1(X), app(P, X))))) --> [above].
 a0(_, lam(P, lam(X, and(a_low_1(X), app(P, X))))) --> [lower].
 a0(_, lam(P, lam(X, and(a_low_2(X), app(P, X))))) --> [lower].
+a0(_, lam(P, lam(X, and(a_low_3(X), app(P, X))))) --> [lower].
 a0(a, lam(P, lam(X, and(a_same_1(X), app(P, X))))) --> [same].
 a0(a, lam(P, lam(X, and(a_same_2(X), app(P, X))))) --> [same].
 a0(a, lam(P, lam(X, and(a_like_2(X), app(P, X))))) --> [same].
@@ -13,268 +22,839 @@ a0(_, lam(P, lam(X, and(a_american_2(X), app(P, X))))) --> [american].
 a0(_, lam(P, lam(X, and(a_indian_1(X), app(P, X))))) --> [indian].
 a0(_, lam(P, lam(X, and(a_indian_2(X), app(P, X))))) --> [indian].
 a0(_, lam(P, lam(X, and(a_australian_1(X), app(P, X))))) --> [australian].
+a0(an, lam(P, lam(X, and(a_after_1(X), app(P, X))))) --> [after].
+a0(a, lam(P, lam(X, and(a_later_1(X), app(P, X))))) --> [later].
 a0(a, lam(P, lam(X, and(a_late_6(X), app(P, X))))) --> [later].
 a0(_, lam(P, lam(X, and(a_late_1(X), app(P, X))))) --> [later].
+a0(a, lam(P, lam(X, and(a_defending_1(X), app(P, X))))) --> [defending].
+a0(a, lam(P, lam(X, and(a_coal_black_1(X), app(P, X))))) --> [jet].
 a0(an, lam(P, lam(X, and(a_alive_1(X), app(P, X))))) --> [alive].
+a0(an, lam(P, lam(X, and(a_alive_2(X), app(P, X))))) --> [alive].
 a0(an, lam(P, lam(X, and(a_animated_1(X), app(P, X))))) --> [alive].
 a0(a, lam(P, lam(X, and(a_dying_1(X), app(P, X))))) --> [dying].
+a0(a, lam(P, lam(X, and(a_anxious_1(X), app(P, X))))) --> [dying].
 a0(a, lam(P, lam(X, and(a_dead_1(X), app(P, X))))) --> [dead].
 a0(a, lam(P, lam(X, and(a_dead_2(X), app(P, X))))) --> [dead].
+a0(a, lam(P, lam(X, and(a_all_in_1(X), app(P, X))))) --> [dead].
 a0(an, lam(P, lam(X, and(a_other_1(X), app(P, X))))) --> [other].
+a0(an, lam(P, lam(X, and(a_other_2(X), app(P, X))))) --> [other].
+a0(an, lam(P, lam(X, and(a_early_3(X), app(P, X))))) --> [other].
 a0(a, lam(P, lam(X, and(a_many_1(X), app(P, X))))) --> [many].
 a0(_, lam(P, lam(X, and(a_british_1(X), app(P, X))))) --> [british].
 a0(_, lam(P, lam(X, and(a_canadian_1(X), app(P, X))))) --> [canadian].
 a0(_, lam(P, lam(X, and(a_european_1(X), app(P, X))))) --> [european].
+a0(a, lam(P, lam(X, and(a_both_1(X), app(P, X))))) --> [both].
 a0(a, lam(P, lam(X, and(a_well_1(X), app(P, X))))) --> [well].
+a0(a, lam(P, lam(X, and(a_good_13(X), app(P, X))))) --> [well].
+a0(a, lam(P, lam(X, and(a_well_3(X), app(P, X))))) --> [well].
+a0(an, lam(P, lam(X, and(a_animal_1(X), app(P, X))))) --> [animal].
+a0(a, lam(P, lam(X, and(a_favored_1(X), app(P, X))))) --> [pet].
+a0(an, lam(P, lam(X, and(a_annoyed_1(X), app(P, X))))) --> [annoyed].
+a0(an, lam(P, lam(X, and(a_annoyed_2(X), app(P, X))))) --> [annoyed].
+a0(a, lam(P, lam(X, and(a_defeated_2(X), app(P, X))))) --> [frustrated].
+a0(an, lam(P, lam(X, and(a_amused_1(X), app(P, X))))) --> [amused].
+a0(a, lam(P, lam(X, and(a_annoyed_1(X), app(P, X))))) --> [pissed]; [peeved].
+a0(a, lam(P, lam(X, and(a_bothered_1(X), app(P, X))))) --> [bothered]; [daunted].
+a0(a, lam(P, lam(X, and(a_besotted_1(X), app(P, X))))) --> [pissed].
 a0(a, lam(P, lam(X, and(a_first_1(X), app(P, X))))) --> [first].
+a0(a, lam(P, lam(X, and(a_first_2(X), app(P, X))))) --> [first].
+a0(a, lam(P, lam(X, and(a_inaugural_2(X), app(P, X))))) --> [first].
+a0(a, lam(P, lam(X, and(a_second_1(X), app(P, X))))) --> [second].
 a0(a, lam(P, lam(X, and(a_second_2(X), app(P, X))))) --> [second].
 a0(an, lam(P, lam(X, and(a_up_1(X), app(P, X))))) --> [up].
+a0(an, lam(P, lam(X, and(a_astir_1(X), app(P, X))))) --> [up].
+a0(an, lam(P, lam(X, and(a_improving_1(X), app(P, X))))) --> [up].
+a0(an, lam(P, lam(X, and(a_complete_5(X), app(P, X))))) --> [over].
 a0(a, lam(P, lam(X, and(a_down_1(X), app(P, X))))) --> [down].
+a0(a, lam(P, lam(X, and(a_down_2(X), app(P, X))))) --> [down].
+a0(a, lam(P, lam(X, and(a_down_3(X), app(P, X))))) --> [down].
+a0(a, lam(P, lam(X, and(a_such_1(X), app(P, X))))) --> [such].
 a0(_, lam(P, lam(X, and(a_asian_1(X), app(P, X))))) --> [asian].
 a0(_, lam(P, lam(X, and(a_japanese_1(X), app(P, X))))) --> [japanese].
+a0(a, lam(P, lam(X, and(a_adolescent_2(X), app(P, X))))) --> [teenage]; [teen].
+a0(a, lam(P, lam(X, and(a_purulent_1(X), app(P, X))))) --> [pussy].
 a0(an, lam(P, lam(X, and(a_asleep_1(X), app(P, X))))) --> [asleep].
+a0(an, lam(P, lam(X, and(a_asleep_2(X), app(P, X))))) --> [asleep].
+a0(an, lam(P, lam(X, and(a_asleep_3(X), app(P, X))))) --> [asleep].
 a0(an, lam(P, lam(X, and(a_awake_1(X), app(P, X))))) --> [awake].
-a0(a, lam(P, lam(X, and(a_near_1(X), app(P, X))))) --> [near]; [close].
+a0(an, lam(P, lam(X, and(a_alert_3(X), app(P, X))))) --> [awake].
+a0(a, lam(P, lam(X, and(a_waking_1(X), app(P, X))))) --> [waking].
+a0(a, lam(P, lam(X, and(a_dormant_3(X), app(P, X))))) --> [sleeping].
+a0(an, lam(P, lam(X, and(a_ante_meridiem_1(X), app(P, X))))) --> ['a.m.'].
+a0(a, lam(P, lam(X, and(a_post_meridiem_1(X), app(P, X))))) --> ['p.m.'].
+a0(a, lam(P, lam(X, and(a_near_1(X), app(P, X))))) --> [close]; [near].
+a0(a, lam(P, lam(X, and(a_near_2(X), app(P, X))))) --> [near].
+a0(a, lam(P, lam(X, and(a_near_3(X), app(P, X))))) --> [near].
+a0(an, lam(P, lam(X, and(a_assaultive_1(X), app(P, X))))) --> [attacking].
+a0(an, lam(P, lam(X, and(a_away_1(X), app(P, X))))) --> [away].
 a0(an, lam(P, lam(X, and(a_away_2(X), app(P, X))))) --> [away].
+a0(an, lam(P, lam(X, and(a_away_3(X), app(P, X))))) --> [away].
 a0(an, lam(P, lam(X, and(a_out_1(X), app(P, X))))) --> [out].
+a0(an, lam(P, lam(X, and(a_extinct_3(X), app(P, X))))) --> [out].
+a0(an, lam(P, lam(X, and(a_out_3(X), app(P, X))))) --> [out].
 a0(an, lam(P, lam(X, and(a_off_1(X), app(P, X))))) --> [off].
+a0(an, lam(P, lam(X, and(a_off_2(X), app(P, X))))) --> [off].
 a0(an, lam(P, lam(X, and(a_off_3(X), app(P, X))))) --> [off].
 a0(a, lam(P, lam(X, and(a_back_1(X), app(P, X))))) --> [back].
-a0(a, lam(P, lam(X, and(a_hairy_1(X), app(P, X))))) --> [hairy]; [haired].
+a0(a, lam(P, lam(X, and(a_back_2(X), app(P, X))))) --> [hind]; [back].
+a0(a, lam(P, lam(X, and(a_back_3(X), app(P, X))))) --> [back].
+a0(a, lam(P, lam(X, and(a_newborn_1(X), app(P, X))))) --> [newborn].
+a0(a, lam(P, lam(X, and(a_newborn_2(X), app(P, X))))) --> [newborn].
+a0(a, lam(P, lam(X, and(a_going_1(X), app(P, X))))) --> [going].
+a0(a, lam(P, lam(X, and(a_bald_1(X), app(P, X))))) --> [bald].
+a0(a, lam(P, lam(X, and(a_bald_2(X), app(P, X))))) --> [bald].
+a0(a, lam(P, lam(X, and(a_bald_3(X), app(P, X))))) --> [bald].
+a0(a, lam(P, lam(X, and(a_balding_1(X), app(P, X))))) --> [balding].
+a0(a, lam(P, lam(X, and(a_hairy_1(X), app(P, X))))) --> [haired]; [hairy].
+a0(a, lam(P, lam(X, and(a_hairy_2(X), app(P, X))))) --> [hairy].
 a0(a, lam(P, lam(X, and(a_shaven_1(X), app(P, X))))) --> [shaved].
 a0(a, lam(P, lam(X, and(a_blond_1(X), app(P, X))))) --> [blond]; [blonde].
+a0(a, lam(P, lam(X, and(a_fantastic_2(X), app(P, X))))) --> [howling].
+a0(a, lam(P, lam(X, and(a_must_1(X), app(P, X))))) --> [must].
+a0(a, lam(P, lam(X, and(a_flaxen_1(X), app(P, X))))) --> [sandy].
 a0(a, lam(P, lam(X, and(a_arenaceous_1(X), app(P, X))))) --> [sandy].
+a0(a, lam(P, lam(X, and(a_mendicant_1(X), app(P, X))))) --> [mendicant].
+a0(a, lam(P, lam(X, and(a_behind_1(X), app(P, X))))) --> [behind].
 a0(an, lam(P, lam(X, and(a_inside_1(X), app(P, X))))) --> [inside].
+a0(an, lam(P, lam(X, and(a_inside_2(X), app(P, X))))) --> [inside].
+a0(an, lam(P, lam(X, and(a_inside_3(X), app(P, X))))) --> [inside].
 a0(a, lam(P, lam(X, and(a_seated_1(X), app(P, X))))) --> [sitting].
-a0(_, lam(P, lam(X, and(a_large_1(X), app(P, X))))) --> [larger]; [bigger]; [biger].
+a0(a, lam(P, lam(X, and(a_sitting_2(X), app(P, X))))) --> [sitting].
+a0(a, lam(P, lam(X, and(a_doddering_1(X), app(P, X))))) --> [gaga].
+a0(a, lam(P, lam(X, and(a_crazy_5(X), app(P, X))))) --> [gaga].
+a0(_, lam(P, lam(X, and(a_large_1(X), app(P, X))))) --> [biger]; [bigger]; [larger].
+a0(_, lam(P, lam(X, and(a_big_2(X), app(P, X))))) --> [biger]; [bigger].
+a0(_, lam(P, lam(X, and(a_bad_2(X), app(P, X))))) --> [biger].
+a0(a, lam(P, lam(X, and(a_bigger_1(X), app(P, X))))) --> [bigger]; [larger].
+a0(_, lam(P, lam(X, and(a_large_2(X), app(P, X))))) --> [larger].
+a0(a, lam(P, lam(X, and(a_smaller_1(X), app(P, X))))) --> [smaller].
 a0(_, lam(P, lam(X, and(a_small_1(X), app(P, X))))) --> [smaller].
-a0(a, lam(P, lam(X, and(a_large_1(X), app(P, X))))) --> [big]; [large].
+a0(_, lam(P, lam(X, and(a_minor_10(X), app(P, X))))) --> [smaller].
+a0(a, lam(P, lam(X, and(a_large_1(X), app(P, X))))) --> [large]; [big].
+a0(a, lam(P, lam(X, and(a_big_2(X), app(P, X))))) --> [big].
+a0(a, lam(P, lam(X, and(a_bad_2(X), app(P, X))))) --> [big].
+a0(a, lam(P, lam(X, and(a_huge_1(X), app(P, X))))) --> [huge].
 a0(a, lam(P, lam(X, and(a_much_1(X), app(P, X))))) --> [much].
 a0(a, lam(P, lam(X, and(a_topless_1(X), app(P, X))))) --> [topless].
+a0(a, lam(P, lam(X, and(a_bare_breasted_1(X), app(P, X))))) --> [topless].
+a0(a, lam(P, lam(X, and(a_bare_1(X), app(P, X))))) --> [nude].
+a0(a, lam(P, lam(X, and(a_barbed_1(X), app(P, X))))) --> [biting]; [nipping].
+a0(a, lam(P, lam(X, and(a_biting_2(X), app(P, X))))) --> [biting].
+a0(a, lam(P, lam(X, and(a_crisp_3(X), app(P, X))))) --> [nipping].
+a0(a, lam(P, lam(X, and(a_cutting_1(X), app(P, X))))) --> [cutting]; [stinging].
 a0(a, lam(P, lam(X, and(a_black_1(X), app(P, X))))) --> [black].
 a0(a, lam(P, lam(X, and(a_black_2(X), app(P, X))))) --> [black].
+a0(a, lam(P, lam(X, and(a_black_3(X), app(P, X))))) --> [black].
 a0(a, lam(P, lam(X, and(a_white_1(X), app(P, X))))) --> [white].
 a0(a, lam(P, lam(X, and(a_white_2(X), app(P, X))))) --> [white].
+a0(a, lam(P, lam(X, and(a_white_3(X), app(P, X))))) --> [white].
+a0(a, lam(P, lam(X, and(a_red_1(X), app(P, X))))) --> [red].
+a0(a, lam(P, lam(X, and(a_crimson_2(X), app(P, X))))) --> [red].
+a0(a, lam(P, lam(X, and(a_crimson_3(X), app(P, X))))) --> [red].
+a0(a, lam(P, lam(X, and(a_brown_1(X), app(P, X))))) --> [brown].
+a0(a, lam(P, lam(X, and(a_brown_2(X), app(P, X))))) --> [brown].
+a0(a, lam(P, lam(X, and(a_grey_1(X), app(P, X))))) --> [grey]; [gray].
+a0(a, lam(P, lam(X, and(a_grey_2(X), app(P, X))))) --> [grey]; [gray].
+a0(a, lam(P, lam(X, and(a_grey_3(X), app(P, X))))) --> [grey]; [gray].
+a0(a, lam(P, lam(X, and(a_blue_1(X), app(P, X))))) --> [blue].
+a0(a, lam(P, lam(X, and(a_blue_2(X), app(P, X))))) --> [blue].
+a0(a, lam(P, lam(X, and(a_gloomy_2(X), app(P, X))))) --> [blue].
+a0(a, lam(P, lam(X, and(a_across_the_board_1(X), app(P, X))))) --> [blanket].
 a0(a, lam(P, lam(X, and(a_blind_1(X), app(P, X))))) --> [blind].
+a0(a, lam(P, lam(X, and(a_blind_2(X), app(P, X))))) --> [blind].
+a0(a, lam(P, lam(X, and(a_blind_3(X), app(P, X))))) --> [blind].
+a0(a, lam(P, lam(X, and(a_blinded_1(X), app(P, X))))) --> [blinded].
 a0(a, lam(P, lam(X, and(a_deaf_1(X), app(P, X))))) --> [deaf].
+a0(a, lam(P, lam(X, and(a_deaf_2(X), app(P, X))))) --> [deaf].
+a0(an, lam(P, lam(X, and(a_ignorant_1(X), app(P, X))))) --> [ignorant].
+a0(an, lam(P, lam(X, and(a_ignorant_2(X), app(P, X))))) --> [ignorant].
+a0(an, lam(P, lam(X, and(a_ignorant_3(X), app(P, X))))) --> [ignorant].
 a0(a, lam(P, lam(X, and(a_brunet_1(X), app(P, X))))) --> [brunette].
+a0(a, lam(P, lam(X, and(a_bosomy_1(X), app(P, X))))) --> [busty].
+a0(a, lam(P, lam(X, and(a_full_dress_1(X), app(P, X))))) --> [dress].
+a0(a, lam(P, lam(X, and(a_dress_2(X), app(P, X))))) --> [dress].
+a0(a, lam(P, lam(X, and(a_purple_1(X), app(P, X))))) --> [purple].
+a0(a, lam(P, lam(X, and(a_empurpled_1(X), app(P, X))))) --> [purple].
+a0(a, lam(P, lam(X, and(a_imperial_4(X), app(P, X))))) --> [purple].
+a0(a, lam(P, lam(X, and(a_yellow_1(X), app(P, X))))) --> [yellow].
+a0(a, lam(P, lam(X, and(a_chicken_1(X), app(P, X))))) --> [chicken]; [yellow].
+a0(a, lam(P, lam(X, and(a_yellow_3(X), app(P, X))))) --> [yellow].
+a0(a, lam(P, lam(X, and(a_pink_1(X), app(P, X))))) --> [pink].
 a0(a, lam(P, lam(X, and(a_bold_1(X), app(P, X))))) --> [bold].
+a0(a, lam(P, lam(X, and(a_bold_2(X), app(P, X))))) --> [bold].
+a0(a, lam(P, lam(X, and(a_bluff_1(X), app(P, X))))) --> [bold].
+a0(a, lam(P, lam(X, and(a_audacious_3(X), app(P, X))))) --> [daring].
+a0(a, lam(P, lam(X, and(a_avant_garde_1(X), app(P, X))))) --> [daring].
 a0(_, lam(P, lam(X, and(a_bold_1(X), app(P, X))))) --> [bolder].
+a0(_, lam(P, lam(X, and(a_bold_2(X), app(P, X))))) --> [bolder].
+a0(_, lam(P, lam(X, and(a_bluff_1(X), app(P, X))))) --> [bolder].
+a0(an, lam(P, lam(X, and(a_attention_getting_1(X), app(P, X))))) --> [eye-catching].
+a0(a, lam(P, lam(X, and(a_elusive_3(X), app(P, X))))) --> [subtle].
+a0(a, lam(P, lam(X, and(a_subtle_2(X), app(P, X))))) --> [subtle].
+a0(a, lam(P, lam(X, and(a_insidious_3(X), app(P, X))))) --> [subtle].
+a0(a, lam(P, lam(X, and(a_bone_1(X), app(P, X))))) --> [bone].
+a0(a, lam(P, lam(X, and(a_paperback_1(X), app(P, X))))) --> [paperback].
+a0(a, lam(P, lam(X, and(a_booted_1(X), app(P, X))))) --> [booted].
 a0(a, lam(P, lam(X, and(a_bowed_1(X), app(P, X))))) --> [bowed].
+a0(a, lam(P, lam(X, and(a_arced_1(X), app(P, X))))) --> [bowed].
+a0(a, lam(P, lam(X, and(a_bandy_1(X), app(P, X))))) --> [bowed].
+a0(a, lam(P, lam(X, and(a_cardinal_1(X), app(P, X))))) --> [central].
 a0(a, lam(P, lam(X, and(a_central_2(X), app(P, X))))) --> [central].
+a0(a, lam(P, lam(X, and(a_branched_2(X), app(P, X))))) --> [branching].
+a0(a, lam(P, lam(X, and(a_branching_2(X), app(P, X))))) --> [branching].
+a0(a, lam(P, lam(X, and(a_adust_1(X), app(P, X))))) --> [baked].
+a0(a, lam(P, lam(X, and(a_baked_2(X), app(P, X))))) --> [baked].
 a0(_, lam(P, lam(X, and(a_compact_1(X), app(P, X))))) --> [compacter].
+a0(_, lam(P, lam(X, and(a_compact_2(X), app(P, X))))) --> [compacter].
+a0(_, lam(P, lam(X, and(a_compendious_1(X), app(P, X))))) --> [compacter].
+a0(a, lam(P, lam(X, and(a_stone_1(X), app(P, X))))) --> [stone].
 a0(a, lam(P, lam(X, and(a_concrete_1(X), app(P, X))))) --> [concrete].
+a0(a, lam(P, lam(X, and(a_concrete_2(X), app(P, X))))) --> [concrete].
+a0(a, lam(P, lam(X, and(a_beige_1(X), app(P, X))))) --> [beige].
+a0(a, lam(P, lam(X, and(a_built_1(X), app(P, X))))) --> [built].
+a0(a, lam(P, lam(X, and(a_cunning_1(X), app(P, X))))) --> [cute].
+a0(a, lam(P, lam(X, and(a_cute_2(X), app(P, X))))) --> [cute].
+a0(a, lam(P, lam(X, and(a_burning_1(X), app(P, X))))) --> [burning].
+a0(a, lam(P, lam(X, and(a_burned_1(X), app(P, X))))) --> [burnt]; [burned].
+a0(a, lam(P, lam(X, and(a_burned_2(X), app(P, X))))) --> [burnt]; [burned].
+a0(a, lam(P, lam(X, and(a_burned_3(X), app(P, X))))) --> [burnt]; [burned].
+a0(a, lam(P, lam(X, and(a_bush_league_1(X), app(P, X))))) --> [bush].
 a0(_, lam(P, lam(X, and(a_caucasian_1(X), app(P, X))))) --> [caucasian].
+a0(_, lam(P, lam(X, and(a_caucasian_2(X), app(P, X))))) --> [caucasian].
 a0(a, lam(P, lam(X, and(a_written_1(X), app(P, X))))) --> [written].
 a0(a, lam(P, lam(X, and(a_written_2(X), app(P, X))))) --> [written].
 a0(a, lam(P, lam(X, and(a_scripted_1(X), app(P, X))))) --> [written].
+a0(an, lam(P, lam(X, and(a_emended_1(X), app(P, X))))) --> [edited].
+a0(a, lam(P, lam(X, and(a_caller_1(X), app(P, X))))) --> [caller].
+a0(a, lam(P, lam(X, and(a_caller_2(X), app(P, X))))) --> [caller].
+a0(a, lam(P, lam(X, and(a_votive_1(X), app(P, X))))) --> [votive].
 a0(a, lam(P, lam(X, and(a_scented_1(X), app(P, X))))) --> [scented].
+a0(a, lam(P, lam(X, and(a_perfumed_1(X), app(P, X))))) --> [scented].
+a0(a, lam(P, lam(X, and(a_odoriferous_3(X), app(P, X))))) --> [scented].
+a0(a, lam(P, lam(X, and(a_capped_1(X), app(P, X))))) --> [capped].
+a0(a, lam(P, lam(X, and(a_capped_2(X), app(P, X))))) --> [capped].
+a0(a, lam(P, lam(X, and(a_flightless_1(X), app(P, X))))) --> [flightless].
+a0(a, lam(P, lam(X, and(a_catching_1(X), app(P, X))))) --> [catching].
+a0(a, lam(P, lam(X, and(a_patched_2(X), app(P, X))))) --> [spotted].
+a0(a, lam(P, lam(X, and(a_mobile_1(X), app(P, X))))) --> [peregrine]; [mobile].
 a0(a, lam(P, lam(X, and(a_mobile_2(X), app(P, X))))) --> [mobile].
+a0(a, lam(P, lam(X, and(a_mobile_3(X), app(P, X))))) --> [mobile].
+a0(a, lam(P, lam(X, and(a_at_bay_1(X), app(P, X))))) --> [cornered].
 a0(a, lam(P, lam(X, and(a_pedunculate_1(X), app(P, X))))) --> [stalked].
+a0(a, lam(P, lam(X, and(a_chilling_1(X), app(P, X))))) --> [chilling].
+a0(a, lam(P, lam(X, and(a_distressing_1(X), app(P, X))))) --> [disturbing].
+a0(a, lam(P, lam(X, and(a_terrific_3(X), app(P, X))))) --> [terrifying].
+a0(a, lam(P, lam(X, and(a_awful_2(X), app(P, X))))) --> [frightening].
+a0(a, lam(P, lam(X, and(a_caramel_1(X), app(P, X))))) --> [caramel].
+a0(a, lam(P, lam(X, and(a_clawed_1(X), app(P, X))))) --> [clawed].
+a0(a, lam(P, lam(X, and(a_clawed_2(X), app(P, X))))) --> [clawed].
 a0(a, lam(P, lam(X, and(a_closed_1(X), app(P, X))))) --> [closed].
 a0(a, lam(P, lam(X, and(a_closed_2(X), app(P, X))))) --> [closed].
-a0(a, lam(P, lam(X, and(a_shut_1(X), app(P, X))))) --> [shut]; [closed].
+a0(a, lam(P, lam(X, and(a_shut_1(X), app(P, X))))) --> [closed]; [shut].
 a0(an, lam(P, lam(X, and(a_open_1(X), app(P, X))))) --> [open].
 a0(an, lam(P, lam(X, and(a_open_2(X), app(P, X))))) --> [open].
+a0(an, lam(P, lam(X, and(a_exposed_1(X), app(P, X))))) --> [open].
 a0(an, lam(P, lam(X, and(a_open_5(X), app(P, X))))) --> [opened].
+a0(an, lam(P, lam(X, and(a_opened_2(X), app(P, X))))) --> [opened].
+a0(an, lam(P, lam(X, and(a_open_13(X), app(P, X))))) --> [opened].
 a0(a, lam(P, lam(X, and(a_closing_1(X), app(P, X))))) --> [closing].
 a0(a, lam(P, lam(X, and(a_closed_4(X), app(P, X))))) --> [shut].
-a0(a, lam(P, lam(X, and(a_comfortable_1(X), app(P, X))))) --> [comfy]; [comfortable].
+a0(a, lam(P, lam(X, and(a_contained_1(X), app(P, X))))) --> [contained].
+a0(a, lam(P, lam(X, and(a_cozy_1(X), app(P, X))))) --> [cozy]; [cosy].
+a0(a, lam(P, lam(X, and(a_cozy_2(X), app(P, X))))) --> [cozy].
+a0(a, lam(P, lam(X, and(a_cozy_3(X), app(P, X))))) --> [cozy].
+a0(a, lam(P, lam(X, and(a_comfortable_1(X), app(P, X))))) --> [comfortable]; [comfy].
+a0(a, lam(P, lam(X, and(a_homely_1(X), app(P, X))))) --> [homely].
+a0(a, lam(P, lam(X, and(a_homelike_1(X), app(P, X))))) --> [homely].
+a0(a, lam(P, lam(X, and(a_homely_3(X), app(P, X))))) --> [homely].
+a0(a, lam(P, lam(X, and(a_broad_6(X), app(P, X))))) --> [spacious].
+a0(a, lam(P, lam(X, and(a_roomy_1(X), app(P, X))))) --> [spacious].
 a0(a, lam(P, lam(X, and(a_comfortable_2(X), app(P, X))))) --> [comfortable].
+a0(a, lam(P, lam(X, and(a_comfortable_3(X), app(P, X))))) --> [comfortable].
 a0(a, lam(P, lam(X, and(a_few_1(X), app(P, X))))) --> [few].
+a0(a, lam(P, lam(X, and(a_two_1(X), app(P, X))))) --> [two].
+a0(a, lam(P, lam(X, and(a_several_1(X), app(P, X))))) --> [several].
+a0(a, lam(P, lam(X, and(a_respective_1(X), app(P, X))))) --> [various]; [several].
+a0(a, lam(P, lam(X, and(a_several_3(X), app(P, X))))) --> [several].
+a0(a, lam(P, lam(X, and(a_three_1(X), app(P, X))))) --> [three].
 a0(a, lam(P, lam(X, and(a_covered_1(X), app(P, X))))) --> [covered].
+a0(a, lam(P, lam(X, and(a_laid_1(X), app(P, X))))) --> [laid].
+a0(a, lam(P, lam(X, and(a_creamy_1(X), app(P, X))))) --> [creamy].
+a0(a, lam(P, lam(X, and(a_creamy_2(X), app(P, X))))) --> [creamy].
+a0(a, lam(P, lam(X, and(a_cross_1(X), app(P, X))))) --> [cross].
+a0(a, lam(P, lam(X, and(a_crabbed_1(X), app(P, X))))) --> [cross].
 a0(a, lam(P, lam(X, and(a_crossed_1(X), app(P, X))))) --> [crossed].
 a0(a, lam(P, lam(X, and(a_crossed_2(X), app(P, X))))) --> [crossed].
 a0(a, lam(P, lam(X, and(a_side_1(X), app(P, X))))) --> [side].
+a0(a, lam(P, lam(X, and(a_dull_11(X), app(P, X))))) --> [thudding].
+a0(a, lam(P, lam(X, and(a_clamant_2(X), app(P, X))))) --> [crying].
+a0(a, lam(P, lam(X, and(a_crying_2(X), app(P, X))))) --> [crying].
+a0(a, lam(P, lam(X, and(a_screaming_1(X), app(P, X))))) --> [screaming].
+a0(a, lam(P, lam(X, and(a_screaming_2(X), app(P, X))))) --> [screaming].
+a0(a, lam(P, lam(X, and(a_hilarious_1(X), app(P, X))))) --> [screaming].
+a0(a, lam(P, lam(X, and(a_laughing_1(X), app(P, X))))) --> [laughing].
+a0(a, lam(P, lam(X, and(a_bleak_3(X), app(P, X))))) --> [cutting].
+a0(a, lam(P, lam(X, and(a_cutting_3(X), app(P, X))))) --> [cutting].
 a0(a, lam(P, lam(X, and(a_cut_1(X), app(P, X))))) --> [cut].
 a0(a, lam(P, lam(X, and(a_cut_2(X), app(P, X))))) --> [cut].
+a0(a, lam(P, lam(X, and(a_cut_3(X), app(P, X))))) --> [cut].
 a0(a, lam(P, lam(X, and(a_dark_1(X), app(P, X))))) --> [dark].
 a0(a, lam(P, lam(X, and(a_dark_2(X), app(P, X))))) --> [dark].
+a0(a, lam(P, lam(X, and(a_dark_3(X), app(P, X))))) --> [dark].
 a0(_, lam(P, lam(X, and(a_dark_1(X), app(P, X))))) --> [darker].
 a0(_, lam(P, lam(X, and(a_dark_2(X), app(P, X))))) --> [darker].
+a0(_, lam(P, lam(X, and(a_dark_3(X), app(P, X))))) --> [darker].
+a0(a, lam(P, lam(X, and(a_pale_1(X), app(P, X))))) --> [pale].
+a0(a, lam(P, lam(X, and(a_pale_2(X), app(P, X))))) --> [pale].
+a0(a, lam(P, lam(X, and(a_pale_3(X), app(P, X))))) --> [pale].
+a0(a, lam(P, lam(X, and(a_killing_1(X), app(P, X))))) --> [killing].
+a0(an, lam(P, lam(X, and(a_arid_1(X), app(P, X))))) --> [arid].
+a0(an, lam(P, lam(X, and(a_arid_2(X), app(P, X))))) --> [arid].
+a0(a, lam(P, lam(X, and(a_dirt_1(X), app(P, X))))) --> [dirt].
+a0(a, lam(P, lam(X, and(a_done_1(X), app(P, X))))) --> [through]; [done].
+a0(a, lam(P, lam(X, and(a_done_2(X), app(P, X))))) --> [done].
+a0(a, lam(P, lam(X, and(a_trying_1(X), app(P, X))))) --> [trying].
+a0(a, lam(P, lam(X, and(a_nerve_racking_1(X), app(P, X))))) --> [trying].
 a0(a, lam(P, lam(X, and(a_front_1(X), app(P, X))))) --> [front].
+a0(a, lam(P, lam(X, and(a_careworn_1(X), app(P, X))))) --> [drawn]; [worn].
+a0(a, lam(P, lam(X, and(a_drawn_2(X), app(P, X))))) --> [drawn].
 a0(a, lam(P, lam(X, and(a_intoxicated_1(X), app(P, X))))) --> [drunk].
+a0(a, lam(P, lam(X, and(a_intoxicated_2(X), app(P, X))))) --> [drunk].
+a0(a, lam(P, lam(X, and(a_driving_1(X), app(P, X))))) --> [driving].
+a0(a, lam(P, lam(X, and(a_driving_2(X), app(P, X))))) --> [driving].
 a0(a, lam(P, lam(X, and(a_dry_1(X), app(P, X))))) --> [dry].
+a0(a, lam(P, lam(X, and(a_dry_2(X), app(P, X))))) --> [dry].
 a0(a, lam(P, lam(X, and(a_dry_3(X), app(P, X))))) --> [dry].
 a0(a, lam(P, lam(X, and(a_wet_1(X), app(P, X))))) --> [wet].
 a0(a, lam(P, lam(X, and(a_wet_2(X), app(P, X))))) --> [wet].
 a0(a, lam(P, lam(X, and(a_wet_3(X), app(P, X))))) --> [wet].
+a0(a, lam(P, lam(X, and(a_damp_1(X), app(P, X))))) --> [damp]; [moist].
+a0(a, lam(P, lam(X, and(a_dried_1(X), app(P, X))))) --> [dried].
+a0(a, lam(P, lam(X, and(a_dried_2(X), app(P, X))))) --> [dried].
 a0(a, lam(P, lam(X, and(a_cold_1(X), app(P, X))))) --> [cold].
 a0(a, lam(P, lam(X, and(a_cold_2(X), app(P, X))))) --> [cold].
+a0(a, lam(P, lam(X, and(a_cold_3(X), app(P, X))))) --> [cold].
+a0(an, lam(P, lam(X, and(a_each_1(X), app(P, X))))) --> [each].
+a0(an, lam(P, lam(X, and(a_every_1(X), app(P, X))))) --> [every].
+a0(an, lam(P, lam(X, and(a_every_2(X), app(P, X))))) --> [every].
 a0(an, lam(P, lam(X, and(a_individual_1(X), app(P, X))))) --> [individual].
+a0(an, lam(P, lam(X, and(a_individual_2(X), app(P, X))))) --> [individual].
+a0(an, lam(P, lam(X, and(a_individual_3(X), app(P, X))))) --> [individual].
 a0(a, lam(P, lam(X, and(a_cooked_1(X), app(P, X))))) --> [cooked].
 a0(a, lam(P, lam(X, and(a_hungry_1(X), app(P, X))))) --> [hungry].
+a0(a, lam(P, lam(X, and(a_athirst_1(X), app(P, X))))) --> [hungry].
 a0(an, lam(P, lam(X, and(a_empty_1(X), app(P, X))))) --> [empty].
+a0(an, lam(P, lam(X, and(a_empty_2(X), app(P, X))))) --> [empty].
+a0(an, lam(P, lam(X, and(a_empty_3(X), app(P, X))))) --> [empty].
+a0(a, lam(P, lam(X, and(a_filled_1(X), app(P, X))))) --> [filled].
 a0(a, lam(P, lam(X, and(a_filled_2(X), app(P, X))))) --> [filled].
+a0(a, lam(P, lam(X, and(a_filled_3(X), app(P, X))))) --> [filled].
+a0(an, lam(P, lam(X, and(a_entire_1(X), app(P, X))))) --> [entire].
+a0(an, lam(P, lam(X, and(a_integral_2(X), app(P, X))))) --> [entire].
+a0(an, lam(P, lam(X, and(a_entire_3(X), app(P, X))))) --> [entire].
 a0(a, lam(P, lam(X, and(a_certain_2(X), app(P, X))))) --> [sure].
+a0(a, lam(P, lam(X, and(a_certain_7(X), app(P, X))))) --> [sure].
 a0(a, lam(P, lam(X, and(a_certain_4(X), app(P, X))))) --> [sure].
 a0(a, lam(P, lam(X, and(a_faced_1(X), app(P, X))))) --> [faced].
+a0(a, lam(P, lam(X, and(a_struggling_1(X), app(P, X))))) --> [struggling].
+a0(a, lam(P, lam(X, and(a_fallen_1(X), app(P, X))))) --> [fallen].
+a0(a, lam(P, lam(X, and(a_fallen_2(X), app(P, X))))) --> [fallen].
+a0(a, lam(P, lam(X, and(a_fallen_3(X), app(P, X))))) --> [fallen].
+a0(a, lam(P, lam(X, and(a_barbarous_1(X), app(P, X))))) --> [fell].
+a0(a, lam(P, lam(X, and(a_falling_1(X), app(P, X))))) --> [falling].
 a0(a, lam(P, lam(X, and(a_falling_2(X), app(P, X))))) --> [falling].
+a0(a, lam(P, lam(X, and(a_dropping_1(X), app(P, X))))) --> [falling].
+a0(a, lam(P, lam(X, and(a_risen_1(X), app(P, X))))) --> [risen].
 a0(a, lam(P, lam(X, and(a_far_1(X), app(P, X))))) --> [far].
+a0(a, lam(P, lam(X, and(a_far_2(X), app(P, X))))) --> [far].
+a0(a, lam(P, lam(X, and(a_far_3(X), app(P, X))))) --> [far].
+a0(a, lam(P, lam(X, and(a_feathery_3(X), app(P, X))))) --> [feathery]; [feathered].
 a0(a, lam(P, lam(X, and(a_feathered_2(X), app(P, X))))) --> [feathered].
+a0(a, lam(P, lam(X, and(a_featherlike_1(X), app(P, X))))) --> [feathery].
+a0(a, lam(P, lam(X, and(a_feathery_2(X), app(P, X))))) --> [feathery].
+a0(a, lam(P, lam(X, and(a_active_2(X), app(P, X))))) --> [fighting].
+a0(a, lam(P, lam(X, and(a_pink_orange_1(X), app(P, X))))) --> [salmon].
+a0(a, lam(P, lam(X, and(a_five_1(X), app(P, X))))) --> [five].
+a0(a, lam(P, lam(X, and(a_six_1(X), app(P, X))))) --> [six].
+a0(a, lam(P, lam(X, and(a_four_1(X), app(P, X))))) --> [four].
+a0(a, lam(P, lam(X, and(a_seven_1(X), app(P, X))))) --> [seven].
+a0(an, lam(P, lam(X, and(a_eight_1(X), app(P, X))))) --> [eight].
+a0(a, lam(P, lam(X, and(a_banner_1(X), app(P, X))))) --> [banner].
 a0(a, lam(P, lam(X, and(a_patriotic_1(X), app(P, X))))) --> [patriotic].
+a0(a, lam(P, lam(X, and(a_flat_1(X), app(P, X))))) --> [flat].
+a0(a, lam(P, lam(X, and(a_flat_2(X), app(P, X))))) --> [flat].
+a0(a, lam(P, lam(X, and(a_categoric_2(X), app(P, X))))) --> [flat].
 a0(a, lam(P, lam(X, and(a_bottom_1(X), app(P, X))))) --> [bottom].
+a0(a, lam(P, lam(X, and(a_bottom_2(X), app(P, X))))) --> [bottom].
 a0(a, lam(P, lam(X, and(a_curved_1(X), app(P, X))))) --> [curved].
+a0(a, lam(P, lam(X, and(a_aslant_1(X), app(P, X))))) --> [sloping].
+a0(a, lam(P, lam(X, and(a_sloping_2(X), app(P, X))))) --> [sloping].
 a0(a, lam(P, lam(X, and(a_thin_1(X), app(P, X))))) --> [thin].
 a0(a, lam(P, lam(X, and(a_thin_2(X), app(P, X))))) --> [lean]; [thin].
+a0(a, lam(P, lam(X, and(a_slender_2(X), app(P, X))))) --> [thin].
+a0(a, lam(P, lam(X, and(a_fly_1(X), app(P, X))))) --> [fly].
+a0(a, lam(P, lam(X, and(a_fast_flying_1(X), app(P, X))))) --> [flying].
+a0(a, lam(P, lam(X, and(a_flying_2(X), app(P, X))))) --> [flying].
+a0(a, lam(P, lam(X, and(a_floating_1(X), app(P, X))))) --> [floating].
+a0(a, lam(P, lam(X, and(a_aimless_2(X), app(P, X))))) --> [floating].
+a0(a, lam(P, lam(X, and(a_floating_3(X), app(P, X))))) --> [floating].
+a0(a, lam(P, lam(X, and(a_submerged_1(X), app(P, X))))) --> [submerged].
+a0(a, lam(P, lam(X, and(a_subaqueous_1(X), app(P, X))))) --> [submerged].
 a0(an, lam(P, lam(X, and(a_upstairs_1(X), app(P, X))))) --> [upstairs].
+a0(a, lam(P, lam(X, and(a_floral_1(X), app(P, X))))) --> [floral].
 a0(a, lam(P, lam(X, and(a_floral_2(X), app(P, X))))) --> [floral].
 a0(a, lam(P, lam(X, and(a_floral_3(X), app(P, X))))) --> [floral].
+a0(a, lam(P, lam(X, and(a_forested_1(X), app(P, X))))) --> [forested].
+a0(a, lam(P, lam(X, and(a_through_2(X), app(P, X))))) --> [through].
+a0(a, lam(P, lam(X, and(a_rear_1(X), app(P, X))))) --> [rear].
 a0(a, lam(P, lam(X, and(a_full_1(X), app(P, X))))) --> [full].
+a0(a, lam(P, lam(X, and(a_entire_1(X), app(P, X))))) --> [full].
+a0(a, lam(P, lam(X, and(a_full_3(X), app(P, X))))) --> [full].
 a0(a, lam(P, lam(X, and(a_complete_1(X), app(P, X))))) --> [complete].
+a0(a, lam(P, lam(X, and(a_complete_2(X), app(P, X))))) --> [complete].
+a0(a, lam(P, lam(X, and(a_accomplished_1(X), app(P, X))))) --> [complete].
 a0(a, lam(P, lam(X, and(a_free_1(X), app(P, X))))) --> [free].
 a0(a, lam(P, lam(X, and(a_free_2(X), app(P, X))))) --> [free].
+a0(a, lam(P, lam(X, and(a_complimentary_2(X), app(P, X))))) --> [free].
 a0(a, lam(P, lam(X, and(a_more_1(X), app(P, X))))) --> [more].
 a0(a, lam(P, lam(X, and(a_more_2(X), app(P, X))))) --> [more].
+a0(a, lam(P, lam(X, and(a_ginger_1(X), app(P, X))))) --> [ginger].
+a0(a, lam(P, lam(X, and(a_frosted_1(X), app(P, X))))) --> [frosted].
 a0(a, lam(P, lam(X, and(a_ceramic_1(X), app(P, X))))) --> [ceramic].
 a0(a, lam(P, lam(X, and(a_go_1(X), app(P, X))))) --> [go].
 a0(a, lam(P, lam(X, and(a_just_1(X), app(P, X))))) --> [just].
 a0(a, lam(P, lam(X, and(a_equitable_1(X), app(P, X))))) --> [just].
 a0(a, lam(P, lam(X, and(a_fair_1(X), app(P, X))))) --> [just].
+a0(a, lam(P, lam(X, and(a_done_for_1(X), app(P, X))))) --> [gone].
+a0(a, lam(P, lam(X, and(a_asleep_3(X), app(P, X))))) --> [gone].
+a0(a, lam(P, lam(X, and(a_bygone_1(X), app(P, X))))) --> [gone].
+a0(a, lam(P, lam(X, and(a_approaching_1(X), app(P, X))))) --> [coming].
+a0(a, lam(P, lam(X, and(a_aureate_2(X), app(P, X))))) --> [gold]; [golden].
+a0(a, lam(P, lam(X, and(a_golden_2(X), app(P, X))))) --> [golden].
+a0(a, lam(P, lam(X, and(a_gold_1(X), app(P, X))))) --> [gold]; [golden].
+a0(a, lam(P, lam(X, and(a_shining_1(X), app(P, X))))) --> [shining].
+a0(a, lam(P, lam(X, and(a_bright_5(X), app(P, X))))) --> [shining].
+a0(a, lam(P, lam(X, and(a_glistening_1(X), app(P, X))))) --> [shining].
+a0(a, lam(P, lam(X, and(a_silver_1(X), app(P, X))))) --> [silver].
+a0(a, lam(P, lam(X, and(a_silver_2(X), app(P, X))))) --> [silver].
+a0(a, lam(P, lam(X, and(a_argent_1(X), app(P, X))))) --> [silver].
+a0(a, lam(P, lam(X, and(a_grazed_1(X), app(P, X))))) --> [grazed].
+a0(a, lam(P, lam(X, and(a_green_1(X), app(P, X))))) --> [green].
 a0(a, lam(P, lam(X, and(a_green_2(X), app(P, X))))) --> [green].
 a0(a, lam(P, lam(X, and(a_green_3(X), app(P, X))))) --> [green].
+a0(an, lam(P, lam(X, and(a_orange_1(X), app(P, X))))) --> [orange].
+a0(a, lam(P, lam(X, and(a_laic_1(X), app(P, X))))) --> [lay].
+a0(a, lam(P, lam(X, and(a_lay_2(X), app(P, X))))) --> [lay].
+a0(a, lam(P, lam(X, and(a_bass_1(X), app(P, X))))) --> [bass].
 a0(an, lam(P, lam(X, and(a_acoustic_1(X), app(P, X))))) --> [acoustic].
 a0(a, lam(P, lam(X, and(a_piano_1(X), app(P, X))))) --> [piano].
 a0(a, lam(P, lam(X, and(a_curly_1(X), app(P, X))))) --> [curly].
 a0(a, lam(P, lam(X, and(a_handed_1(X), app(P, X))))) --> [handed].
 a0(a, lam(P, lam(X, and(a_happy_1(X), app(P, X))))) --> [happy].
+a0(a, lam(P, lam(X, and(a_felicitous_2(X), app(P, X))))) --> [happy].
+a0(a, lam(P, lam(X, and(a_glad_2(X), app(P, X))))) --> [happy]; [glad].
 a0(a, lam(P, lam(X, and(a_glad_1(X), app(P, X))))) --> [glad].
+a0(a, lam(P, lam(X, and(a_glad_3(X), app(P, X))))) --> [glad].
 a0(a, lam(P, lam(X, and(a_grateful_1(X), app(P, X))))) --> [thankful].
+a0(an, lam(P, lam(X, and(a_aroused_6(X), app(P, X))))) --> [excited].
 a0(an, lam(P, lam(X, and(a_excited_2(X), app(P, X))))) --> [excited].
+a0(an, lam(P, lam(X, and(a_delirious_2(X), app(P, X))))) --> [excited].
+a0(a, lam(P, lam(X, and(a_headed_1(X), app(P, X))))) --> [headed].
 a0(a, lam(P, lam(X, and(a_headed_2(X), app(P, X))))) --> [headed].
 a0(a, lam(P, lam(X, and(a_headed_3(X), app(P, X))))) --> [headed].
 a0(a, lam(P, lam(X, and(a_held_1(X), app(P, X))))) --> [held].
 a0(an, lam(P, lam(X, and(a_accompanied_2(X), app(P, X))))) --> [attended].
+a0(an, lam(P, lam(X, and(a_attended_2(X), app(P, X))))) --> [attended].
+a0(a, lam(P, lam(X, and(a_smitten_1(X), app(P, X))))) --> [struck].
+a0(a, lam(P, lam(X, and(a_standing_1(X), app(P, X))))) --> [standing].
+a0(a, lam(P, lam(X, and(a_standing_2(X), app(P, X))))) --> [standing].
 a0(a, lam(P, lam(X, and(a_standing_3(X), app(P, X))))) --> [standing].
 a0(a, lam(P, lam(X, and(a_hollow_1(X), app(P, X))))) --> [hollow].
+a0(a, lam(P, lam(X, and(a_hollow_2(X), app(P, X))))) --> [hollow].
+a0(a, lam(P, lam(X, and(a_empty_2(X), app(P, X))))) --> [hollow].
+a0(a, lam(P, lam(X, and(a_cylindrical_1(X), app(P, X))))) --> [cylindrical].
+a0(an, lam(P, lam(X, and(a_elongated_1(X), app(P, X))))) --> [elongated].
+a0(an, lam(P, lam(X, and(a_elongate_2(X), app(P, X))))) --> [elongated].
+a0(a, lam(P, lam(X, and(a_tubular_1(X), app(P, X))))) --> [tubular].
 a0(an, lam(P, lam(X, and(a_equine_1(X), app(P, X))))) --> [equine].
 a0(an, lam(P, lam(X, and(a_equine_2(X), app(P, X))))) --> [equine].
+a0(a, lam(P, lam(X, and(a_pedigree_1(X), app(P, X))))) --> [thoroughbred].
 a0(a, lam(P, lam(X, and(a_home_1(X), app(P, X))))) --> [home].
 a0(a, lam(P, lam(X, and(a_home_2(X), app(P, X))))) --> [home].
+a0(a, lam(P, lam(X, and(a_home_3(X), app(P, X))))) --> [home].
 a0(a, lam(P, lam(X, and(a_frozen_1(X), app(P, X))))) --> [frozen].
+a0(a, lam(P, lam(X, and(a_frozen_2(X), app(P, X))))) --> [frozen].
+a0(a, lam(P, lam(X, and(a_frigid_3(X), app(P, X))))) --> [frozen].
+a0(an, lam(P, lam(X, and(a_frigid_3(X), app(P, X))))) --> [icy].
+a0(an, lam(P, lam(X, and(a_arctic_2(X), app(P, X))))) --> [icy].
+a0(an, lam(P, lam(X, and(a_icy_3(X), app(P, X))))) --> [icy].
+a0(an, lam(P, lam(X, and(a_in_1(X), app(P, X))))) --> [in].
+a0(an, lam(P, lam(X, and(a_in_2(X), app(P, X))))) --> [in].
+a0(an, lam(P, lam(X, and(a_in_3(X), app(P, X))))) --> [in].
 a0(an, lam(P, lam(X, and(a_outside_1(X), app(P, X))))) --> [outside].
+a0(an, lam(P, lam(X, and(a_external_2(X), app(P, X))))) --> [outside].
+a0(an, lam(P, lam(X, and(a_outside_3(X), app(P, X))))) --> [outside].
+a0(an, lam(P, lam(X, and(a_intimidated_1(X), app(P, X))))) --> [intimidated].
+a0(an, lam(P, lam(X, and(a_abashed_1(X), app(P, X))))) --> [embarrassed].
+a0(an, lam(P, lam(X, and(a_embarrassed_2(X), app(P, X))))) --> [embarrassed].
+a0(a, lam(P, lam(X, and(a_frightened_1(X), app(P, X))))) --> [frightened].
+a0(a, lam(P, lam(X, and(a_panicky_1(X), app(P, X))))) --> [frightened].
+a0(a, lam(P, lam(X, and(a_inactive_10(X), app(P, X))))) --> [still].
+a0(a, lam(P, lam(X, and(a_silent_1(X), app(P, X))))) --> [silent]; [still].
+a0(a, lam(P, lam(X, and(a_placid_1(X), app(P, X))))) --> [still].
+a0(a, lam(P, lam(X, and(a_broke_1(X), app(P, X))))) --> [broke].
 a0(a, lam(P, lam(X, and(a_landed_1(X), app(P, X))))) --> [landed].
 a0(a, lam(P, lam(X, and(a_lean_2(X), app(P, X))))) --> [lean].
+a0(a, lam(P, lam(X, and(a_lean_3(X), app(P, X))))) --> [lean].
 a0(_, lam(P, lam(X, and(a_thin_2(X), app(P, X))))) --> [leaner].
 a0(_, lam(P, lam(X, and(a_lean_2(X), app(P, X))))) --> [leaner].
+a0(_, lam(P, lam(X, and(a_lean_3(X), app(P, X))))) --> [leaner].
 a0(a, lam(P, lam(X, and(a_fat_1(X), app(P, X))))) --> [fat].
+a0(a, lam(P, lam(X, and(a_fat_2(X), app(P, X))))) --> [fat].
 a0(a, lam(P, lam(X, and(a_fatty_1(X), app(P, X))))) --> [fat].
 a0(a, lam(P, lam(X, and(a_muscular_1(X), app(P, X))))) --> [muscular].
 a0(a, lam(P, lam(X, and(a_mesomorphic_1(X), app(P, X))))) --> [muscular].
+a0(a, lam(P, lam(X, and(a_muscular_3(X), app(P, X))))) --> [muscular].
+a0(a, lam(P, lam(X, and(a_atilt_1(X), app(P, X))))) --> [tilted]; [leaning].
 a0(a, lam(P, lam(X, and(a_least_1(X), app(P, X))))) --> [least].
 a0(a, lam(P, lam(X, and(a_less_1(X), app(P, X))))) --> [less].
+a0(a, lam(P, lam(X, and(a_less_2(X), app(P, X))))) --> [less].
+a0(a, lam(P, lam(X, and(a_less_3(X), app(P, X))))) --> [less].
 a0(an, lam(P, lam(X, and(a_even_1(X), app(P, X))))) --> [even].
+a0(an, lam(P, lam(X, and(a_even_2(X), app(P, X))))) --> [even].
 a0(an, lam(P, lam(X, and(a_even_3(X), app(P, X))))) --> [even].
 a0(a, lam(P, lam(X, and(a_left_1(X), app(P, X))))) --> [left].
+a0(a, lam(P, lam(X, and(a_leftover_1(X), app(P, X))))) --> [left].
+a0(a, lam(P, lam(X, and(a_left_3(X), app(P, X))))) --> [left].
 a0(a, lam(P, lam(X, and(a_right_1(X), app(P, X))))) --> [right].
 a0(a, lam(P, lam(X, and(a_correct_1(X), app(P, X))))) --> [right].
+a0(a, lam(P, lam(X, and(a_correct_2(X), app(P, X))))) --> [right].
 a0(a, lam(P, lam(X, and(a_legged_1(X), app(P, X))))) --> [legged].
+a0(a, lam(P, lam(X, and(a_leggy_2(X), app(P, X))))) --> [long-legged].
+a0(a, lam(P, lam(X, and(a_licked_1(X), app(P, X))))) --> [licked].
 a0(a, lam(P, lam(X, and(a_liked_1(X), app(P, X))))) --> [liked].
 a0(a, lam(P, lam(X, and(a_liquid_1(X), app(P, X))))) --> [liquid].
+a0(a, lam(P, lam(X, and(a_liquid_2(X), app(P, X))))) --> [liquid]; [swimming].
+a0(a, lam(P, lam(X, and(a_liquid_3(X), app(P, X))))) --> [liquid].
+a0(a, lam(P, lam(X, and(a_fluid_1(X), app(P, X))))) --> [fluid].
+a0(a, lam(P, lam(X, and(a_fluid_2(X), app(P, X))))) --> [fluid].
+a0(a, lam(P, lam(X, and(a_fluent_1(X), app(P, X))))) --> [fluid].
 a0(a, lam(P, lam(X, and(a_solvent_1(X), app(P, X))))) --> [solvent].
+a0(a, lam(P, lam(X, and(a_syrupy_2(X), app(P, X))))) --> [viscous].
+a0(a, lam(P, lam(X, and(a_gluey_1(X), app(P, X))))) --> [viscous].
+a0(a, lam(P, lam(X, and(a_illuminated_1(X), app(P, X))))) --> [lit]; [lighted].
 a0(a, lam(P, lam(X, and(a_lighted_1(X), app(P, X))))) --> [lit]; [lighted].
+a0(an, lam(P, lam(X, and(a_illuminated_1(X), app(P, X))))) --> [illuminated].
+a0(a, lam(P, lam(X, and(a_dim_1(X), app(P, X))))) --> [dim].
+a0(a, lam(P, lam(X, and(a_dim_2(X), app(P, X))))) --> [dim].
 a0(a, lam(P, lam(X, and(a_dimmed_1(X), app(P, X))))) --> [dim].
 a0(a, lam(P, lam(X, and(a_long_1(X), app(P, X))))) --> [long].
 a0(a, lam(P, lam(X, and(a_long_2(X), app(P, X))))) --> [long].
+a0(a, lam(P, lam(X, and(a_long_3(X), app(P, X))))) --> [long].
 a0(a, lam(P, lam(X, and(a_short_1(X), app(P, X))))) --> [short].
 a0(a, lam(P, lam(X, and(a_short_2(X), app(P, X))))) --> [short].
 a0(a, lam(P, lam(X, and(a_short_3(X), app(P, X))))) --> [short].
 a0(_, lam(P, lam(X, and(a_long_1(X), app(P, X))))) --> [longer].
 a0(_, lam(P, lam(X, and(a_long_2(X), app(P, X))))) --> [longer].
+a0(_, lam(P, lam(X, and(a_long_3(X), app(P, X))))) --> [longer].
+a0(a, lam(P, lam(X, and(a_looking_1(X), app(P, X))))) --> [looking].
+a0(a, lam(P, lam(X, and(a_inquisitory_1(X), app(P, X))))) --> [searching].
+a0(a, lam(P, lam(X, and(a_searching_2(X), app(P, X))))) --> [searching].
+a0(a, lam(P, lam(X, and(a_searching_3(X), app(P, X))))) --> [searching].
 a0(an, lam(P, lam(X, and(a_interested_1(X), app(P, X))))) --> [interested].
+a0(an, lam(P, lam(X, and(a_concerned_2(X), app(P, X))))) --> [interested].
+a0(a, lam(P, lam(X, and(a_lacking_2(X), app(P, X))))) --> [wanting].
+a0(a, lam(P, lam(X, and(a_deficient_1(X), app(P, X))))) --> [wanting].
+a0(a, lam(P, lam(X, and(a_pretty_1(X), app(P, X))))) --> [pretty].
+a0(a, lam(P, lam(X, and(a_pretty_2(X), app(P, X))))) --> [pretty].
+a0(a, lam(P, lam(X, and(a_made_1(X), app(P, X))))) --> [made].
 a0(a, lam(P, lam(X, and(a_made_2(X), app(P, X))))) --> [made].
+a0(a, lam(P, lam(X, and(a_made_3(X), app(P, X))))) --> [made].
 a0(an, lam(P, lam(X, and(a_amphibious_1(X), app(P, X))))) --> [amphibian].
 a0(a, lam(P, lam(X, and(a_cetacean_1(X), app(P, X))))) --> [cetacean].
+a0(a, lam(P, lam(X, and(a_flat_14(X), app(P, X))))) --> [mat].
 a0(an, lam(P, lam(X, and(a_alpine_1(X), app(P, X))))) --> [alpine].
 a0(_, lam(P, lam(X, and(a_alpine_2(X), app(P, X))))) --> [alpine].
+a0(_, lam(P, lam(X, and(a_alpine_3(X), app(P, X))))) --> [alpine].
+a0(a, lam(P, lam(X, and(a_cragged_1(X), app(P, X))))) --> [mountainous].
+a0(a, lam(P, lam(X, and(a_mountainous_2(X), app(P, X))))) --> [mountainous].
+a0(a, lam(P, lam(X, and(a_mountainous_3(X), app(P, X))))) --> [mountainous].
 a0(a, lam(P, lam(X, and(a_musical_1(X), app(P, X))))) --> [musical].
 a0(a, lam(P, lam(X, and(a_musical_2(X), app(P, X))))) --> [musical].
 a0(a, lam(P, lam(X, and(a_musical_3(X), app(P, X))))) --> [musical].
+a0(a, lam(P, lam(X, and(a_mute_1(X), app(P, X))))) --> [mute].
+a0(a, lam(P, lam(X, and(a_dumb_4(X), app(P, X))))) --> [mute].
+a0(a, lam(P, lam(X, and(a_mum_1(X), app(P, X))))) --> [silent].
+a0(a, lam(P, lam(X, and(a_silent_3(X), app(P, X))))) --> [silent].
 a0(a, lam(P, lam(X, and(a_natural_1(X), app(P, X))))) --> [natural].
 a0(a, lam(P, lam(X, and(a_natural_2(X), app(P, X))))) --> [natural].
 a0(a, lam(P, lam(X, and(a_natural_3(X), app(P, X))))) --> [natural].
+a0(a, lam(P, lam(X, and(a_nearby_1(X), app(P, X))))) --> [nearby].
+a0(a, lam(P, lam(X, and(a_located_1(X), app(P, X))))) --> [set]; [located]; [placed].
 a0(a, lam(P, lam(X, and(a_close_1(X), app(P, X))))) --> [close].
 a0(a, lam(P, lam(X, and(a_close_2(X), app(P, X))))) --> [close].
 a0(a, lam(P, lam(X, and(a_north_1(X), app(P, X))))) --> [north].
+a0(a, lam(P, lam(X, and(a_pendent_1(X), app(P, X))))) --> [pendant].
 a0(a, lam(P, lam(X, and(a_net_1(X), app(P, X))))) --> [net].
+a0(a, lam(P, lam(X, and(a_final_2(X), app(P, X))))) --> [net].
 a0(an, lam(P, lam(X, and(a_editorial_1(X), app(P, X))))) --> [editorial].
 a0(an, lam(P, lam(X, and(a_editorial_2(X), app(P, X))))) --> [editorial].
+a0(a, lam(P, lam(X, and(a_following_2(X), app(P, X))))) --> [next].
+a0(a, lam(P, lam(X, and(a_adjacent_1(X), app(P, X))))) --> [next].
+a0(a, lam(P, lam(X, and(a_future_3(X), app(P, X))))) --> [next].
+a0(a, lam(P, lam(X, and(a_last_1(X), app(P, X))))) --> [last].
 a0(a, lam(P, lam(X, and(a_last_2(X), app(P, X))))) --> [last].
+a0(a, lam(P, lam(X, and(a_concluding_1(X), app(P, X))))) --> [last].
 a0(a, lam(P, lam(X, and(a_no_1(X), app(P, X))))) --> [no].
+a0(a, lam(P, lam(X, and(a_none_1(X), app(P, X))))) --> [none].
+a0(a, lam(P, lam(X, and(a_neither_1(X), app(P, X))))) --> [neither].
+a0(a, lam(P, lam(X, and(a_fresh_4(X), app(P, X))))) --> [novel].
+a0(a, lam(P, lam(X, and(a_novel_2(X), app(P, X))))) --> [novel].
 a0(an, lam(P, lam(X, and(a_old_1(X), app(P, X))))) --> [old].
 a0(an, lam(P, lam(X, and(a_old_2(X), app(P, X))))) --> [old].
+a0(an, lam(P, lam(X, and(a_old_3(X), app(P, X))))) --> [old].
+a0(an, lam(P, lam(X, and(a_aged_1(X), app(P, X))))) --> [older].
+a0(an, lam(P, lam(X, and(a_elder_1(X), app(P, X))))) --> [older].
+a0(an, lam(P, lam(X, and(a_old_4(X), app(P, X))))) --> [older].
 a0(a, lam(P, lam(X, and(a_small_1(X), app(P, X))))) --> [little]; [small].
 a0(a, lam(P, lam(X, and(a_little_2(X), app(P, X))))) --> [little].
+a0(a, lam(P, lam(X, and(a_little_3(X), app(P, X))))) --> [little]; [small].
 a0(an, lam(P, lam(X, and(a_on_1(X), app(P, X))))) --> [on].
 a0(an, lam(P, lam(X, and(a_on_2(X), app(P, X))))) --> [on].
+a0(an, lam(P, lam(X, and(a_lone_3(X), app(P, X))))) --> [only].
+a0(an, lam(P, lam(X, and(a_alone_3(X), app(P, X))))) --> [only].
 a0(an, lam(P, lam(X, and(a_opening_1(X), app(P, X))))) --> [opening].
+a0(a, lam(P, lam(X, and(a_assorted_2(X), app(P, X))))) --> [various].
+a0(a, lam(P, lam(X, and(a_diverse_2(X), app(P, X))))) --> [various].
 a0(a, lam(P, lam(X, and(a_different_1(X), app(P, X))))) --> [different].
+a0(a, lam(P, lam(X, and(a_different_2(X), app(P, X))))) --> [different].
+a0(a, lam(P, lam(X, and(a_different_3(X), app(P, X))))) --> [different].
 a0(a, lam(P, lam(X, and(a_painted_1(X), app(P, X))))) --> [painted].
+a0(a, lam(P, lam(X, and(a_painted_2(X), app(P, X))))) --> [painted].
 a0(a, lam(P, lam(X, and(a_painted_3(X), app(P, X))))) --> [painted].
+a0(a, lam(P, lam(X, and(a_mated_2(X), app(P, X))))) --> [paired].
 a0(a, lam(P, lam(X, and(a_opposite_2(X), app(P, X))))) --> [paired].
+a0(a, lam(P, lam(X, and(a_paired_3(X), app(P, X))))) --> [paired].
+a0(an, lam(P, lam(X, and(a_identical_1(X), app(P, X))))) --> [identical].
+a0(an, lam(P, lam(X, and(a_identical_2(X), app(P, X))))) --> [identical].
 a0(an, lam(P, lam(X, and(a_identical_3(X), app(P, X))))) --> [identical].
+a0(a, lam(P, lam(X, and(a_cardboard_1(X), app(P, X))))) --> [cardboard].
 a0(a, lam(P, lam(X, and(a_parked_1(X), app(P, X))))) --> [parked].
-a0(a, lam(P, lam(X, and(a_passing_2(X), app(P, X))))) --> [pass]; [passing].
+a0(a, lam(P, lam(X, and(a_ephemeral_1(X), app(P, X))))) --> [passing].
+a0(a, lam(P, lam(X, and(a_passing_2(X), app(P, X))))) --> [passing]; [pass].
+a0(a, lam(P, lam(X, and(a_passing_3(X), app(P, X))))) --> [passing].
 a0(a, lam(P, lam(X, and(a_past_1(X), app(P, X))))) --> [past].
+a0(a, lam(P, lam(X, and(a_past_2(X), app(P, X))))) --> [past].
+a0(a, lam(P, lam(X, and(a_insignificant_3(X), app(P, X))))) --> [peanut].
+a0(a, lam(P, lam(X, and(a_pedestrian_1(X), app(P, X))))) --> [pedestrian].
+a0(a, lam(P, lam(X, and(a_bare_assed_1(X), app(P, X))))) --> [peeled].
+a0(a, lam(P, lam(X, and(a_chopped_1(X), app(P, X))))) --> [chopped]; [sliced].
+a0(a, lam(P, lam(X, and(a_sliced_2(X), app(P, X))))) --> [sliced].
+a0(a, lam(P, lam(X, and(a_nestled_1(X), app(P, X))))) --> [nestled].
 a0(a, lam(P, lam(X, and(a_whole_1(X), app(P, X))))) --> [whole].
 a0(a, lam(P, lam(X, and(a_whole_2(X), app(P, X))))) --> [whole].
+a0(a, lam(P, lam(X, and(a_unharmed_1(X), app(P, X))))) --> [whole].
+a0(a, lam(P, lam(X, and(a_placed_2(X), app(P, X))))) --> [placed].
+a0(a, lam(P, lam(X, and(a_removed_1(X), app(P, X))))) --> [removed].
+a0(a, lam(P, lam(X, and(a_distant_4(X), app(P, X))))) --> [removed].
 a0(a, lam(P, lam(X, and(a_flowering_1(X), app(P, X))))) --> [flowering].
+a0(an, lam(P, lam(X, and(a_incorporate_1(X), app(P, X))))) --> [integrated].
 a0(an, lam(P, lam(X, and(a_integrated_2(X), app(P, X))))) --> [integrated].
 a0(an, lam(P, lam(X, and(a_integrated_3(X), app(P, X))))) --> [integrated].
+a0(a, lam(P, lam(X, and(a_crippled_1(X), app(P, X))))) --> [game].
+a0(a, lam(P, lam(X, and(a_game_2(X), app(P, X))))) --> [game].
 a0(a, lam(P, lam(X, and(a_played_1(X), app(P, X))))) --> [played].
 a0(a, lam(P, lam(X, and(a_plowed_1(X), app(P, X))))) --> [ploughed].
+a0(a, lam(P, lam(X, and(a_gushing_1(X), app(P, X))))) --> [pouring].
 a0(a, lam(P, lam(X, and(a_moved_1(X), app(P, X))))) --> [stirred]; [touched].
+a0(a, lam(P, lam(X, and(a_stimulated_1(X), app(P, X))))) --> [stirred].
+a0(a, lam(P, lam(X, and(a_stirred_3(X), app(P, X))))) --> [stirred].
+a0(a, lam(P, lam(X, and(a_marauding_1(X), app(P, X))))) --> [predatory].
+a0(a, lam(P, lam(X, and(a_predatory_2(X), app(P, X))))) --> [predatory].
+a0(a, lam(P, lam(X, and(a_predaceous_2(X), app(P, X))))) --> [predatory].
+a0(a, lam(P, lam(X, and(a_boggy_1(X), app(P, X))))) --> [muddy].
+a0(a, lam(P, lam(X, and(a_mucky_2(X), app(P, X))))) --> [muddy].
+a0(a, lam(P, lam(X, and(a_dirty_6(X), app(P, X))))) --> [muddy].
 a0(a, lam(P, lam(X, and(a_locomotive_1(X), app(P, X))))) --> [locomotive].
 a0(a, lam(P, lam(X, and(a_ready_1(X), app(P, X))))) --> [ready].
+a0(a, lam(P, lam(X, and(a_ready_2(X), app(P, X))))) --> [ready].
+a0(a, lam(P, lam(X, and(a_ready_3(X), app(P, X))))) --> [ready].
+a0(a, lam(P, lam(X, and(a_waiting_1(X), app(P, X))))) --> [waiting].
+a0(a, lam(P, lam(X, and(a_reflecting_1(X), app(P, X))))) --> [reflecting].
 a0(a, lam(P, lam(X, and(a_reflected_1(X), app(P, X))))) --> [reflected].
+a0(a, lam(P, lam(X, and(a_brooding_1(X), app(P, X))))) --> [reflective].
 a0(a, lam(P, lam(X, and(a_reflective_2(X), app(P, X))))) --> [reflective].
+a0(a, lam(P, lam(X, and(a_reflective_3(X), app(P, X))))) --> [reflective].
 a0(a, lam(P, lam(X, and(a_rested_1(X), app(P, X))))) --> [rested].
+a0(a, lam(P, lam(X, and(a_crinkled_1(X), app(P, X))))) --> [rippled].
+a0(a, lam(P, lam(X, and(a_rippled_2(X), app(P, X))))) --> [rippled].
+a0(a, lam(P, lam(X, and(a_bum_1(X), app(P, X))))) --> [punk].
+a0(a, lam(P, lam(X, and(a_popular_4(X), app(P, X))))) --> [pop].
+a0(a, lam(P, lam(X, and(a_rocky_1(X), app(P, X))))) --> [rocky].
 a0(a, lam(P, lam(X, and(a_rough_9(X), app(P, X))))) --> [rocky].
+a0(a, lam(P, lam(X, and(a_rocky_3(X), app(P, X))))) --> [rocky].
 a0(a, lam(P, lam(X, and(a_downstairs_1(X), app(P, X))))) --> [downstairs].
 a0(a, lam(P, lam(X, and(a_round_1(X), app(P, X))))) --> [round].
+a0(a, lam(P, lam(X, and(a_orotund_2(X), app(P, X))))) --> [round].
+a0(a, lam(P, lam(X, and(a_round_3(X), app(P, X))))) --> [round].
+a0(an, lam(P, lam(X, and(a_egg_shaped_1(X), app(P, X))))) --> [oval].
+a0(a, lam(P, lam(X, and(a_straight_1(X), app(P, X))))) --> [straight].
 a0(a, lam(P, lam(X, and(a_straight_2(X), app(P, X))))) --> [straight].
 a0(a, lam(P, lam(X, and(a_straight_3(X), app(P, X))))) --> [straight].
 a0(a, lam(P, lam(X, and(a_running_1(X), app(P, X))))) --> [running].
+a0(a, lam(P, lam(X, and(a_running_2(X), app(P, X))))) --> [running].
 a0(a, lam(P, lam(X, and(a_running_3(X), app(P, X))))) --> [running].
 a0(_, lam(P, lam(X, and(a_russian_1(X), app(P, X))))) --> [russian].
 a0(_, lam(P, lam(X, and(a_ukrainian_1(X), app(P, X))))) --> [ukrainian].
 a0(_, lam(P, lam(X, and(a_czech_1(X), app(P, X))))) --> [czech].
 a0(_, lam(P, lam(X, and(a_romanian_1(X), app(P, X))))) --> [romanian].
+a0(a, lam(P, lam(X, and(a_knitted_1(X), app(P, X))))) --> [knitted].
+a0(a, lam(P, lam(X, and(a_fit_2(X), app(P, X))))) --> [set].
+a0(a, lam(P, lam(X, and(a_fixed_2(X), app(P, X))))) --> [set].
+a0(a, lam(P, lam(X, and(a_nine_1(X), app(P, X))))) --> [nine].
+a0(a, lam(P, lam(X, and(a_numerous_1(X), app(P, X))))) --> [numerous].
 a0(a, lam(P, lam(X, and(a_caducous_1(X), app(P, X))))) --> [shed].
 a0(an, lam(P, lam(X, and(a_untied_1(X), app(P, X))))) --> [untied].
 a0(an, lam(P, lam(X, and(a_unlaced_1(X), app(P, X))))) --> [untied].
+a0(an, lam(P, lam(X, and(a_unchained_1(X), app(P, X))))) --> [untied].
 a0(_, lam(P, lam(X, and(a_short_1(X), app(P, X))))) --> [shorter].
 a0(_, lam(P, lam(X, and(a_short_2(X), app(P, X))))) --> [shorter].
 a0(_, lam(P, lam(X, and(a_short_3(X), app(P, X))))) --> [shorter].
+a0(a, lam(P, lam(X, and(a_brief_1(X), app(P, X))))) --> [brief].
+a0(a, lam(P, lam(X, and(a_brief_2(X), app(P, X))))) --> [brief].
+a0(a, lam(P, lam(X, and(a_abbreviated_1(X), app(P, X))))) --> [brief].
+a0(a, lam(P, lam(X, and(a_drawn_out_1(X), app(P, X))))) --> [lengthy].
+a0(a, lam(P, lam(X, and(a_agaze_1(X), app(P, X))))) --> [staring].
+a0(a, lam(P, lam(X, and(a_arrant_1(X), app(P, X))))) --> [staring].
+a0(a, lam(P, lam(X, and(a_napping_1(X), app(P, X))))) --> [napping].
+a0(a, lam(P, lam(X, and(a_minor_10(X), app(P, X))))) --> [small].
+a0(a, lam(P, lam(X, and(a_large_2(X), app(P, X))))) --> [large].
+a0(a, lam(P, lam(X, and(a_bombastic_1(X), app(P, X))))) --> [large].
+a0(a, lam(P, lam(X, and(a_bantam_1(X), app(P, X))))) --> [tiny].
 a0(a, lam(P, lam(X, and(a_sized_1(X), app(P, X))))) --> [sized].
 a0(a, lam(P, lam(X, and(a_sized_2(X), app(P, X))))) --> [sized].
+a0(a, lam(P, lam(X, and(a_beamish_1(X), app(P, X))))) --> [smiling].
+a0(a, lam(P, lam(X, and(a_smoking_1(X), app(P, X))))) --> [smoking].
+a0(a, lam(P, lam(X, and(a_redolent_2(X), app(P, X))))) --> [smelling].
+a0(a, lam(P, lam(X, and(a_white_4(X), app(P, X))))) --> [snowy].
+a0(a, lam(P, lam(X, and(a_snow_clad_1(X), app(P, X))))) --> [snowy].
+a0(a, lam(P, lam(X, and(a_snow_white_1(X), app(P, X))))) --> [snowy].
+a0(a, lam(P, lam(X, and(a_soaring_1(X), app(P, X))))) --> [soaring].
+a0(a, lam(P, lam(X, and(a_eminent_2(X), app(P, X))))) --> [soaring].
 a0(a, lam(P, lam(X, and(a_rising_1(X), app(P, X))))) --> [rising].
+a0(a, lam(P, lam(X, and(a_acclivitous_1(X), app(P, X))))) --> [rising].
+a0(a, lam(P, lam(X, and(a_emerging_1(X), app(P, X))))) --> [rising].
+a0(a, lam(P, lam(X, and(a_billowy_1(X), app(P, X))))) --> [surging].
+a0(a, lam(P, lam(X, and(a_envisioned_1(X), app(P, X))))) --> [pictured].
+a0(a, lam(P, lam(X, and(a_depicted_1(X), app(P, X))))) --> [pictured].
 a0(a, lam(P, lam(X, and(a_noticed_1(X), app(P, X))))) --> [noticed].
+a0(a, lam(P, lam(X, and(a_dispersed_1(X), app(P, X))))) --> [spread].
+a0(a, lam(P, lam(X, and(a_spread_2(X), app(P, X))))) --> [spread].
+a0(a, lam(P, lam(X, and(a_outspread_1(X), app(P, X))))) --> [spread].
+a0(a, lam(P, lam(X, and(a_dapper_1(X), app(P, X))))) --> [spruce].
+a0(a, lam(P, lam(X, and(a_birch_1(X), app(P, X))))) --> [birch].
 a0(a, lam(P, lam(X, and(a_square_1(X), app(P, X))))) --> [square].
 a0(a, lam(P, lam(X, and(a_straight_6(X), app(P, X))))) --> [square].
+a0(a, lam(P, lam(X, and(a_hearty_2(X), app(P, X))))) --> [square].
+a0(a, lam(P, lam(X, and(a_rectangular_1(X), app(P, X))))) --> [rectangular].
+a0(a, lam(P, lam(X, and(a_orthogonal_3(X), app(P, X))))) --> [rectangular].
+a0(a, lam(P, lam(X, and(a_jutting_1(X), app(P, X))))) --> [sticking].
 a0(a, lam(P, lam(X, and(a_stuck_1(X), app(P, X))))) --> [stuck].
+a0(a, lam(P, lam(X, and(a_stuck_2(X), app(P, X))))) --> [stuck].
 a0(a, lam(P, lam(X, and(a_difficult_1(X), app(P, X))))) --> [hard].
 a0(a, lam(P, lam(X, and(a_hard_2(X), app(P, X))))) --> [hard].
 a0(a, lam(P, lam(X, and(a_hard_3(X), app(P, X))))) --> [hard].
 a0(a, lam(P, lam(X, and(a_downtown_1(X), app(P, X))))) --> [downtown].
+a0(a, lam(P, lam(X, and(a_striped_1(X), app(P, X))))) --> [striped].
+a0(a, lam(P, lam(X, and(a_arrhythmic_1(X), app(P, X))))) --> [jerking].
+a0(a, lam(P, lam(X, and(a_graduate_1(X), app(P, X))))) --> [graduate].
+a0(a, lam(P, lam(X, and(a_stuffed_1(X), app(P, X))))) --> [stuffed].
+a0(a, lam(P, lam(X, and(a_stuffed_2(X), app(P, X))))) --> [stuffed].
+a0(a, lam(P, lam(X, and(a_cloaked_2(X), app(P, X))))) --> [wrapped].
+a0(a, lam(P, lam(X, and(a_captive_2(X), app(P, X))))) --> [wrapped].
 a0(a, lam(P, lam(X, and(a_wrapped_3(X), app(P, X))))) --> [wrapped].
+a0(a, lam(P, lam(X, and(a_cheery_1(X), app(P, X))))) --> [sunny].
+a0(a, lam(P, lam(X, and(a_showery_1(X), app(P, X))))) --> [rainy].
+a0(a, lam(P, lam(X, and(a_blowy_1(X), app(P, X))))) --> [windy]; [breezy].
+a0(a, lam(P, lam(X, and(a_airy_2(X), app(P, X))))) --> [windy].
+a0(a, lam(P, lam(X, and(a_windy_3(X), app(P, X))))) --> [windy].
+a0(a, lam(P, lam(X, and(a_breezy_1(X), app(P, X))))) --> [breezy].
+a0(a, lam(P, lam(X, and(a_balmy_1(X), app(P, X))))) --> [balmy].
+a0(a, lam(P, lam(X, and(a_balmy_2(X), app(P, X))))) --> [balmy].
+a0(a, lam(P, lam(X, and(a_naiant_1(X), app(P, X))))) --> [swimming].
+a0(an, lam(P, lam(X, and(a_adjustable_1(X), app(P, X))))) --> [adjustable].
+a0(an, lam(P, lam(X, and(a_adjustable_2(X), app(P, X))))) --> [adjustable].
+a0(a, lam(P, lam(X, and(a_fetching_1(X), app(P, X))))) --> [taking].
+a0(a, lam(P, lam(X, and(a_interpreted_1(X), app(P, X))))) --> [taken].
+a0(a, lam(P, lam(X, and(a_taken_2(X), app(P, X))))) --> [taken].
+a0(a, lam(P, lam(X, and(a_big_12(X), app(P, X))))) --> [giving].
+a0(an, lam(P, lam(X, and(a_own_1(X), app(P, X))))) --> [own].
+a0(a, lam(P, lam(X, and(a_trussed_1(X), app(P, X))))) --> [tied].
+a0(a, lam(P, lam(X, and(a_tied_2(X), app(P, X))))) --> [tied].
 a0(a, lam(P, lam(X, and(a_tied_3(X), app(P, X))))) --> [tied].
+a0(a, lam(P, lam(X, and(a_knotted_1(X), app(P, X))))) --> [knotted].
+a0(a, lam(P, lam(X, and(a_gnarled_1(X), app(P, X))))) --> [knotted].
+a0(a, lam(P, lam(X, and(a_tiled_1(X), app(P, X))))) --> [tiled].
 a0(an, lam(P, lam(X, and(a_able_1(X), app(P, X))))) --> [able].
+a0(an, lam(P, lam(X, and(a_able_2(X), app(P, X))))) --> [able].
+a0(an, lam(P, lam(X, and(a_able_3(X), app(P, X))))) --> [able].
+a0(a, lam(P, lam(X, and(a_together_1(X), app(P, X))))) --> [together].
+a0(an, lam(P, lam(X, and(a_apart_1(X), app(P, X))))) --> [apart].
+a0(an, lam(P, lam(X, and(a_apart_2(X), app(P, X))))) --> [apart].
 a0(a, lam(P, lam(X, and(a_top_1(X), app(P, X))))) --> [top].
+a0(a, lam(P, lam(X, and(a_ace_1(X), app(P, X))))) --> [tops].
 a0(a, lam(P, lam(X, and(a_best_1(X), app(P, X))))) --> [best].
+a0(a, lam(P, lam(X, and(a_better_3(X), app(P, X))))) --> [best].
 a0(_, lam(P, lam(X, and(a_good_1(X), app(P, X))))) --> [best].
 a0(a, lam(P, lam(X, and(a_touched_1(X), app(P, X))))) --> [touched].
+a0(a, lam(P, lam(X, and(a_fey_1(X), app(P, X))))) --> [touched].
+a0(a, lam(P, lam(X, and(a_affecting_1(X), app(P, X))))) --> [poignant]; [touching].
+a0(a, lam(P, lam(X, and(a_accomplished_2(X), app(P, X))))) --> [realized].
+a0(a, lam(P, lam(X, and(a_poignant_2(X), app(P, X))))) --> [poignant].
+a0(a, lam(P, lam(X, and(a_tested_1(X), app(P, X))))) --> [tried].
+a0(a, lam(P, lam(X, and(a_tested_2(X), app(P, X))))) --> [tried].
+a0(an, lam(P, lam(X, and(a_nether_3(X), app(P, X))))) --> [under].
+a0(an, lam(P, lam(X, and(a_under_2(X), app(P, X))))) --> [under].
+a0(a, lam(P, lam(X, and(a_pursuant_1(X), app(P, X))))) --> [pursuant].
 a0(an, lam(P, lam(X, and(a_used_1(X), app(P, X))))) --> [used].
+a0(an, lam(P, lam(X, and(a_exploited_2(X), app(P, X))))) --> [used].
+a0(an, lam(P, lam(X, and(a_secondhand_2(X), app(P, X))))) --> [used].
+a0(an, lam(P, lam(X, and(a_utilized_1(X), app(P, X))))) --> [utilized].
+a0(a, lam(P, lam(X, and(a_walk_to_1(X), app(P, X))))) --> [walking].
+a0(a, lam(P, lam(X, and(a_washed_1(X), app(P, X))))) --> [washed].
+a0(a, lam(P, lam(X, and(a_washed_2(X), app(P, X))))) --> [washed].
 a0(_, lam(P, lam(X, and(a_dry_1(X), app(P, X))))) --> [dryer].
+a0(_, lam(P, lam(X, and(a_dry_2(X), app(P, X))))) --> [dryer].
 a0(_, lam(P, lam(X, and(a_dry_3(X), app(P, X))))) --> [dryer].
+a0(a, lam(P, lam(X, and(a_seeing_1(X), app(P, X))))) --> [seeing].
+a0(a, lam(P, lam(X, and(a_salt_1(X), app(P, X))))) --> [salt].
+a0(a, lam(P, lam(X, and(a_exhausting_2(X), app(P, X))))) --> [wearing].
+a0(a, lam(P, lam(X, and(a_appareled_1(X), app(P, X))))) --> [dressed].
+a0(a, lam(P, lam(X, and(a_dressed_2(X), app(P, X))))) --> [dressed].
+a0(a, lam(P, lam(X, and(a_dressed_3(X), app(P, X))))) --> [dressed].
 a0(a, lam(P, lam(X, and(a_worn_1(X), app(P, X))))) --> [worn].
 a0(a, lam(P, lam(X, and(a_hot_1(X), app(P, X))))) --> [hot].
+a0(a, lam(P, lam(X, and(a_hot_2(X), app(P, X))))) --> [hot].
 a0(a, lam(P, lam(X, and(a_hot_3(X), app(P, X))))) --> [hot].
+a0(a, lam(P, lam(X, and(a_snappy_2(X), app(P, X))))) --> [whipping].
 a0(a, lam(P, lam(X, and(a_winged_1(X), app(P, X))))) --> [winged].
+a0(a, lam(P, lam(X, and(a_winged_2(X), app(P, X))))) --> [winged].
+a0(an, lam(P, lam(X, and(a_any_1(X), app(P, X))))) --> [any].
+a0(a, lam(P, lam(X, and(a_nee_1(X), app(P, X))))) --> [nee].
+a0(a, lam(P, lam(X, and(a_wooden_1(X), app(P, X))))) --> [wooden].
+a0(a, lam(P, lam(X, and(a_wooden_2(X), app(P, X))))) --> [wooden].
 a0(a, lam(P, lam(X, and(a_carved_1(X), app(P, X))))) --> [carved].
+a0(a, lam(P, lam(X, and(a_cosmetic_1(X), app(P, X))))) --> [decorative].
+a0(a, lam(P, lam(X, and(a_yawning_1(X), app(P, X))))) --> [yawning].
+a0(a, lam(P, lam(X, and(a_yawning_2(X), app(P, X))))) --> [yawning].
+a0(a, lam(P, lam(X, and(a_drowsy_2(X), app(P, X))))) --> [yawning].
 a0(a, lam(P, lam(X, and(a_young_1(X), app(P, X))))) --> [young].
+a0(a, lam(P, lam(X, and(a_new_10(X), app(P, X))))) --> [young].
+a0(a, lam(P, lam(X, and(a_youthful_1(X), app(P, X))))) --> [young].
+a0(a, lam(P, lam(X, and(a_younger_1(X), app(P, X))))) --> [younger].
 a0(_, lam(P, lam(X, and(a_young_1(X), app(P, X))))) --> [younger].
-n0(pl, _, lam(X, n_angstrom_1(X))) --> [as]; [a].
+a0(_, lam(P, lam(X, and(a_new_10(X), app(P, X))))) --> [younger].
+n0(pl, _, lam(X, n_angstrom_1(X))) --> [a]; [as].
 n0(pl, _, lam(X, n_vitamin_a_1(X))) --> [a].
 n0(pl, _, lam(X, n_deoxyadenosine_monophosphate_1(X))) --> [a].
 n0(sg, an, lam(X, n_one_1(X))) --> [one].
@@ -298,9 +878,9 @@ n0(sg, a, lam(X, n_concertina_2(X))) --> [concertina].
 n0(sg, a, lam(X, n_mandolin_1(X))) --> [mandolin].
 n0(pl, _, lam(X, n_african_1(X))) --> [african].
 n0(pl, _, lam(X, n_africa_1(X))) --> [africa].
-n0(pl, _, lam(X, n_american_1(X))) --> [american]; [americans].
-n0(pl, _, lam(X, n_american_english_1(X))) --> [american]; [americans].
-n0(pl, _, lam(X, n_american_3(X))) --> [american]; [americans].
+n0(pl, _, lam(X, n_american_1(X))) --> [americans]; [american].
+n0(pl, _, lam(X, n_american_english_1(X))) --> [americans]; [american].
+n0(pl, _, lam(X, n_american_3(X))) --> [americans]; [american].
 n0(pl, _, lam(X, n_indian_1(X))) --> [indian].
 n0(pl, _, lam(X, n_indian_2(X))) --> [indian].
 n0(pl, _, lam(X, n_amerind_1(X))) --> [indian].
@@ -309,7 +889,7 @@ n0(pl, _, lam(X, n_australian_2(X))) --> [australian].
 n0(pl, _, lam(X, n_ghana_1(X))) --> [ghana].
 n0(pl, _, lam(X, n_opposition_4(X))) --> [opponents].
 n0(pl, _, lam(X, n_adversary_1(X))) --> [opponents].
-n0(sg, a, lam(X, n_defeat_1(X))) --> [defeat]; [licking].
+n0(sg, a, lam(X, n_defeat_1(X))) --> [licking]; [defeat].
 n0(sg, a, lam(X, n_frustration_1(X))) --> [defeat].
 n0(sg, a, lam(X, n_beating_1(X))) --> [beating].
 n0(sg, a, lam(X, n_beating_2(X))) --> [beating]; [licking].
@@ -357,7 +937,7 @@ n0(sg, a, lam(X, n_frump_1(X))) --> [dog].
 n0(sg, a, lam(X, n_dog_3(X))) --> [dog].
 n0(sg, a, lam(X, n_mammal_1(X))) --> [mammal].
 n0(sg, a, lam(X, n_cat_1(X))) --> [cat].
-n0(sg, a, lam(X, n_guy_1(X))) --> [guy]; [cat].
+n0(sg, a, lam(X, n_guy_1(X))) --> [cat]; [guy].
 n0(sg, a, lam(X, n_cat_3(X))) --> [cat].
 n0(sg, a, lam(X, n_world_8(X))) --> [humans].
 n0(pl, _, lam(X, n_homo_2(X))) --> [humans].
@@ -371,15 +951,15 @@ n0(pl, _, lam(X, n_rabbit_3(X))) --> [rabbits].
 n0(sg, a, lam(X, n_first_1(X))) --> [first].
 n0(sg, a, lam(X, n_first_2(X))) --> [first].
 n0(sg, a, lam(X, n_beginning_2(X))) --> [start]; [first].
-n0(sg, a, lam(X, n_second_1(X))) --> [second]; [s].
+n0(sg, a, lam(X, n_second_1(X))) --> [s]; [second].
 n0(sg, a, lam(X, n_moment_2(X))) --> [second].
 n0(sg, a, lam(X, n_second_base_2(X))) --> [second].
 n0(sg, an, lam(X, n_antenna_1(X))) --> [antenna].
 n0(sg, an, lam(X, n_antenna_2(X))) --> [antenna].
 n0(sg, an, lam(X, n_antenna_3(X))) --> [antenna].
-n0(pl, _, lam(X, n_antenna_1(X))) --> [antennas]; [antennae].
-n0(pl, _, lam(X, n_antenna_2(X))) --> [antennas]; [antennae].
-n0(pl, _, lam(X, n_antenna_3(X))) --> [antennas]; [antennae].
+n0(pl, _, lam(X, n_antenna_1(X))) --> [antennae]; [antennas].
+n0(pl, _, lam(X, n_antenna_2(X))) --> [antennae]; [antennas].
+n0(pl, _, lam(X, n_antenna_3(X))) --> [antennae]; [antennas].
 n0(sg, a, lam(X, n_sender_1(X))) --> [transmitter].
 n0(sg, a, lam(X, n_vector_3(X))) --> [transmitter].
 n0(sg, a, lam(X, n_transmitter_3(X))) --> [transmitter].
@@ -417,7 +997,7 @@ n0(sg, a, lam(X, n_rich_person_1(X))) --> [have].
 n0(sg, an, lam(X, n_armchair_1(X))) --> [armchair].
 n0(sg, a, lam(X, n_sofa_1(X))) --> [couch]; [sofa].
 n0(pl, _, lam(X, n_armchair_1(X))) --> [armchairs].
-n0(sg, a, lam(X, n_recliner_1(X))) --> [lounger]; [recliner].
+n0(sg, a, lam(X, n_recliner_1(X))) --> [recliner]; [lounger].
 n0(sg, a, lam(X, n_couch_2(X))) --> [couch].
 n0(sg, a, lam(X, n_couch_3(X))) --> [couch].
 n0(sg, an, lam(X, n_weaponry_1(X))) --> [arms].
@@ -433,7 +1013,7 @@ n0(sg, a, lam(X, n_legs_1(X))) --> [legs].
 n0(pl, _, lam(X, n_leg_1(X))) --> [legs].
 n0(pl, _, lam(X, n_leg_2(X))) --> [legs].
 n0(sg, a, lam(X, n_hands_1(X))) --> [hands].
-n0(sg, a, lam(X, n_work_force_1(X))) --> [hands]; [men].
+n0(sg, a, lam(X, n_work_force_1(X))) --> [men]; [hands].
 n0(pl, _, lam(X, n_hand_1(X))) --> [hands]; [paws].
 n0(pl, _, lam(X, n_knee_1(X))) --> [knees].
 n0(pl, _, lam(X, n_stifle_1(X))) --> [knees].
@@ -450,7 +1030,7 @@ n0(sg, a, lam(X, n_organism_1(X))) --> [being].
 n0(pl, _, lam(X, n_asian_1(X))) --> [asian].
 n0(pl, _, lam(X, n_japanese_1(X))) --> [japanese].
 n0(pl, _, lam(X, n_japanese_2(X))) --> [japanese].
-n0(sg, a, lam(X, n_adolescent_1(X))) --> [teen]; [teenager].
+n0(sg, a, lam(X, n_adolescent_1(X))) --> [teenager]; [teen].
 n0(sg, a, lam(X, n_pornography_1(X))) --> [porn].
 n0(sg, a, lam(X, n_cunt_2(X))) --> [pussy].
 n0(sg, a, lam(X, n_kitty_4(X))) --> [pussy].
@@ -492,7 +1072,7 @@ n0(sg, an, lam(X, n_baby_1(X))) --> [infant].
 n0(sg, a, lam(X, n_toddler_1(X))) --> [toddler].
 n0(sg, a, lam(X, n_child_1(X))) --> [child]; [kid].
 n0(sg, a, lam(X, n_child_2(X))) --> [child].
-n0(sg, a, lam(X, n_passing_2(X))) --> [going]; [passing].
+n0(sg, a, lam(X, n_passing_2(X))) --> [passing]; [going].
 n0(sg, a, lam(X, n_going_3(X))) --> [going].
 n0(sg, a, lam(X, n_background_1(X))) --> [background].
 n0(sg, a, lam(X, n_background_2(X))) --> [background].
@@ -525,10 +1105,10 @@ n0(sg, a, lam(X, n_throw_1(X))) --> [throw].
 n0(sg, a, lam(X, n_throw_2(X))) --> [throw].
 n0(sg, a, lam(X, n_throw_3(X))) --> [throw].
 n0(sg, a, lam(X, n_kick_1(X))) --> [kicking]; [kick].
-n0(sg, a, lam(X, n_bang_4(X))) --> [kick]; [boot].
+n0(sg, a, lam(X, n_bang_4(X))) --> [boot]; [kick].
 n0(sg, a, lam(X, n_recoil_1(X))) --> [kick].
 n0(sg, a, lam(X, n_bounce_1(X))) --> [bounce].
-n0(sg, a, lam(X, n_leap_1(X))) --> [bounce]; [leaping].
+n0(sg, a, lam(X, n_leap_1(X))) --> [leaping]; [bounce].
 n0(sg, a, lam(X, n_bounce_3(X))) --> [bounce].
 n0(sg, a, lam(X, n_banana_1(X))) --> [banana].
 n0(sg, a, lam(X, n_banana_2(X))) --> [banana].
@@ -585,7 +1165,7 @@ n0(pl, _, lam(X, n_beak_1(X))) --> [beaks].
 n0(pl, _, lam(X, n_beak_2(X))) --> [beaks].
 n0(pl, _, lam(X, n_beak_3(X))) --> [beaks].
 n0(sg, a, lam(X, n_snout_1(X))) --> [snout].
-n0(sg, a, lam(X, n_beak_4(X))) --> [nozzle]; [snout].
+n0(sg, a, lam(X, n_beak_4(X))) --> [snout]; [nozzle].
 n0(sg, a, lam(X, n_snout_3(X))) --> [snout].
 n0(pl, _, lam(X, n_talon_1(X))) --> [talons].
 n0(pl, _, lam(X, n_claw_1(X))) --> [claws].
@@ -594,7 +1174,7 @@ n0(pl, _, lam(X, n_claw_3(X))) --> [claws].
 n0(pl, _, lam(X, n_feather_1(X))) --> [feathers].
 n0(pl, _, lam(X, n_feather_2(X))) --> [feathers].
 n0(sg, a, lam(X, n_goatee_1(X))) --> [goatee].
-n0(sg, a, lam(X, n_mustache_1(X))) --> [moustache]; [mustache].
+n0(sg, a, lam(X, n_mustache_1(X))) --> [mustache]; [moustache].
 n0(pl, _, lam(X, n_beard_1(X))) --> [beards].
 n0(pl, _, lam(X, n_beard_2(X))) --> [beards].
 n0(pl, _, lam(X, n_beard_3(X))) --> [beards].
@@ -612,15 +1192,15 @@ n0(sg, a, lam(X, n_bathtub_1(X))) --> [bath].
 n0(sg, a, lam(X, n_beer_1(X))) --> [beer].
 n0(pl, _, lam(X, n_beer_1(X))) --> [beers].
 n0(sg, a, lam(X, n_drink_1(X))) --> [drink].
-n0(sg, a, lam(X, n_drink_2(X))) --> [drinking]; [drink].
-n0(sg, a, lam(X, n_beverage_1(X))) --> [beverage]; [drink].
+n0(sg, a, lam(X, n_drink_2(X))) --> [drink]; [drinking].
+n0(sg, a, lam(X, n_beverage_1(X))) --> [drink]; [beverage].
 n0(sg, a, lam(X, n_brew_1(X))) --> [brew].
 n0(sg, a, lam(X, n_laager_1(X))) --> [lager].
 n0(sg, a, lam(X, n_lager_2(X))) --> [lager].
 n0(sg, a, lam(X, n_brewery_1(X))) --> [brewery].
 n0(sg, a, lam(X, n_beggar_1(X))) --> [beggar]; [mendicant].
 n0(pl, _, lam(X, n_beggar_1(X))) --> [beggars].
-n0(sg, a, lam(X, n_drunkard_1(X))) --> [drunkard]; [drunk].
+n0(sg, a, lam(X, n_drunkard_1(X))) --> [drunk]; [drunkard].
 n0(sg, a, lam(X, n_friar_1(X))) --> [mendicant].
 n0(sg, a, lam(X, n_panhandler_1(X))) --> [panhandler].
 n0(sg, a, lam(X, n_buttocks_1(X))) --> [seat]; [behind]; [bottom].
@@ -638,12 +1218,12 @@ n0(sg, a, lam(X, n_seance_1(X))) --> [sitting].
 n0(sg, a, lam(X, n_chair_1(X))) --> [chair].
 n0(sg, a, lam(X, n_professorship_1(X))) --> [chair].
 n0(sg, a, lam(X, n_president_4(X))) --> [chair].
-n0(pl, _, lam(X, n_beverage_1(X))) --> [drinks]; [beverages].
+n0(pl, _, lam(X, n_beverage_1(X))) --> [beverages]; [drinks].
 n0(pl, _, lam(X, n_drink_1(X))) --> [drinks].
 n0(pl, _, lam(X, n_drink_2(X))) --> [drinks].
-n0(sg, a, lam(X, n_bicycle_1(X))) --> [bike]; [bicycle].
-n0(sg, a, lam(X, n_motorcycle_1(X))) --> [bike]; [motorcycle].
-n0(pl, _, lam(X, n_bicycle_1(X))) --> [bikes]; [bicycles].
+n0(sg, a, lam(X, n_bicycle_1(X))) --> [bicycle]; [bike].
+n0(sg, a, lam(X, n_motorcycle_1(X))) --> [motorcycle]; [bike].
+n0(pl, _, lam(X, n_bicycle_1(X))) --> [bicycles]; [bikes].
 n0(pl, _, lam(X, n_motorcycle_1(X))) --> [bikes]; [motorcycles].
 n0(sg, a, lam(X, n_cycling_1(X))) --> [cycling].
 n0(pl, _, lam(X, n_water_scooter_1(X))) --> [scooters].
@@ -692,9 +1272,9 @@ n0(sg, a, lam(X, n_parrot_2(X))) --> [parrot].
 n0(sg, a, lam(X, n_nest_1(X))) --> [nest].
 n0(sg, a, lam(X, n_nest_2(X))) --> [nest].
 n0(sg, a, lam(X, n_nest_3(X))) --> [nest].
-n0(pl, _, lam(X, n_goose_1(X))) --> [gooses]; [geese].
-n0(pl, _, lam(X, n_fathead_1(X))) --> [gooses]; [geese].
-n0(pl, _, lam(X, n_goose_3(X))) --> [gooses]; [geese].
+n0(pl, _, lam(X, n_goose_1(X))) --> [geese]; [gooses].
+n0(pl, _, lam(X, n_fathead_1(X))) --> [geese]; [gooses].
+n0(pl, _, lam(X, n_goose_3(X))) --> [geese]; [gooses].
 n0(pl, _, lam(X, n_duck_1(X))) --> [ducks].
 n0(pl, _, lam(X, n_duck_2(X))) --> [ducks].
 n0(pl, _, lam(X, n_duck_3(X))) --> [ducks].
@@ -710,7 +1290,7 @@ n0(sg, a, lam(X, n_sting_1(X))) --> [stinging].
 n0(sg, a, lam(X, n_black_1(X))) --> [black].
 n0(sg, a, lam(X, n_total_darkness_1(X))) --> [black].
 n0(pl, _, lam(X, n_black_3(X))) --> [black].
-n0(pl, _, lam(X, n_white_1(X))) --> [white]; [caucasian].
+n0(pl, _, lam(X, n_white_1(X))) --> [caucasian]; [white].
 n0(sg, _, lam(X, n_white_2(X))) --> [white].
 n0(pl, _, lam(X, n_white_3(X))) --> [white].
 n0(sg, a, lam(X, n_red_1(X))) --> [red].
@@ -725,10 +1305,10 @@ n0(pl, _, lam(X, n_grey_3(X))) --> [grey].
 n0(sg, a, lam(X, n_blue_1(X))) --> [blue].
 n0(sg, a, lam(X, n_blue_2(X))) --> [blue].
 n0(sg, a, lam(X, n_blue_3(X))) --> [blue].
-n0(sg, a, lam(X, n_blanket_1(X))) --> [cover]; [blanket].
+n0(sg, a, lam(X, n_blanket_1(X))) --> [blanket]; [cover].
 n0(sg, a, lam(X, n_blanket_2(X))) --> [blanket].
 n0(sg, a, lam(X, n_blanket_3(X))) --> [blanket].
-n0(pl, _, lam(X, n_blanket_1(X))) --> [blankets]; [covers].
+n0(pl, _, lam(X, n_blanket_1(X))) --> [covers]; [blankets].
 n0(pl, _, lam(X, n_blanket_2(X))) --> [blankets].
 n0(pl, _, lam(X, n_blanket_3(X))) --> [blankets].
 n0(sg, a, lam(X, n_pillow_1(X))) --> [pillow].
@@ -736,7 +1316,7 @@ n0(sg, a, lam(X, n_fleece_1(X))) --> [fleece].
 n0(sg, a, lam(X, n_sheepskin_1(X))) --> [fleece].
 n0(sg, a, lam(X, n_fleece_3(X))) --> [fleece].
 n0(sg, a, lam(X, n_flannel_1(X))) --> [flannel].
-n0(sg, a, lam(X, n_washcloth_1(X))) --> [flannel]; [washcloth].
+n0(sg, a, lam(X, n_washcloth_1(X))) --> [washcloth]; [flannel].
 n0(sg, a, lam(X, n_flannel_3(X))) --> [flannel].
 n0(pl, _, lam(X, n_pillow_1(X))) --> [pillows].
 n0(sg, a, lam(X, n_bleat_1(X))) --> [bleat].
@@ -746,7 +1326,7 @@ n0(sg, a, lam(X, n_blind_2(X))) --> [blind].
 n0(sg, a, lam(X, n_blind_3(X))) --> [blind].
 n0(sg, a, lam(X, n_deaf_1(X))) --> [deaf].
 n0(sg, a, lam(X, n_fool_1(X))) --> [fool].
-n0(sg, a, lam(X, n_chump_1(X))) --> [fool]; [gull].
+n0(sg, a, lam(X, n_chump_1(X))) --> [gull]; [fool].
 n0(sg, a, lam(X, n_jester_1(X))) --> [fool].
 n0(sg, a, lam(X, n_blindness_1(X))) --> [blindness].
 n0(sg, a, lam(X, n_brunet_1(X))) --> [brunette].
@@ -796,7 +1376,7 @@ n0(pl, _, lam(X, n_body_2(X))) --> [bodies].
 n0(pl, _, lam(X, n_body_3(X))) --> [bodies].
 n0(sg, a, lam(X, n_skin_1(X))) --> [skin].
 n0(sg, a, lam(X, n_skin_2(X))) --> [skin].
-n0(sg, a, lam(X, n_hide_2(X))) --> [pelt]; [skin].
+n0(sg, a, lam(X, n_hide_2(X))) --> [skin]; [pelt].
 n0(pl, _, lam(X, n_muscle_1(X))) --> [muscles].
 n0(pl, _, lam(X, n_muscle_2(X))) --> [muscles].
 n0(pl, _, lam(X, n_muscleman_1(X))) --> [muscles].
@@ -839,7 +1419,7 @@ n0(sg, a, lam(X, n_boot_1(X))) --> [boot].
 n0(sg, a, lam(X, n_boot_2(X))) --> [boot].
 n0(pl, _, lam(X, n_boot_1(X))) --> [boots].
 n0(pl, _, lam(X, n_boot_2(X))) --> [boots].
-n0(pl, _, lam(X, n_bang_4(X))) --> [boots]; [kicks].
+n0(pl, _, lam(X, n_bang_4(X))) --> [kicks]; [boots].
 n0(sg, a, lam(X, n_shoe_1(X))) --> [shoe].
 n0(sg, a, lam(X, n_shoe_2(X))) --> [shoe].
 n0(sg, a, lam(X, n_horseshoe_2(X))) --> [shoe].
@@ -864,7 +1444,7 @@ n0(sg, a, lam(X, n_pint_1(X))) --> [pint].
 n0(sg, a, lam(X, n_pint_2(X))) --> [pint].
 n0(sg, a, lam(X, n_pint_3(X))) --> [pint].
 n0(sg, a, lam(X, n_boulder_1(X))) --> [boulder].
-n0(pl, _, lam(X, n_boulder_2(X))) --> [boulder]; [boulders].
+n0(pl, _, lam(X, n_boulder_2(X))) --> [boulders]; [boulder].
 n0(pl, _, lam(X, n_boulder_1(X))) --> [boulders].
 n0(pl, _, lam(X, n_colorado_1(X))) --> [colorado].
 n0(pl, _, lam(X, n_colorado_2(X))) --> [colorado].
@@ -875,12 +1455,12 @@ n0(sg, a, lam(X, n_ridge_1(X))) --> [ridge].
 n0(sg, a, lam(X, n_ridge_2(X))) --> [ridge].
 n0(sg, a, lam(X, n_ridge_3(X))) --> [ridge].
 n0(pl, _, lam(X, n_outcrop_1(X))) --> [outcrops]; [outcroppings].
-n0(pl, _, lam(X, n_rock_1(X))) --> [rocks]; [stones].
-n0(pl, _, lam(X, n_rock_2(X))) --> [rocks]; [stones].
-n0(pl, _, lam(X, n_rock_3(X))) --> [rocks]; [rock].
+n0(pl, _, lam(X, n_rock_1(X))) --> [stones]; [rocks].
+n0(pl, _, lam(X, n_rock_2(X))) --> [stones]; [rocks].
+n0(pl, _, lam(X, n_rock_3(X))) --> [rock]; [rocks].
 n0(pl, _, lam(X, n_cliff_1(X))) --> [cliffs].
 n0(pl, _, lam(X, n_dais_1(X))) --> [daises].
-n0(sg, a, lam(X, n_bouquet_1(X))) --> [corsage]; [bouquet].
+n0(sg, a, lam(X, n_bouquet_1(X))) --> [bouquet]; [corsage].
 n0(sg, a, lam(X, n_bow_1(X))) --> [bow].
 n0(sg, a, lam(X, n_bow_2(X))) --> [bow].
 n0(sg, a, lam(X, n_bow_3(X))) --> [bow].
@@ -948,7 +1528,7 @@ n0(sg, a, lam(X, n_depository_financial_institution_1(X))) --> [bank].
 n0(sg, a, lam(X, n_bank_3(X))) --> [bank].
 n0(sg, a, lam(X, n_tree_1(X))) --> [tree].
 n0(sg, a, lam(X, n_tree_2(X))) --> [tree].
-n0(pl, _, lam(X, n_tree_3(X))) --> [trees]; [tree].
+n0(pl, _, lam(X, n_tree_3(X))) --> [tree]; [trees].
 n0(sg, a, lam(X, n_central_1(X))) --> [central].
 n0(sg, an, lam(X, n_institution_1(X))) --> [institution].
 n0(sg, an, lam(X, n_institution_2(X))) --> [institution].
@@ -958,7 +1538,7 @@ n0(pl, _, lam(X, n_tree_2(X))) --> [trees].
 n0(pl, _, lam(X, n_branchlet_1(X))) --> [twigs].
 n0(sg, a, lam(X, n_branching_1(X))) --> [branching].
 n0(sg, a, lam(X, n_bread_1(X))) --> [bread].
-n0(sg, a, lam(X, n_boodle_1(X))) --> [sugar]; [bread]; [lettuce].
+n0(sg, a, lam(X, n_boodle_1(X))) --> [bread]; [sugar]; [lettuce].
 n0(sg, a, lam(X, n_loaf_of_bread_1(X))) --> [loaf].
 n0(sg, a, lam(X, n_loaf_2(X))) --> [loaf].
 n0(pl, _, lam(X, n_bread_1(X))) --> [breads].
@@ -974,16 +1554,16 @@ n0(sg, a, lam(X, n_brick_1(X))) --> [brick].
 n0(sg, a, lam(X, n_brick_2(X))) --> [brick].
 n0(pl, _, lam(X, n_brick_1(X))) --> [bricks].
 n0(pl, _, lam(X, n_brick_2(X))) --> [bricks].
-n0(sg, a, lam(X, n_rock_1(X))) --> [stone]; [rock].
+n0(sg, a, lam(X, n_rock_1(X))) --> [rock]; [stone].
 n0(sg, a, lam(X, n_stone_2(X))) --> [stone].
-n0(sg, a, lam(X, n_rock_2(X))) --> [stone]; [rock].
+n0(sg, a, lam(X, n_rock_2(X))) --> [rock]; [stone].
 n0(sg, a, lam(X, n_stucco_1(X))) --> [stucco].
 n0(sg, a, lam(X, n_masonry_1(X))) --> [masonry].
 n0(pl, _, lam(X, n_freemasonry_2(X))) --> [masonry].
 n0(sg, _, lam(X, n_masonry_3(X))) --> [masonry].
 n0(sg, a, lam(X, n_concrete_1(X))) --> [concrete].
 n0(sg, a, lam(X, n_bride_1(X))) --> [bride].
-n0(pl, _, lam(X, n_bridget_1(X))) --> [bride]; [brides].
+n0(pl, _, lam(X, n_bridget_1(X))) --> [brides]; [bride].
 n0(sg, _, lam(X, n_bride_3(X))) --> [bride].
 n0(pl, _, lam(X, n_bride_1(X))) --> [brides].
 n0(pl, _, lam(X, n_bride_3(X))) --> [brides].
@@ -1012,7 +1592,7 @@ n0(sg, a, lam(X, n_grey_4(X))) --> [gray].
 n0(sg, a, lam(X, n_beige_1(X))) --> [beige].
 n0(sg, a, lam(X, n_bucket_1(X))) --> [bucket]; [pail].
 n0(sg, a, lam(X, n_bucket_2(X))) --> [bucket].
-n0(pl, _, lam(X, n_bucket_1(X))) --> [pails]; [buckets].
+n0(pl, _, lam(X, n_bucket_1(X))) --> [buckets]; [pails].
 n0(pl, _, lam(X, n_bucket_2(X))) --> [buckets].
 n0(sg, a, lam(X, n_pail_2(X))) --> [pail].
 n0(sg, a, lam(X, n_shovel_1(X))) --> [shovel].
@@ -1060,7 +1640,7 @@ n0(pl, _, lam(X, n_burns_1(X))) --> [burns].
 n0(pl, _, lam(X, n_burns_2(X))) --> [burns].
 n0(pl, _, lam(X, n_burn_1(X))) --> [burns].
 n0(pl, _, lam(X, n_fire_3(X))) --> [flames].
-n0(pl, _, lam(X, n_shrub_1(X))) --> [bushes]; [shrubs].
+n0(pl, _, lam(X, n_shrub_1(X))) --> [shrubs]; [bushes].
 n0(pl, _, lam(X, n_bush_2(X))) --> [bushes].
 n0(pl, _, lam(X, n_scrub_1(X))) --> [bushes].
 n0(sg, a, lam(X, n_shrubbery_1(X))) --> [shrubbery].
@@ -1084,20 +1664,20 @@ n0(sg, a, lam(X, n_butterfly_2(X))) --> [butterfly].
 n0(sg, a, lam(X, n_dragonfly_1(X))) --> [dragonfly].
 n0(sg, a, lam(X, n_ladybug_1(X))) --> [ladybug].
 n0(sg, a, lam(X, n_flower_1(X))) --> [flower].
-n0(sg, a, lam(X, n_flower_2(X))) --> [flower]; [blossom].
-n0(sg, a, lam(X, n_flower_3(X))) --> [flower]; [blossom].
+n0(sg, a, lam(X, n_flower_2(X))) --> [blossom]; [flower].
+n0(sg, a, lam(X, n_flower_3(X))) --> [blossom]; [flower].
 n0(sg, a, lam(X, n_peacock_1(X))) --> [peacock].
 n0(sg, a, lam(X, n_peacock_2(X))) --> [peacock].
 n0(pl, _, lam(X, n_call_1(X))) --> [calls].
-n0(pl, _, lam(X, n_call_2(X))) --> [calls]; [call].
-n0(pl, _, lam(X, n_cry_1(X))) --> [calls]; [cries]; [crying].
+n0(pl, _, lam(X, n_call_2(X))) --> [call]; [calls].
+n0(pl, _, lam(X, n_cry_1(X))) --> [crying]; [cries]; [calls].
 n0(sg, a, lam(X, n_career_1(X))) --> [calling].
 n0(sg, a, lam(X, n_call_1(X))) --> [call].
 n0(sg, _, lam(X, n_cry_1(X))) --> [call].
 n0(sg, a, lam(X, n_caller_1(X))) --> [caller].
 n0(sg, a, lam(X, n_caller_2(X))) --> [caller].
 n0(sg, a, lam(X, n_caller_3(X))) --> [caller].
-n0(sg, a, lam(X, n_telephone_1(X))) --> [telephone]; [phone].
+n0(sg, a, lam(X, n_telephone_1(X))) --> [phone]; [telephone].
 n0(sg, a, lam(X, n_phone_2(X))) --> [phone].
 n0(sg, a, lam(X, n_earphone_1(X))) --> [phone]; [headphone].
 n0(pl, _, lam(X, n_caller_1(X))) --> [callers].
@@ -1112,7 +1692,7 @@ n0(sg, a, lam(X, n_lens_1(X))) --> [lens].
 n0(pl, _, lam(X, n_lens_2(X))) --> [lens].
 n0(sg, _, lam(X, n_lens_3(X))) --> [lens].
 n0(sg, a, lam(X, n_rapid_climb_1(X))) --> [zoom].
-n0(sg, a, lam(X, n_soar_1(X))) --> [soar]; [zoom].
+n0(sg, a, lam(X, n_soar_1(X))) --> [zoom]; [soar].
 n0(sg, a, lam(X, n_candle_1(X))) --> [candle].
 n0(sg, a, lam(X, n_candle_2(X))) --> [candle].
 n0(pl, _, lam(X, n_candle_1(X))) --> [candles].
@@ -1142,10 +1722,10 @@ n0(pl, _, lam(X, n_car_3(X))) --> [cars].
 n0(sg, a, lam(X, n_vehicle_1(X))) --> [vehicle].
 n0(sg, a, lam(X, n_vehicle_2(X))) --> [vehicle].
 n0(sg, a, lam(X, n_vehicle_3(X))) --> [vehicle].
-n0(sg, an, lam(X, n_car_1(X))) --> [automobile]; [auto].
+n0(sg, an, lam(X, n_car_1(X))) --> [auto]; [automobile].
 n0(sg, a, lam(X, n_truck_1(X))) --> [truck].
 n0(sg, a, lam(X, n_hand_truck_1(X))) --> [truck].
-n0(sg, a, lam(X, n_caressing_1(X))) --> [caressing]; [fondling]; [petting]; [snuggling]; [cuddling].
+n0(sg, a, lam(X, n_caressing_1(X))) --> [fondling]; [caressing]; [snuggling]; [cuddling]; [petting].
 n0(sg, a, lam(X, n_caress_1(X))) --> [caress].
 n0(sg, a, lam(X, n_stroke_5(X))) --> [stroking].
 n0(pl, _, lam(X, n_caress_1(X))) --> [caresses].
@@ -1166,7 +1746,7 @@ n0(sg, a, lam(X, n_zucchini_1(X))) --> [zucchini].
 n0(sg, a, lam(X, n_zucchini_2(X))) --> [zucchini].
 n0(sg, a, lam(X, n_carry_1(X))) --> [carry].
 n0(pl, _, lam(X, n_carry_1(X))) --> [carries].
-n0(sg, a, lam(X, n_retention_1(X))) --> [keeping]; [holding].
+n0(sg, a, lam(X, n_retention_1(X))) --> [holding]; [keeping].
 n0(sg, a, lam(X, n_property_1(X))) --> [holding].
 n0(sg, a, lam(X, n_case_1(X))) --> [case].
 n0(sg, a, lam(X, n_event_2(X))) --> [case].
@@ -1215,9 +1795,9 @@ n0(sg, a, lam(X, n_broccoli_1(X))) --> [broccoli].
 n0(sg, a, lam(X, n_broccoli_2(X))) --> [broccoli].
 n0(sg, a, lam(X, n_cellular_telephone_1(X))) --> [cellphone].
 n0(pl, _, lam(X, n_cellular_telephone_1(X))) --> [cellphones].
-n0(pl, _, lam(X, n_telephone_1(X))) --> [phones]; [telephones].
+n0(pl, _, lam(X, n_telephone_1(X))) --> [telephones]; [phones].
 n0(pl, _, lam(X, n_phone_2(X))) --> [phones].
-n0(pl, _, lam(X, n_earphone_1(X))) --> [phones]; [headphones].
+n0(pl, _, lam(X, n_earphone_1(X))) --> [headphones]; [phones].
 n0(pl, _, lam(X, n_mobile_1(X))) --> [mobile].
 n0(pl, _, lam(X, n_mobile_2(X))) --> [mobile].
 n0(sg, _, lam(X, n_mobile_3(X))) --> [mobile].
@@ -1227,13 +1807,13 @@ n0(pl, _, lam(X, n_president_4(X))) --> [chairs].
 n0(sg, a, lam(X, n_seat_1(X))) --> [seat].
 n0(sg, a, lam(X, n_seat_3(X))) --> [seat].
 n0(sg, a, lam(X, n_desk_1(X))) --> [desk].
-n0(pl, _, lam(X, n_sofa_1(X))) --> [couches]; [sofas].
+n0(pl, _, lam(X, n_sofa_1(X))) --> [sofas]; [couches].
 n0(sg, a, lam(X, n_furniture_1(X))) --> [furniture].
 n0(pl, _, lam(X, n_couch_2(X))) --> [couches].
 n0(pl, _, lam(X, n_couch_3(X))) --> [couches].
 n0(sg, a, lam(X, n_pursued_1(X))) --> [chased].
 n0(sg, a, lam(X, n_pursuit_1(X))) --> [chase].
-n0(pl, _, lam(X, n_chase_2(X))) --> [chase]; [chases].
+n0(pl, _, lam(X, n_chase_2(X))) --> [chases]; [chase].
 n0(sg, _, lam(X, n_chase_3(X))) --> [chase].
 n0(pl, _, lam(X, n_pursuit_1(X))) --> [chases].
 n0(pl, _, lam(X, n_chase_3(X))) --> [chases].
@@ -1277,7 +1857,7 @@ n0(sg, a, lam(X, n_flue_3(X))) --> [flue].
 n0(pl, _, lam(X, n_fluke_3(X))) --> [flues].
 n0(pl, _, lam(X, n_flue_pipe_1(X))) --> [flues].
 n0(pl, _, lam(X, n_flue_3(X))) --> [flues].
-n0(sg, a, lam(X, n_fireplace_1(X))) --> [fireplace]; [hearth].
+n0(sg, a, lam(X, n_fireplace_1(X))) --> [hearth]; [fireplace].
 n0(sg, a, lam(X, n_hearth_2(X))) --> [hearth].
 n0(sg, a, lam(X, n_hearth_3(X))) --> [hearth].
 n0(sg, a, lam(X, n_chipmunk_1(X))) --> [chipmunk].
@@ -1285,7 +1865,7 @@ n0(pl, _, lam(X, n_chipmunk_1(X))) --> [chipmunks].
 n0(sg, a, lam(X, n_squirrel_1(X))) --> [squirrel].
 n0(sg, a, lam(X, n_squirrel_2(X))) --> [squirrel].
 n0(sg, a, lam(X, n_raccoon_1(X))) --> [raccoon].
-n0(sg, a, lam(X, n_raccoon_2(X))) --> [raccoon]; [racoon].
+n0(sg, a, lam(X, n_raccoon_2(X))) --> [racoon]; [raccoon].
 n0(sg, a, lam(X, n_cocoa_1(X))) --> [chocolate].
 n0(sg, a, lam(X, n_chocolate_2(X))) --> [chocolate].
 n0(sg, a, lam(X, n_chocolate_3(X))) --> [chocolate].
@@ -1309,7 +1889,7 @@ n0(sg, a, lam(X, n_claw_1(X))) --> [claw].
 n0(sg, a, lam(X, n_hook_4(X))) --> [claw].
 n0(sg, a, lam(X, n_claw_3(X))) --> [claw].
 n0(sg, a, lam(X, n_paw_1(X))) --> [paw].
-n0(sg, a, lam(X, n_hand_1(X))) --> [paw]; [hand].
+n0(sg, a, lam(X, n_hand_1(X))) --> [hand]; [paw].
 n0(pl, _, lam(X, n_jaw_1(X))) --> [jaws].
 n0(pl, _, lam(X, n_jaw_2(X))) --> [jaws].
 n0(pl, _, lam(X, n_jaw_3(X))) --> [jaws].
@@ -1317,18 +1897,18 @@ n0(sg, an, lam(X, n_open_1(X))) --> [open].
 n0(sg, an, lam(X, n_outdoors_1(X))) --> [open].
 n0(sg, an, lam(X, n_open_3(X))) --> [open].
 n0(sg, a, lam(X, n_shutting_1(X))) --> [closing].
-n0(sg, a, lam(X, n_conclusion_8(X))) --> [closing]; [close].
+n0(sg, a, lam(X, n_conclusion_8(X))) --> [close]; [closing].
 n0(sg, a, lam(X, n_closing_3(X))) --> [closing].
 n0(pl, _, lam(X, n_stopping_point_1(X))) --> [closes].
 n0(pl, _, lam(X, n_conclusion_8(X))) --> [closes].
 n0(pl, _, lam(X, n_finale_3(X))) --> [closes].
-n0(sg, a, lam(X, n_clothing_1(X))) --> [wear]; [clothing].
+n0(sg, a, lam(X, n_clothing_1(X))) --> [clothing]; [wear].
 n0(pl, _, lam(X, n_garment_1(X))) --> [garments].
 n0(sg, a, lam(X, n_bloomers_1(X))) --> [pants].
 n0(pl, _, lam(X, n_pant_1(X))) --> [pants].
 n0(pl, _, lam(X, n_trouser_1(X))) --> [trousers]; [pants].
 n0(pl, _, lam(X, n_jean_1(X))) --> [jeans].
-n0(pl, _, lam(X, n_denim_2(X))) --> [jeans]; [dungarees].
+n0(pl, _, lam(X, n_denim_2(X))) --> [dungarees]; [jeans].
 n0(sg, an, lam(X, n_apparel_1(X))) --> [apparel].
 n0(pl, _, lam(X, n_shirt_1(X))) --> [shirts].
 n0(pl, _, lam(X, n_jacket_1(X))) --> [jackets].
@@ -1390,7 +1970,7 @@ n0(sg, a, lam(X, n_desktop_1(X))) --> [desktop].
 n0(sg, a, lam(X, n_background_7(X))) --> [desktop].
 n0(sg, a, lam(X, n_computer_science_1(X))) --> [computing].
 n0(sg, a, lam(X, n_calculation_1(X))) --> [computing].
-n0(sg, a, lam(X, n_corn_1(X))) --> [maize]; [corn].
+n0(sg, a, lam(X, n_corn_1(X))) --> [corn]; [maize].
 n0(sg, a, lam(X, n_corn_2(X))) --> [corn].
 n0(sg, a, lam(X, n_corn_3(X))) --> [corn].
 n0(sg, a, lam(X, n_wheat_1(X))) --> [wheat].
@@ -1399,11 +1979,11 @@ n0(sg, a, lam(X, n_pale_yellow_1(X))) --> [wheat].
 n0(sg, a, lam(X, n_rice_1(X))) --> [rice].
 n0(sg, a, lam(X, n_rice_2(X))) --> [rice].
 n0(pl, _, lam(X, n_rice_3(X))) --> [rice].
-n0(sg, a, lam(X, n_gamboge_2(X))) --> [maize]; [lemon].
+n0(sg, a, lam(X, n_gamboge_2(X))) --> [lemon]; [maize].
 n0(pl, _, lam(X, n_soy_1(X))) --> [soybeans].
 n0(pl, _, lam(X, n_soy_2(X))) --> [soybeans].
 n0(pl, _, lam(X, n_soy_4(X))) --> [soybeans].
-n0(sg, a, lam(X, n_cosy_1(X))) --> [cosy]; [cozy].
+n0(sg, a, lam(X, n_cosy_1(X))) --> [cozy]; [cosy].
 n0(sg, a, lam(X, n_couple_1(X))) --> [couple].
 n0(sg, a, lam(X, n_couple_2(X))) --> [couple].
 n0(sg, a, lam(X, n_couple_3(X))) --> [couple].
@@ -1421,18 +2001,18 @@ n0(sg, a, lam(X, n_screen_4(X))) --> [cover].
 n0(sg, a, lam(X, n_cow_1(X))) --> [cow].
 n0(sg, a, lam(X, n_cow_2(X))) --> [cow].
 n0(sg, a, lam(X, n_cow_3(X))) --> [cow].
-n0(sg, a, lam(X, n_cattle_1(X))) --> [cattle]; [cows].
+n0(sg, a, lam(X, n_cattle_1(X))) --> [cows]; [cattle].
 n0(pl, _, lam(X, n_cow_1(X))) --> [cows].
 n0(pl, _, lam(X, n_cow_2(X))) --> [cows].
-n0(sg, a, lam(X, n_sheep_1(X))) --> [sheep].
+n0(_, a, lam(X, n_sheep_1(X))) --> [sheep].
 n0(sg, a, lam(X, n_sheep_2(X))) --> [sheep].
 n0(sg, a, lam(X, n_sheep_3(X))) --> [sheep].
-n0(sg, a, lam(X, n_hog_3(X))) --> [hog]; [pig].
+n0(sg, a, lam(X, n_hog_3(X))) --> [pig]; [hog].
 n0(sg, a, lam(X, n_slob_1(X))) --> [pig].
-n0(sg, a, lam(X, n_hog_1(X))) --> [hog]; [pig].
+n0(sg, a, lam(X, n_hog_1(X))) --> [pig]; [hog].
 n0(sg, a, lam(X, n_goat_1(X))) --> [goat].
 n0(sg, a, lam(X, n_butt_3(X))) --> [goat].
-n0(pl, _, lam(X, n_capricorn_1(X))) --> [goat]; [goats].
+n0(pl, _, lam(X, n_capricorn_1(X))) --> [goats]; [goat].
 n0(sg, a, lam(X, n_cream_1(X))) --> [cream].
 n0(sg, a, lam(X, n_cream_2(X))) --> [cream].
 n0(sg, a, lam(X, n_cream_3(X))) --> [cream].
@@ -1458,7 +2038,7 @@ n0(sg, a, lam(X, n_crunch_1(X))) --> [crunch].
 n0(sg, a, lam(X, n_crunch_2(X))) --> [crunch].
 n0(sg, a, lam(X, n_crush_4(X))) --> [crunch].
 n0(sg, a, lam(X, n_crying_1(X))) --> [crying].
-n0(pl, _, lam(X, n_cry_2(X))) --> [cries]; [crying].
+n0(pl, _, lam(X, n_cry_2(X))) --> [crying]; [cries].
 n0(sg, a, lam(X, n_cry_1(X))) --> [cry].
 n0(sg, a, lam(X, n_cry_2(X))) --> [cry].
 n0(sg, a, lam(X, n_war_cry_1(X))) --> [cry].
@@ -1467,7 +2047,7 @@ n0(sg, a, lam(X, n_screech_1(X))) --> [screaming].
 n0(sg, a, lam(X, n_sob_3(X))) --> [sobbing].
 n0(pl, _, lam(X, n_war_cry_1(X))) --> [cries].
 n0(pl, _, lam(X, n_cucumber_1(X))) --> [cucumbers].
-n0(pl, _, lam(X, n_cucumber_2(X))) --> [cukes]; [cucumbers].
+n0(pl, _, lam(X, n_cucumber_2(X))) --> [cucumbers]; [cukes].
 n0(sg, a, lam(X, n_cucumber_1(X))) --> [cucumber].
 n0(sg, a, lam(X, n_cucumber_2(X))) --> [cucumber].
 n0(pl, _, lam(X, n_radish_1(X))) --> [radishes].
@@ -1500,7 +2080,7 @@ n0(sg, a, lam(X, n_trim_4(X))) --> [trimming].
 n0(sg, a, lam(X, n_slice_4(X))) --> [slicing].
 n0(sg, a, lam(X, n_slicing_2(X))) --> [slicing].
 n0(pl, _, lam(X, n_cyclist_1(X))) --> [bicyclists]; [cyclists].
-n0(sg, a, lam(X, n_cyclist_1(X))) --> [cyclist]; [bicyclist].
+n0(sg, a, lam(X, n_cyclist_1(X))) --> [bicyclist]; [cyclist].
 n0(sg, a, lam(X, n_motorcyclist_1(X))) --> [motorcyclist].
 n0(sg, a, lam(X, n_rider_1(X))) --> [rider].
 n0(sg, a, lam(X, n_rider_2(X))) --> [rider].
@@ -1539,7 +2119,7 @@ n0(sg, a, lam(X, n_desert_1(X))) --> [desert].
 n0(sg, a, lam(X, n_deserts_1(X))) --> [deserts].
 n0(pl, _, lam(X, n_desert_1(X))) --> [deserts].
 n0(pl, _, lam(X, n_mountain_1(X))) --> [mountains].
-n0(pl, _, lam(X, n_batch_2(X))) --> [flocks]; [lots]; [mountains].
+n0(pl, _, lam(X, n_batch_2(X))) --> [lots]; [flocks]; [mountains].
 n0(pl, _, lam(X, n_plain_1(X))) --> [plains].
 n0(pl, _, lam(X, n_knit_2(X))) --> [plains].
 n0(pl, _, lam(X, n_dune_1(X))) --> [dunes].
@@ -1555,14 +2135,14 @@ n0(sg, a, lam(X, n_shot_9(X))) --> [dig].
 n0(sg, a, lam(X, n_dig_3(X))) --> [dig].
 n0(sg, a, lam(X, n_excavation_1(X))) --> [digging].
 n0(sg, a, lam(X, n_dug_1(X))) --> [dug].
-n0(sg, a, lam(X, n_soil_2(X))) --> [soil]; [dirt].
-n0(sg, a, lam(X, n_dirt_2(X))) --> [soil]; [dirt].
+n0(sg, a, lam(X, n_soil_2(X))) --> [dirt]; [soil].
+n0(sg, a, lam(X, n_dirt_2(X))) --> [dirt]; [soil].
 n0(sg, a, lam(X, n_crap_1(X))) --> [dirt].
 n0(sg, a, lam(X, n_mud_1(X))) --> [mud].
 n0(sg, a, lam(X, n_mud_2(X))) --> [mud].
 n0(sg, a, lam(X, n_gravel_1(X))) --> [gravel].
 n0(sg, a, lam(X, n_dust_1(X))) --> [dust].
-n0(sg, a, lam(X, n_debris_1(X))) --> [dust]; [debris].
+n0(sg, a, lam(X, n_debris_1(X))) --> [debris]; [dust].
 n0(sg, a, lam(X, n_dust_3(X))) --> [dust].
 n0(sg, a, lam(X, n_sand_1(X))) --> [sand].
 n0(pl, _, lam(X, n_sand_2(X))) --> [sands]; [sand].
@@ -1581,11 +2161,11 @@ n0(sg, a, lam(X, n_need_2(X))) --> [want]; [need].
 n0(sg, a, lam(X, n_think_1(X))) --> [think].
 n0(sg, a, lam(X, n_dock_1(X))) --> [dock].
 n0(sg, a, lam(X, n_dock_2(X))) --> [dock].
-n0(sg, a, lam(X, n_pier_1(X))) --> [dock]; [pier]; [wharf].
+n0(sg, a, lam(X, n_pier_1(X))) --> [dock]; [wharf]; [pier].
 n0(sg, a, lam(X, n_docking_1(X))) --> [docking].
 n0(pl, _, lam(X, n_dock_1(X))) --> [docks].
 n0(pl, _, lam(X, n_dock_2(X))) --> [docks].
-n0(pl, _, lam(X, n_pier_1(X))) --> [docks]; [piers].
+n0(pl, _, lam(X, n_pier_1(X))) --> [piers]; [docks].
 n0(sg, a, lam(X, n_puppy_1(X))) --> [puppy].
 n0(sg, a, lam(X, n_puppy_2(X))) --> [puppy].
 n0(pl, _, lam(X, n_puppy_1(X))) --> [puppies].
@@ -1672,7 +2252,7 @@ n0(sg, a, lam(X, n_percussion_section_1(X))) --> [percussion].
 n0(pl, _, lam(X, n_guitar_1(X))) --> [guitars].
 n0(sg, a, lam(X, n_drumming_1(X))) --> [drumming].
 n0(pl, _, lam(X, n_vocal_music_1(X))) --> [vocals].
-n0(pl, _, lam(X, n_song_1(X))) --> [songs]; [vocals].
+n0(pl, _, lam(X, n_song_1(X))) --> [vocals]; [songs].
 n0(sg, a, lam(X, n_dry_1(X))) --> [dry].
 n0(sg, a, lam(X, n_moisture_1(X))) --> [wet].
 n0(sg, a, lam(X, n_damp_1(X))) --> [damp].
@@ -1749,7 +2329,7 @@ n0(sg, a, lam(X, n_day_1(X))) --> [day].
 n0(sg, a, lam(X, n_day_2(X))) --> [day].
 n0(sg, a, lam(X, n_day_3(X))) --> [day].
 n0(sg, an, lam(X, n_stallion_1(X))) --> [entire].
-n0(sg, a, lam(X, n_person_1(X))) --> [person]; [somebody]; [someone].
+n0(sg, a, lam(X, n_person_1(X))) --> [somebody]; [someone]; [person].
 n0(sg, an, lam(X, n_eye_1(X))) --> [eye].
 n0(sg, an, lam(X, n_eye_2(X))) --> [eye].
 n0(sg, an, lam(X, n_eye_3(X))) --> [eye].
@@ -1757,7 +2337,7 @@ n0(sg, an, lam(X, n_eyes_1(X))) --> [eyes].
 n0(pl, _, lam(X, n_eye_1(X))) --> [eyes].
 n0(pl, _, lam(X, n_eye_2(X))) --> [eyes].
 n0(sg, a, lam(X, n_vision_1(X))) --> [vision].
-n0(sg, a, lam(X, n_sight_3(X))) --> [vision]; [sight].
+n0(sg, a, lam(X, n_sight_3(X))) --> [sight]; [vision].
 n0(sg, a, lam(X, n_vision_3(X))) --> [vision].
 n0(sg, a, lam(X, n_face_1(X))) --> [face].
 n0(sg, a, lam(X, n_expression_1(X))) --> [look]; [face].
@@ -1810,7 +2390,7 @@ n0(pl, _, lam(X, n_toe_3(X))) --> [toes].
 n0(pl, _, lam(X, n_meter_1(X))) --> [meters].
 n0(pl, _, lam(X, n_meter_2(X))) --> [meters].
 n0(pl, _, lam(X, n_meter_3(X))) --> [meters].
-n0(sg, a, lam(X, n_fence_1(X))) --> [fencing]; [fence].
+n0(sg, a, lam(X, n_fence_1(X))) --> [fence]; [fencing].
 n0(sg, a, lam(X, n_fence_2(X))) --> [fence].
 n0(pl, _, lam(X, n_fence_1(X))) --> [fences].
 n0(pl, _, lam(X, n_fence_2(X))) --> [fences].
@@ -1836,7 +2416,7 @@ n0(sg, a, lam(X, n_earth_2(X))) --> [ground].
 n0(sg, a, lam(X, n_fight_2(X))) --> [fighting]; [fight].
 n0(sg, a, lam(X, n_battle_1(X))) --> [battle]; [fight].
 n0(sg, a, lam(X, n_competitiveness_1(X))) --> [fight].
-n0(pl, _, lam(X, n_battle_1(X))) --> [fights]; [battles].
+n0(pl, _, lam(X, n_battle_1(X))) --> [battles]; [fights].
 n0(pl, _, lam(X, n_fight_2(X))) --> [fights].
 n0(pl, _, lam(X, n_competitiveness_1(X))) --> [fights].
 n0(sg, a, lam(X, n_struggle_1(X))) --> [battle].
@@ -1845,7 +2425,7 @@ n0(pl, _, lam(X, n_struggle_1(X))) --> [battles].
 n0(pl, _, lam(X, n_conflict_1(X))) --> [battles].
 n0(sg, a, lam(X, n_fish_1(X))) --> [fish].
 n0(sg, a, lam(X, n_fish_2(X))) --> [fish].
-n0(pl, _, lam(X, n_pisces_2(X))) --> [fishes]; [fish].
+n0(pl, _, lam(X, n_pisces_2(X))) --> [fish]; [fishes].
 n0(pl, _, lam(X, n_fish_1(X))) --> [fishes].
 n0(pl, _, lam(X, n_fish_2(X))) --> [fishes].
 n0(sg, a, lam(X, n_salmon_1(X))) --> [salmon].
@@ -1892,8 +2472,8 @@ n0(pl, _, lam(X, n_flat_2(X))) --> [flats].
 n0(sg, a, lam(X, n_bottom_1(X))) --> [bottom].
 n0(sg, a, lam(X, n_bottom_2(X))) --> [bottom].
 n0(sg, a, lam(X, n_flies_1(X))) --> [flies].
-n0(pl, _, lam(X, n_fly_1(X))) --> [flies]; [flys].
-n0(pl, _, lam(X, n_tent_fly_1(X))) --> [flies]; [flys].
+n0(pl, _, lam(X, n_fly_1(X))) --> [flys]; [flies].
+n0(pl, _, lam(X, n_tent_fly_1(X))) --> [flys]; [flies].
 n0(sg, a, lam(X, n_fly_1(X))) --> [fly].
 n0(sg, a, lam(X, n_tent_fly_1(X))) --> [fly].
 n0(sg, a, lam(X, n_fly_3(X))) --> [fly].
@@ -1909,12 +2489,12 @@ n0(pl, _, lam(X, n_ice_cream_soda_1(X))) --> [floats].
 n0(sg, a, lam(X, n_floating_1(X))) --> [floating].
 n0(sg, a, lam(X, n_semivowel_1(X))) --> [glide].
 n0(sg, a, lam(X, n_slide_5(X))) --> [glide].
-n0(sg, a, lam(X, n_glide_3(X))) --> [glide]; [soaring].
+n0(sg, a, lam(X, n_glide_3(X))) --> [soaring]; [glide].
 n0(sg, a, lam(X, n_sinking_1(X))) --> [sinking].
 n0(sg, a, lam(X, n_sinking_2(X))) --> [sinking].
 n0(sg, a, lam(X, n_sinking_3(X))) --> [sinking].
 n0(sg, a, lam(X, n_raft_1(X))) --> [raft].
-n0(sg, a, lam(X, n_batch_2(X))) --> [mountain]; [flock]; [lot]; [raft].
+n0(sg, a, lam(X, n_batch_2(X))) --> [mountain]; [raft]; [lot]; [flock].
 n0(pl, _, lam(X, n_parade_1(X))) --> [parades].
 n0(pl, _, lam(X, n_parade_2(X))) --> [parades].
 n0(pl, _, lam(X, n_parade_3(X))) --> [parades].
@@ -1922,7 +2502,7 @@ n0(sg, a, lam(X, n_flock_1(X))) --> [flock].
 n0(sg, a, lam(X, n_flock_2(X))) --> [flock].
 n0(pl, _, lam(X, n_flock_1(X))) --> [flocks].
 n0(pl, _, lam(X, n_flock_2(X))) --> [flocks].
-n0(sg, a, lam(X, n_floor_1(X))) --> [floor]; [flooring].
+n0(sg, a, lam(X, n_floor_1(X))) --> [flooring]; [floor].
 n0(sg, a, lam(X, n_floor_2(X))) --> [floor].
 n0(sg, a, lam(X, n_floor_3(X))) --> [floor].
 n0(pl, _, lam(X, n_floor_1(X))) --> [floors].
@@ -1930,7 +2510,7 @@ n0(pl, _, lam(X, n_floor_2(X))) --> [floors].
 n0(pl, _, lam(X, n_floor_3(X))) --> [floors].
 n0(sg, a, lam(X, n_hallway_1(X))) --> [hallway].
 n0(sg, an, lam(X, n_upstairs_1(X))) --> [upstairs].
-n0(sg, a, lam(X, n_stairs_1(X))) --> [stairs]; [steps].
+n0(sg, a, lam(X, n_stairs_1(X))) --> [steps]; [stairs].
 n0(pl, _, lam(X, n_step_4(X))) --> [stairs].
 n0(pl, _, lam(X, n_flower_1(X))) --> [flowers].
 n0(pl, _, lam(X, n_flower_2(X))) --> [flowers]; [blossoms].
@@ -1965,8 +2545,8 @@ n0(sg, a, lam(X, n_league_3(X))) --> [league].
 n0(sg, a, lam(X, n_devising_1(X))) --> [making].
 n0(sg, a, lam(X, n_qualification_1(X))) --> [making].
 n0(sg, a, lam(X, n_making_3(X))) --> [making].
-n0(sg, a, lam(X, n_forest_1(X))) --> [forest]; [wood].
-n0(sg, a, lam(X, n_forest_2(X))) --> [forest]; [woodland].
+n0(sg, a, lam(X, n_forest_1(X))) --> [wood]; [forest].
+n0(sg, a, lam(X, n_forest_2(X))) --> [woodland]; [forest].
 n0(pl, _, lam(X, n_forest_1(X))) --> [forests].
 n0(pl, _, lam(X, n_forest_2(X))) --> [forests].
 n0(sg, a, lam(X, n_rain_forest_1(X))) --> [rainforest].
@@ -2056,7 +2636,7 @@ n0(sg, a, lam(X, n_woman_2(X))) --> [woman].
 n0(sg, a, lam(X, n_charwoman_1(X))) --> [woman].
 n0(sg, a, lam(X, n_lady_1(X))) --> [lady].
 n0(sg, a, lam(X, n_dame_2(X))) --> [lady].
-n0(pl, _, lam(X, n_lady_3(X))) --> [ladies]; [lady].
+n0(pl, _, lam(X, n_lady_3(X))) --> [lady]; [ladies].
 n0(sg, a, lam(X, n_teens_1(X))) --> [teens].
 n0(sg, a, lam(X, n_teens_2(X))) --> [teens].
 n0(pl, _, lam(X, n_adolescent_1(X))) --> [teens].
@@ -2112,7 +2692,7 @@ n0(pl, _, lam(X, n_gander_1(X))) --> [ganders].
 n0(sg, a, lam(X, n_gosling_1(X))) --> [gosling].
 n0(sg, a, lam(X, n_acquiring_1(X))) --> [getting].
 n0(sg, a, lam(X, n_grass_1(X))) --> [grass].
-n0(pl, _, lam(X, n_grass_2(X))) --> [grass]; [grasses].
+n0(pl, _, lam(X, n_grass_2(X))) --> [grasses]; [grass].
 n0(sg, _, lam(X, n_supergrass_1(X))) --> [grass].
 n0(pl, _, lam(X, n_grass_1(X))) --> [grasses].
 n0(pl, _, lam(X, n_supergrass_1(X))) --> [grasses].
@@ -2169,8 +2749,8 @@ n0(pl, _, lam(X, n_bass_2(X))) --> [basses].
 n0(pl, _, lam(X, n_bass_3(X))) --> [basses].
 n0(sg, a, lam(X, n_gull_2(X))) --> [seagull]; [gull].
 n0(pl, _, lam(X, n_chump_1(X))) --> [gulls].
-n0(pl, _, lam(X, n_gull_2(X))) --> [seagulls]; [gulls].
-n0(pl, _, lam(X, n_hero_4(X))) --> [herons]; [heron].
+n0(pl, _, lam(X, n_gull_2(X))) --> [gulls]; [seagulls].
+n0(pl, _, lam(X, n_hero_4(X))) --> [heron]; [herons].
 n0(sg, _, lam(X, n_heron_2(X))) --> [heron].
 n0(sg, an, lam(X, n_egret_1(X))) --> [egret].
 n0(sg, a, lam(X, n_pelican_1(X))) --> [pelican].
@@ -2178,7 +2758,7 @@ n0(pl, _, lam(X, n_pelican_1(X))) --> [pelicans].
 n0(pl, _, lam(X, n_tern_1(X))) --> [terns].
 n0(pl, _, lam(X, n_cormorant_1(X))) --> [cormorants].
 n0(pl, _, lam(X, n_heron_2(X))) --> [herons].
-n0(pl, _, lam(X, n_guy_2(X))) --> [guy]; [guys].
+n0(pl, _, lam(X, n_guy_2(X))) --> [guys]; [guy].
 n0(sg, _, lam(X, n_guy_3(X))) --> [guy].
 n0(sg, a, lam(X, n_fellow_6(X))) --> [dude].
 n0(sg, a, lam(X, n_dandy_1(X))) --> [dude].
@@ -2240,7 +2820,7 @@ n0(sg, a, lam(X, n_mind_1(X))) --> [head].
 n0(pl, _, lam(X, n_head_1(X))) --> [heads].
 n0(pl, _, lam(X, n_head_2(X))) --> [heads].
 n0(pl, _, lam(X, n_mind_1(X))) --> [heads].
-n0(sg, a, lam(X, n_porcupine_1(X))) --> [hedgehog]; [porcupine].
+n0(sg, a, lam(X, n_porcupine_1(X))) --> [porcupine]; [hedgehog].
 n0(sg, a, lam(X, n_hedgehog_2(X))) --> [hedgehog].
 n0(pl, _, lam(X, n_porcupine_1(X))) --> [hedgehogs].
 n0(pl, _, lam(X, n_hedgehog_2(X))) --> [hedgehogs].
@@ -2361,9 +2941,9 @@ n0(sg, a, lam(X, n_hug_1(X))) --> [hug].
 n0(sg, a, lam(X, n_hunt_8(X))) --> [hunting].
 n0(sg, a, lam(X, n_search_1(X))) --> [hunting].
 n0(sg, a, lam(X, n_hunt_7(X))) --> [hunting].
-n0(pl, _, lam(X, n_hunt_1(X))) --> [hunt]; [hunts].
-n0(pl, _, lam(X, n_hunt_2(X))) --> [hunt]; [hunts].
-n0(pl, _, lam(X, n_hunt_3(X))) --> [hunt]; [hunts].
+n0(pl, _, lam(X, n_hunt_1(X))) --> [hunts]; [hunt].
+n0(pl, _, lam(X, n_hunt_2(X))) --> [hunts]; [hunt].
+n0(pl, _, lam(X, n_hunt_3(X))) --> [hunts]; [hunt].
 n0(pl, _, lam(X, n_hunter_1(X))) --> [hunters].
 n0(pl, _, lam(X, n_hunter_2(X))) --> [hunters].
 n0(pl, _, lam(X, n_orion_2(X))) --> [hunters].
@@ -2377,7 +2957,7 @@ n0(pl, _, lam(X, n_indium_1(X))) --> [in].
 n0(pl, _, lam(X, n_indiana_1(X))) --> [in].
 n0(sg, an, lam(X, n_outside_1(X))) --> [outside].
 n0(sg, an, lam(X, n_outside_2(X))) --> [outside].
-n0(pl, _, lam(X, n_information_technology_1(X))) --> [it]; [its].
+n0(pl, _, lam(X, n_information_technology_1(X))) --> [its]; [it].
 n0(sg, a, lam(X, n_sol_3(X))) --> [so].
 n0(sg, a, lam(X, n_vest_1(X))) --> [vest].
 n0(sg, a, lam(X, n_singlet_1(X))) --> [vest].
@@ -2390,16 +2970,16 @@ n0(sg, a, lam(X, n_short_pants_1(X))) --> [shorts].
 n0(sg, a, lam(X, n_drawers_1(X))) --> [shorts].
 n0(pl, _, lam(X, n_short_1(X))) --> [shorts].
 n0(pl, _, lam(X, n_legging_1(X))) --> [leggings].
-n0(pl, _, lam(X, n_new_jersey_1(X))) --> [nj]; [jersey]; [jerseys].
-n0(pl, _, lam(X, n_jersey_2(X))) --> [jersey]; [jerseys].
+n0(pl, _, lam(X, n_new_jersey_1(X))) --> [nj]; [jerseys]; [jersey].
+n0(pl, _, lam(X, n_jersey_2(X))) --> [jerseys]; [jersey].
 n0(sg, _, lam(X, n_jersey_3(X))) --> [jersey].
-n0(pl, _, lam(X, n_jersey_3(X))) --> [t-shirts]; [t-shirt]; [jerseys].
+n0(pl, _, lam(X, n_jersey_3(X))) --> [t-shirts]; [jerseys]; [t-shirt].
 n0(pl, _, lam(X, n_york_1(X))) --> [york].
 n0(sg, a, lam(X, n_jumper_1(X))) --> [jumper].
 n0(sg, a, lam(X, n_jumper_2(X))) --> [jumper].
 n0(pl, _, lam(X, n_jumper_1(X))) --> [jumpers].
 n0(pl, _, lam(X, n_jumper_2(X))) --> [jumpers].
-n0(pl, _, lam(X, n_sweater_1(X))) --> [sweaters]; [jumpers].
+n0(pl, _, lam(X, n_sweater_1(X))) --> [jumpers]; [sweaters].
 n0(sg, a, lam(X, n_lay_up_1(X))) --> [layup].
 n0(sg, a, lam(X, n_dunk_1(X))) --> [dunk].
 n0(sg, a, lam(X, n_jumping_1(X))) --> [jumping].
@@ -2431,7 +3011,7 @@ n0(pl, _, lam(X, n_knock_2(X))) --> [knocks].
 n0(pl, _, lam(X, n_knock_3(X))) --> [knocks].
 n0(pl, _, lam(X, n_grab_1(X))) --> [grabs].
 n0(pl, _, lam(X, n_catch_9(X))) --> [grabs].
-n0(sg, a, lam(X, n_dad_1(X))) --> [pop]; [dad].
+n0(sg, a, lam(X, n_dad_1(X))) --> [dad]; [pop].
 n0(sg, a, lam(X, n_kingfisher_1(X))) --> [kingfisher].
 n0(pl, _, lam(X, n_wren_1(X))) --> [wren].
 n0(sg, _, lam(X, n_wren_2(X))) --> [wren].
@@ -2440,7 +3020,7 @@ n0(sg, a, lam(X, n_knife_2(X))) --> [knife].
 n0(sg, a, lam(X, n_tongue_3(X))) --> [tongue]; [knife].
 n0(pl, _, lam(X, n_knife_1(X))) --> [knifes]; [knives].
 n0(pl, _, lam(X, n_knife_2(X))) --> [knifes]; [knives].
-n0(pl, _, lam(X, n_tongue_3(X))) --> [knifes]; [knives]; [tongues].
+n0(pl, _, lam(X, n_tongue_3(X))) --> [knifes]; [tongues]; [knives].
 n0(sg, a, lam(X, n_blade_1(X))) --> [blade].
 n0(sg, a, lam(X, n_blade_2(X))) --> [blade].
 n0(sg, a, lam(X, n_blade_3(X))) --> [blade].
@@ -2466,7 +3046,7 @@ n0(pl, _, lam(X, n_lake_2(X))) --> [lakes].
 n0(pl, _, lam(X, n_lake_3(X))) --> [lakes].
 n0(sg, a, lam(X, n_brook_1(X))) --> [creek].
 n0(pl, _, lam(X, n_creek_2(X))) --> [creek].
-n0(sg, a, lam(X, n_pond_1(X))) --> [pond]; [pool].
+n0(sg, a, lam(X, n_pond_1(X))) --> [pool]; [pond].
 n0(sg, a, lam(X, n_lakeside_1(X))) --> [lakeside].
 n0(sg, a, lam(X, n_lamp_1(X))) --> [lamp].
 n0(sg, a, lam(X, n_lamp_2(X))) --> [lamp].
@@ -2500,7 +3080,7 @@ n0(pl, _, lam(X, n_lap_1(X))) --> [laps].
 n0(pl, _, lam(X, n_lap_2(X))) --> [laps].
 n0(pl, _, lam(X, n_lap_3(X))) --> [laps].
 n0(sg, a, lam(X, n_pole_1(X))) --> [pole].
-n0(pl, _, lam(X, n_pole_2(X))) --> [pole]; [poles].
+n0(pl, _, lam(X, n_pole_2(X))) --> [poles]; [pole].
 n0(sg, _, lam(X, n_pole_3(X))) --> [pole].
 n0(sg, a, lam(X, n_race_1(X))) --> [race].
 n0(sg, a, lam(X, n_race_2(X))) --> [race].
@@ -2520,8 +3100,8 @@ n0(sg, _, lam(X, n_lie_3(X))) --> [lie].
 n0(pl, _, lam(X, n_ballad_1(X))) --> [lays].
 n0(pl, _, lam(X, n_ballad_2(X))) --> [lays].
 n0(sg, a, lam(X, n_putt_1(X))) --> [putting].
-n0(sg, a, lam(X, n_leaf_1(X))) --> [leaf]; [leafage]; [foliage].
-n0(sg, a, lam(X, n_tilt_4(X))) --> [lean]; [leaning].
+n0(sg, a, lam(X, n_leaf_1(X))) --> [leaf]; [foliage]; [leafage].
+n0(sg, a, lam(X, n_tilt_4(X))) --> [leaning]; [lean].
 n0(sg, _, lam(X, n_leaner_1(X))) --> [leaner].
 n0(sg, a, lam(X, n_fat_1(X))) --> [fat].
 n0(sg, a, lam(X, n_adipose_tissue_1(X))) --> [fat].
@@ -2666,7 +3246,7 @@ n0(pl, _, lam(X, n_magazine_3(X))) --> [magazines].
 n0(sg, a, lam(X, n_publication_1(X))) --> [publication].
 n0(sg, a, lam(X, n_issue_11(X))) --> [publication].
 n0(sg, a, lam(X, n_publication_3(X))) --> [publication].
-n0(sg, a, lam(X, n_newspaper_1(X))) --> [paper]; [newspaper].
+n0(sg, a, lam(X, n_newspaper_1(X))) --> [newspaper]; [paper].
 n0(sg, a, lam(X, n_newspaper_2(X))) --> [newspaper].
 n0(sg, a, lam(X, n_newspaper_3(X))) --> [newspaper].
 n0(pl, _, lam(X, n_publication_1(X))) --> [publications].
@@ -2693,7 +3273,7 @@ n0(pl, _, lam(X, n_coinage_1(X))) --> [species].
 n0(pl, _, lam(X, n_man_1(X))) --> [men].
 n0(pl, _, lam(X, n_serviceman_1(X))) --> [men].
 n0(sg, a, lam(X, n_mat_1(X))) --> [mat].
-n0(sg, a, lam(X, n_mat_2(X))) --> [matting]; [mat].
+n0(sg, a, lam(X, n_mat_2(X))) --> [mat]; [matting].
 n0(sg, a, lam(X, n_mat_3(X))) --> [mat].
 n0(pl, _, lam(X, n_mat_1(X))) --> [mats].
 n0(pl, _, lam(X, n_mat_2(X))) --> [mats].
@@ -2758,7 +3338,7 @@ n0(sg, a, lam(X, n_mound_4(X))) --> [hill].
 n0(pl, _, lam(X, n_valley_1(X))) --> [valleys].
 n0(pl, _, lam(X, n_foothill_1(X))) --> [foothills].
 n0(sg, a, lam(X, n_cursor_1(X))) --> [cursor].
-n0(pl, _, lam(X, n_mustache_1(X))) --> [mustaches]; [moustaches].
+n0(pl, _, lam(X, n_mustache_1(X))) --> [moustaches]; [mustaches].
 n0(sg, a, lam(X, n_tongue_1(X))) --> [tongue].
 n0(sg, a, lam(X, n_natural_language_1(X))) --> [tongue].
 n0(pl, _, lam(X, n_mouth_1(X))) --> [mouths].
@@ -2817,8 +3397,8 @@ n0(pl, _, lam(X, n_nature_3(X))) --> [natures].
 n0(sg, an, lam(X, n_kernel_3(X))) --> [essence].
 n0(sg, an, lam(X, n_essence_2(X))) --> [essence].
 n0(sg, an, lam(X, n_effect_4(X))) --> [essence].
-n0(sg, a, lam(X, n_vicinity_1(X))) --> [vicinity]; [neighborhood].
-n0(sg, a, lam(X, n_stopping_point_1(X))) --> [last]; [finish]; [close].
+n0(sg, a, lam(X, n_vicinity_1(X))) --> [neighborhood]; [vicinity].
+n0(sg, a, lam(X, n_stopping_point_1(X))) --> [close]; [finish]; [last].
 n0(sg, a, lam(X, n_finale_3(X))) --> [close].
 n0(pl, _, lam(X, n_north_1(X))) --> [north].
 n0(pl, _, lam(X, n_union_2(X))) --> [north].
@@ -2835,7 +3415,7 @@ n0(sg, a, lam(X, n_bracelet_2(X))) --> [bracelet].
 n0(pl, _, lam(X, n_necklace_1(X))) --> [necklaces].
 n0(sg, a, lam(X, n_pendant_1(X))) --> [pendant].
 n0(sg, a, lam(X, n_chandelier_1(X))) --> [pendant].
-n0(pl, _, lam(X, n_necktie_1(X))) --> [neckties]; [ties].
+n0(pl, _, lam(X, n_necktie_1(X))) --> [ties]; [neckties].
 n0(sg, a, lam(X, n_neckwear_1(X))) --> [neckwear].
 n0(sg, a, lam(X, n_cravat_1(X))) --> [cravat].
 n0(sg, a, lam(X, n_bow_tie_1(X))) --> [bowtie].
@@ -3000,14 +3580,14 @@ n0(pl, _, lam(X, n_park_1(X))) --> [parks].
 n0(pl, _, lam(X, n_park_2(X))) --> [parks].
 n0(sg, a, lam(X, n_parking_1(X))) --> [parking].
 n0(sg, a, lam(X, n_parking_2(X))) --> [parking].
-n0(sg, a, lam(X, n_campsite_1(X))) --> [campsite]; [campground].
+n0(sg, a, lam(X, n_campsite_1(X))) --> [campground]; [campsite].
 n0(sg, a, lam(X, n_menagerie_2(X))) --> [zoo].
-n0(sg, a, lam(X, n_pass_3(X))) --> [pass]; [passing].
+n0(sg, a, lam(X, n_pass_3(X))) --> [passing]; [pass].
 n0(sg, a, lam(X, n_passing_3(X))) --> [passing].
 n0(pl, _, lam(X, n_base_on_balls_1(X))) --> [passes]; [walks].
 n0(pl, _, lam(X, n_pass_2(X))) --> [passes].
 n0(pl, _, lam(X, n_pass_3(X))) --> [passes].
-n0(sg, a, lam(X, n_base_on_balls_1(X))) --> [pass]; [walk].
+n0(sg, a, lam(X, n_base_on_balls_1(X))) --> [walk]; [pass].
 n0(sg, a, lam(X, n_pass_2(X))) --> [pass].
 n0(sg, a, lam(X, n_rush_7(X))) --> [rushing].
 n0(sg, a, lam(X, n_haste_2(X))) --> [rushing].
@@ -3110,14 +3690,14 @@ n0(sg, a, lam(X, n_handset_1(X))) --> [handset].
 n0(sg, a, lam(X, n_photography_1(X))) --> [photography].
 n0(sg, a, lam(X, n_photography_2(X))) --> [photography].
 n0(sg, a, lam(X, n_photography_3(X))) --> [photography].
-n0(sg, a, lam(X, n_photograph_1(X))) --> [photograph]; [photo]; [pic].
+n0(sg, a, lam(X, n_photograph_1(X))) --> [photo]; [photograph]; [pic].
 n0(sg, a, lam(X, n_violin_1(X))) --> [violin].
 n0(sg, a, lam(X, n_cello_1(X))) --> [cello].
 n0(sg, a, lam(X, n_clarinet_1(X))) --> [clarinet].
 n0(sg, a, lam(X, n_sax_2(X))) --> [saxophone].
 n0(sg, a, lam(X, n_picture_1(X))) --> [picture].
 n0(sg, a, lam(X, n_mental_picture_1(X))) --> [picture].
-n0(pl, _, lam(X, n_picture_1(X))) --> [images]; [pictures].
+n0(pl, _, lam(X, n_picture_1(X))) --> [pictures]; [images].
 n0(pl, _, lam(X, n_mental_picture_1(X))) --> [pictures].
 n0(sg, a, lam(X, n_movie_1(X))) --> [pic].
 n0(sg, an, lam(X, n_image_1(X))) --> [image].
@@ -3125,7 +3705,7 @@ n0(sg, an, lam(X, n_persona_2(X))) --> [image].
 n0(sg, an, lam(X, n_picture_1(X))) --> [image].
 n0(pl, _, lam(X, n_image_1(X))) --> [images].
 n0(pl, _, lam(X, n_persona_2(X))) --> [images].
-n0(pl, _, lam(X, n_photograph_1(X))) --> [pics]; [photos].
+n0(pl, _, lam(X, n_photograph_1(X))) --> [photos]; [pics].
 n0(pl, _, lam(X, n_movie_1(X))) --> [pics].
 n0(pl, _, lam(X, n_pigeon_1(X))) --> [pigeons].
 n0(pl, _, lam(X, n_jackdaw_1(X))) --> [jackdaws].
@@ -3210,9 +3790,9 @@ n0(pl, _, lam(X, n_play_3(X))) --> [plays].
 n0(sg, a, lam(X, n_function_3(X))) --> [role].
 n0(sg, a, lam(X, n_character_4(X))) --> [role].
 n0(sg, a, lam(X, n_function_2(X))) --> [role].
-n0(pl, _, lam(X, n_big_dipper_1(X))) --> [ploughs]; [plough].
+n0(pl, _, lam(X, n_big_dipper_1(X))) --> [plough]; [ploughs].
 n0(sg, _, lam(X, n_plow_1(X))) --> [plough].
-n0(sg, a, lam(X, n_plowing_1(X))) --> [ploughing]; [plowing].
+n0(sg, a, lam(X, n_plowing_1(X))) --> [plowing]; [ploughing].
 n0(pl, _, lam(X, n_plow_1(X))) --> [ploughs].
 n0(sg, a, lam(X, n_plow_1(X))) --> [plow].
 n0(sg, a, lam(X, n_furrow_1(X))) --> [furrow].
@@ -3279,10 +3859,10 @@ n0(pl, _, lam(X, n_pull_3(X))) --> [pulls].
 n0(pl, _, lam(X, n_push_1(X))) --> [pushes].
 n0(pl, _, lam(X, n_push_2(X))) --> [pushes].
 n0(pl, _, lam(X, n_energy_3(X))) --> [pushes].
-n0(sg, a, lam(X, n_railway_1(X))) --> [railroad]; [railway].
-n0(sg, a, lam(X, n_railroad_track_1(X))) --> [railroad]; [railway].
-n0(pl, _, lam(X, n_railway_1(X))) --> [railroads]; [railways].
-n0(pl, _, lam(X, n_railroad_track_1(X))) --> [railroads]; [railways].
+n0(sg, a, lam(X, n_railway_1(X))) --> [railway]; [railroad].
+n0(sg, a, lam(X, n_railroad_track_1(X))) --> [railway]; [railroad].
+n0(pl, _, lam(X, n_railway_1(X))) --> [railways]; [railroads].
+n0(pl, _, lam(X, n_railroad_track_1(X))) --> [railways]; [railroads].
 n0(sg, a, lam(X, n_locomotive_1(X))) --> [locomotive].
 n0(sg, a, lam(X, n_rail_2(X))) --> [rail].
 n0(sg, a, lam(X, n_track_9(X))) --> [rail].
@@ -3330,7 +3910,7 @@ n0(sg, a, lam(X, n_diamond_2(X))) --> [diamond].
 n0(sg, a, lam(X, n_rhombus_1(X))) --> [diamond].
 n0(pl, _, lam(X, n_ripple_1(X))) --> [ripples].
 n0(pl, _, lam(X, n_ripple_2(X))) --> [ripples].
-n0(sg, a, lam(X, n_ripple_1(X))) --> [rippling]; [ripple].
+n0(sg, a, lam(X, n_ripple_1(X))) --> [ripple]; [rippling].
 n0(sg, a, lam(X, n_ripple_2(X))) --> [ripple].
 n0(pl, _, lam(X, n_wave_1(X))) --> [waves].
 n0(pl, _, lam(X, n_wave_2(X))) --> [waves].
@@ -3543,7 +4123,7 @@ n0(sg, a, lam(X, n_moon_1(X))) --> [moon].
 n0(sg, a, lam(X, n_moon_2(X))) --> [moon].
 n0(sg, a, lam(X, n_lunar_month_1(X))) --> [moon].
 n0(sg, a, lam(X, n_sun_1(X))) --> [sun].
-n0(sg, a, lam(X, n_sunlight_1(X))) --> [sun]; [sunshine].
+n0(sg, a, lam(X, n_sunlight_1(X))) --> [sunshine]; [sun].
 n0(sg, a, lam(X, n_sun_3(X))) --> [sun].
 n0(sg, a, lam(X, n_horizon_1(X))) --> [horizon].
 n0(sg, a, lam(X, n_horizon_2(X))) --> [horizon].
@@ -3572,7 +4152,7 @@ n0(sg, a, lam(X, n_smell_5(X))) --> [smelling].
 n0(pl, _, lam(X, n_sniffer_1(X))) --> [sniffers].
 n0(sg, a, lam(X, n_snow_1(X))) --> [snow]; [snowfall].
 n0(sg, a, lam(X, n_snow_2(X))) --> [snow].
-n0(pl, _, lam(X, n_snow_3(X))) --> [snows]; [snow].
+n0(pl, _, lam(X, n_snow_3(X))) --> [snow]; [snows].
 n0(sg, a, lam(X, n_winter_1(X))) --> [winter].
 n0(pl, _, lam(X, n_snow_1(X))) --> [snows].
 n0(pl, _, lam(X, n_snow_2(X))) --> [snows].
@@ -3623,7 +4203,7 @@ n0(sg, a, lam(X, n_foam_2(X))) --> [foam].
 n0(sg, a, lam(X, n_brush_1(X))) --> [brush].
 n0(sg, a, lam(X, n_brush_2(X))) --> [brush].
 n0(sg, a, lam(X, n_brush_3(X))) --> [brush].
-n0(sg, a, lam(X, n_spread_1(X))) --> [spread]; [spreading].
+n0(sg, a, lam(X, n_spread_1(X))) --> [spreading]; [spread].
 n0(sg, a, lam(X, n_dissemination_1(X))) --> [spreading].
 n0(sg, a, lam(X, n_spread_10(X))) --> [spreading].
 n0(sg, a, lam(X, n_gap_1(X))) --> [spread].
@@ -3761,7 +4341,7 @@ n0(pl, _, lam(X, n_perspirer_1(X))) --> [sweaters].
 n0(sg, a, lam(X, n_knit_1(X))) --> [knit].
 n0(sg, a, lam(X, n_knit_2(X))) --> [knit].
 n0(sg, a, lam(X, n_knit_3(X))) --> [knit].
-n0(sg, a, lam(X, n_swimming_1(X))) --> [swimming]; [swim].
+n0(sg, a, lam(X, n_swimming_1(X))) --> [swim]; [swimming].
 n0(sg, a, lam(X, n_pool_1(X))) --> [pool].
 n0(sg, a, lam(X, n_pool_3(X))) --> [pool].
 n0(pl, _, lam(X, n_pool_1(X))) --> [pools].
@@ -3847,9 +4427,9 @@ n0(sg, a, lam(X, n_tile_2(X))) --> [tile].
 n0(sg, a, lam(X, n_tile_3(X))) --> [tile].
 n0(sg, a, lam(X, n_flooring_2(X))) --> [flooring].
 n0(sg, a, lam(X, n_tiling_1(X))) --> [tiling].
-n0(pl, _, lam(X, n_tire_1(X))) --> [tyres]; [tires].
+n0(pl, _, lam(X, n_tire_1(X))) --> [tires]; [tyres].
 n0(sg, a, lam(X, n_tire_1(X))) --> [tire].
-n0(pl, _, lam(X, n_sur_1(X))) --> [tyres]; [tyre].
+n0(pl, _, lam(X, n_sur_1(X))) --> [tyre]; [tyres].
 n0(pl, _, lam(X, n_rim_1(X))) --> [rims].
 n0(pl, _, lam(X, n_rim_2(X))) --> [rims].
 n0(pl, _, lam(X, n_rim_3(X))) --> [rims].
@@ -3875,7 +4455,7 @@ n0(pl, _, lam(X, n_best_3(X))) --> [best].
 n0(sg, an, lam(X, n_edge_1(X))) --> [edge].
 n0(sg, an, lam(X, n_boundary_2(X))) --> [edge].
 n0(sg, an, lam(X, n_edge_3(X))) --> [edge].
-n0(sg, a, lam(X, n_touch_1(X))) --> [touching]; [touch].
+n0(sg, a, lam(X, n_touch_1(X))) --> [touch]; [touching].
 n0(sg, a, lam(X, n_touch_5(X))) --> [touching].
 n0(sg, a, lam(X, n_felt_1(X))) --> [felt].
 n0(pl, _, lam(X, n_touch_1(X))) --> [touches].
@@ -3892,7 +4472,7 @@ n0(pl, _, lam(X, n_attraction_3(X))) --> [attractions].
 n0(sg, a, lam(X, n_sightseeing_1(X))) --> [sightseeing].
 n0(pl, _, lam(X, n_local_1(X))) --> [locals].
 n0(pl, _, lam(X, n_local_anesthetic_1(X))) --> [locals].
-n0(pl, _, lam(X, n_traveler_1(X))) --> [travelers]; [travellers].
+n0(pl, _, lam(X, n_traveler_1(X))) --> [travellers]; [travelers].
 n0(pl, _, lam(X, n_vacationer_1(X))) --> [vacationers].
 n0(sg, a, lam(X, n_slacks_1(X))) --> [slacks].
 n0(pl, _, lam(X, n_slack_1(X))) --> [slacks].
@@ -3970,9 +4550,9 @@ n0(sg, a, lam(X, n_ceiling_1(X))) --> [ceiling].
 n0(sg, a, lam(X, n_ceiling_2(X))) --> [ceiling].
 n0(sg, a, lam(X, n_ceiling_3(X))) --> [ceiling].
 n0(sg, a, lam(X, n_wash_1(X))) --> [wash].
-n0(sg, a, lam(X, n_wash_2(X))) --> [wash]; [washing].
+n0(sg, a, lam(X, n_wash_2(X))) --> [washing]; [wash].
 n0(sg, a, lam(X, n_wash_3(X))) --> [wash].
-n0(sg, a, lam(X, n_laundry_1(X))) --> [laundry]; [washing].
+n0(sg, a, lam(X, n_laundry_1(X))) --> [washing]; [laundry].
 n0(sg, a, lam(X, n_rinse_1(X))) --> [rinse].
 n0(sg, a, lam(X, n_rinse_2(X))) --> [rinse]; [rinsing].
 n0(sg, a, lam(X, n_rinse_3(X))) --> [rinse].
@@ -3998,7 +4578,7 @@ n0(sg, a, lam(X, n_salt_2(X))) --> [salt].
 n0(pl, _, lam(X, n_strategic_arms_limitation_talks_1(X))) --> [salt].
 n0(sg, a, lam(X, n_seawater_1(X))) --> [seawater].
 n0(sg, a, lam(X, n_erosion_1(X))) --> [wearing].
-n0(sg, a, lam(X, n_wear_3(X))) --> [wear]; [wearing].
+n0(sg, a, lam(X, n_wear_3(X))) --> [wearing]; [wear].
 n0(sg, a, lam(X, n_wear_1(X))) --> [wear].
 n0(pl, _, lam(X, n_wear_1(X))) --> [wears].
 n0(pl, _, lam(X, n_clothing_1(X))) --> [wears].
@@ -4076,7 +4656,7 @@ n0(pl, _, lam(X, n_writer_1(X))) --> [writers].
 n0(pl, _, lam(X, n_writer_2(X))) --> [writers].
 n0(sg, a, lam(X, n_writer_1(X))) --> [writer].
 n0(sg, a, lam(X, n_writer_2(X))) --> [writer].
-n0(sg, a, lam(X, n_yawn_1(X))) --> [yawning]; [yawn].
+n0(sg, a, lam(X, n_yawn_1(X))) --> [yawn]; [yawning].
 n0(pl, _, lam(X, n_yawn_1(X))) --> [yawns].
 n0(sg, a, lam(X, n_panting_1(X))) --> [panting].
 n0(sg, a, lam(X, n_panting_2(X))) --> [panting].

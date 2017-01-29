@@ -38,12 +38,13 @@ def process_word(nouns, adjectives, line, max_forms):
             .replace("-", "_") \
             .split('.')
         plural = is_plural(word, synset)
+        pos = 'n' if pos == 'n' else 'a'
         pred = "{}_{}_{}(X)".format(pos, lemma, num.lstrip('0'))
         pl = "pl" if plural else "sg"
         det = "_" if plural else det
         if pos == 'n':
             nouns[(pl, det, pred)].add(' '.join(line))
-        elif pos == 'a' and lemma not in ['all', 'some']:
+        elif lemma not in ['all', 'some']:
             pred = "lam(X, and({}, app(P, X)))".format(pred)
             adjectives[(det, pred)].add(' '.join(line))
 
