@@ -272,11 +272,9 @@ a0(a, lam(P, lam(X, and(a_roomy_1(X), app(P, X))))) --> [spacious].
 a0(a, lam(P, lam(X, and(a_comfortable_2(X), app(P, X))))) --> [comfortable].
 a0(a, lam(P, lam(X, and(a_comfortable_3(X), app(P, X))))) --> [comfortable].
 a0(a, lam(P, lam(X, and(a_few_1(X), app(P, X))))) --> [few].
-a0(a, lam(P, lam(X, and(a_two_1(X), app(P, X))))) --> [two].
 a0(a, lam(P, lam(X, and(a_several_1(X), app(P, X))))) --> [several].
 a0(a, lam(P, lam(X, and(a_respective_1(X), app(P, X))))) --> [various]; [several].
 a0(a, lam(P, lam(X, and(a_several_3(X), app(P, X))))) --> [several].
-a0(a, lam(P, lam(X, and(a_three_1(X), app(P, X))))) --> [three].
 a0(a, lam(P, lam(X, and(a_covered_1(X), app(P, X))))) --> [covered].
 a0(a, lam(P, lam(X, and(a_laid_1(X), app(P, X))))) --> [laid].
 a0(a, lam(P, lam(X, and(a_creamy_1(X), app(P, X))))) --> [creamy].
@@ -374,11 +372,6 @@ a0(a, lam(P, lam(X, and(a_featherlike_1(X), app(P, X))))) --> [feathery].
 a0(a, lam(P, lam(X, and(a_feathery_2(X), app(P, X))))) --> [feathery].
 a0(a, lam(P, lam(X, and(a_active_2(X), app(P, X))))) --> [fighting].
 a0(a, lam(P, lam(X, and(a_pink_orange_1(X), app(P, X))))) --> [salmon].
-a0(a, lam(P, lam(X, and(a_five_1(X), app(P, X))))) --> [five].
-a0(a, lam(P, lam(X, and(a_six_1(X), app(P, X))))) --> [six].
-a0(a, lam(P, lam(X, and(a_four_1(X), app(P, X))))) --> [four].
-a0(a, lam(P, lam(X, and(a_seven_1(X), app(P, X))))) --> [seven].
-a0(an, lam(P, lam(X, and(a_eight_1(X), app(P, X))))) --> [eight].
 a0(a, lam(P, lam(X, and(a_banner_1(X), app(P, X))))) --> [banner].
 a0(a, lam(P, lam(X, and(a_patriotic_1(X), app(P, X))))) --> [patriotic].
 a0(a, lam(P, lam(X, and(a_flat_1(X), app(P, X))))) --> [flat].
