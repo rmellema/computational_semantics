@@ -2,6 +2,7 @@
 %
 s(app(PT,app(NP,lam(X,some(Y,eq(Y,X)))))) --> np(_,NP), punct(PT).      
 s(app(PT,app(NP,VP))) --> np(Num,NP), vp(dcl,Num,VP), punct(PT).      
+s(app(PT,app(NP,app(AV, lam(X, some(Y, eq(Y, X))))))) --> [there], av(dcl,Num,prp,AV), np(Num,NP), punct(PT).
 s(app(PT,app(NP,app(AV,VP)))) --> [there], av(dcl,Num,prp,AV), np(Num,NP), vp(prp,Num,VP), punct(PT).
 
 % punctuation
