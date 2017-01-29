@@ -42,6 +42,18 @@ iv(dcl,pl, lam(X, not(some(Y,s_supports(Y,X))))) --> [fly].
 iv(bse,_,  lam(X, not(some(Y,s_supports(Y,X))))) --> [fly].
 iv(psp,_,  lam(X, not(some(Y,s_supports(Y,X))))) --> [flown].
 
+iv(prp,_,  lam(X,or(n_player_1(X), n_player_2(X)))) --> [playing]. 
+iv(dcl,sg, lam(X,or(n_player_1(X), n_player_2(X)))) --> [plays]. 
+iv(dcl,pl, lam(X,or(n_player_1(X), n_player_2(X)))) --> [play]. 
+iv(bse,_,  lam(X,or(n_player_1(X), n_player_2(X)))) --> [play]. 
+iv(psp,_,  lam(X,or(n_player_1(X), n_player_2(X)))) --> [played].
+
+iv(prp, _,  lam(X, some(Y, eq(Y, X)))) --> [being].
+iv(dcl, sg, lam(X, some(Y, eq(Y, X)))) --> [is].
+iv(dcl, pl, lam(X, some(Y, eq(Y, X)))) --> [are].
+iv(bse, _, lam(X, some(Y, eq(Y, X)))) --> [am].
+iv(psp, _, lam(X, some(Y, eq(Y, X)))) --> [were].
+
 % transitive verbs
 %
 tv(prp,_,  lam(P,lam(X,app(P,lam(Y,s_supports(Y,X)))))) --> [riding].
@@ -85,7 +97,7 @@ tv(dcl,sg, lam(P,lam(X,app(P,lam(Y,s_near(X,Y)))))) --> [chases].
 tv(dcl,pl, lam(P,lam(X,app(P,lam(Y,s_near(X,Y)))))) --> [chase].
 tv(bse,_,  lam(P,lam(X,app(P,lam(Y,s_near(X,Y)))))) --> [chased].
 tv(psp,_,  lam(P,lam(X,app(P,lam(Y,s_near(X,Y)))))) --> [chased].
- 
+
 % ditransitive verbs
 %
 dv(prp,_,  lam(P,lam(Q,lam(X,app(P,lam(Y,app(Q,lam(Z,'X'(X,Y,Z))))))))) --> [sending].
