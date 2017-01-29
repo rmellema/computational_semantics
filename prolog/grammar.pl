@@ -98,9 +98,9 @@ det(_ ,_,  lam(P,lam(Q,not(some(X,and(app(P,X),app(Q,X))))))) --> [no].
 det(sg,a,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [a].
 det(sg,an, lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [an].
 det(sg,_,  lam(P,lam(Q, and(some(Y,app(P,Y)),all(X,imp(app(P,X),app(Q,X))))))) --> [every];[each].
-det(_ ,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [the];[some].
+det(_ ,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [the];[some];[one];[only,one].
 det(pl,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [].
-det(pl,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [several].
+det(pl,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [several];[two];[three];[four];[five];[six];[seven];[eight];[nine];[ten].
 det(pl,_,  lam(P,lam(Q, all(X,imp(app(P,X),app(Q,X)))))) --> [all].
 
 % prepositions
