@@ -94,19 +94,28 @@ np0(sg,lam(P,not(some(X,and(n_person_1(X),app(P,X)))))) --> [nobody];[noone].
 
 % determiners
 %
-det(_ ,_,  lam(P,lam(Q,not(some(X,and(app(P,X),app(Q,X))))))) --> [no].
-det(sg,a,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [a].
-det(sg,an, lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [an].
-det(sg,_,  lam(P,lam(Q, and(some(Y,app(P,Y)),all(X,imp(app(P,X),app(Q,X))))))) --> [every];[each].
-det(_ ,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [the];[some];[one];[only,one].
+det(_ ,_,  lam(P,lam(Q,not(some(X,and(app(P,X),app(Q,X))))))) --> 
+	[no].
+det(sg,a,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> 
+	[a].
+det(sg,an, lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> 
+	[an].
+det(sg,_,  lam(P,lam(Q, and(some(Y,app(P,Y)),all(X,imp(app(P,X),app(Q,X))))))) --> 
+	[every];[each].
+det(_ ,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> 
+	[the];[some];[one];[only,one];[exactly,one].
 det(pl,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [].
-det(pl,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> [several];[two];[three];[four];[five];[six];[seven];[eight];[nine];[ten].
-det(pl,_,  lam(P,lam(Q, all(X,imp(app(P,X),app(Q,X)))))) --> [all].
+det(pl,_,  lam(P,lam(Q,some(X,and(app(P,X),app(Q,X)))))) --> 
+	[several];[two];[three];[four];[five];[six];[seven];[eight];[nine];[ten].
+det(pl,_,  lam(P,lam(Q, all(X,imp(app(P,X),app(Q,X)))))) --> 
+	[all].
 
 % prepositions
 %
-prep0(lam(P,lam(Y,app(P,lam(X,s_supports(X,Y)))))) --> [on];[against].
-prep0(lam(P,lam(Y,app(P,lam(X,s_near(Y,X)))))) --> [with];[by];[at];[around];[near].
+prep0(lam(P,lam(Y,app(P,lam(X,s_supports(X,Y)))))) --> 
+	[on];[against].
+prep0(lam(P,lam(Y,app(P,lam(X,s_near(Y,X)))))) --> 
+	[with];[by];[at];[around];[near];[next,to].
 prep0(lam(P,lam(Y,app(P,lam(X,s_part_of(Y,X)))))) --> [of].
 prep0(lam(P,lam(Y,app(P,lam(X,s_occludes(Y,X)))))) --> [behind].
 prep0(lam(P,lam(Y,app(P,lam(X,s_occludes(X,Y)))))) --> [in,front,of].
