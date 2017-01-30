@@ -48,17 +48,6 @@ iv(dcl,pl, lam(X,or(n_player_1(X), n_musician_1(X)))) --> [play].
 iv(bse,_,  lam(X,or(n_player_1(X), n_musician_1(X)))) --> [play]. 
 iv(psp,_,  lam(X,or(n_player_1(X), n_musician_1(X)))) --> [played].
 
-iv(prp,_, lam(X,and(n_player_1(X),some(Y,app(NP,Y))))) --> 
-	[playing], n0(_, _, NP). 
-iv(dcl,sg, lam(X,and(n_player_1(X),some(Y,app(NP,Y))))) --> 
-	[playing], n0(_, _, NP). 
-iv(dcl,pl, lam(X,and(n_player_1(X),some(Y,app(NP,Y))))) --> 
-	[playing], n0(pl, _, NP). 
-iv(bse,_, lam(X,and(n_player_1(X),some(Y,app(NP,Y))))) --> 
-	[playing], n0(_, _, NP). 
-iv(psp,_, lam(X,and(n_player_1(X),some(Y,app(NP,Y))))) --> 
-	[playing], n0(_, _, NP). 
-
 iv(prp, _,  lam(X, some(Y, eq(Y, X)))) --> [being].
 iv(dcl, sg, lam(X, some(Y, eq(Y, X)))) --> [is].
 iv(dcl, pl, lam(X, some(Y, eq(Y, X)))) --> [are].

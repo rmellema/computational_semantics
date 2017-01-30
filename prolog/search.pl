@@ -67,6 +67,7 @@ sort_models(Query, Models, SortedModels) :-
 
 search(Stream, Models, SortedPaths) :-
 	read_query(Stream, Query),
+	write(user_error, Query), nl(user_error),
 	filter_models(Query, Models, TrueModels),
 	\+ length(TrueModels, 0), !,
 	write(Query), nl,

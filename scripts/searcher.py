@@ -6,6 +6,9 @@ from nltk.metrics import edit_distance
 import shlex
 from subprocess import run, PIPE, STDOUT
 import sys
+import spacy
+
+nlp = spacy.load('en')
 
 def spell_check(word):
     best_match = []
@@ -20,7 +23,7 @@ def spell_check(word):
     return best_match
 
 def is_correct(word):
-    return word in words.words()
+    return word in nlp.vocab
 
 def correct_sentence(sent):
     tagged = pos_tag(sent)
@@ -84,7 +87,7 @@ def single_run(options, grim_search, command):
     correct_line = correct_sentence(word_tokenize(line.lower()))
     result = run(command,
             input  = str(correct_line) + '.', encoding = 'utf-8',
-            stdout = PIPE, stderr= STDOUT)
+            stdout = PIPE, stderr = sys.stderr)
     res = result.stdout.strip().split('\n')
     output_results(options, line.strip(), res[0], res[1:])
 
