@@ -1,36 +1,21 @@
 import argparse
+import enchant
 import os.path 
 from nltk import pos_tag, word_tokenize
-from nltk.corpus import words
-from nltk.metrics import edit_distance
 import shlex
 from subprocess import run, PIPE, STDOUT
 import sys
-import spacy
+#import spacy
 
-nlp = spacy.load('en')
-
-def spell_check(word):
-    best_match = []
-    best_score = 100
-    for suggestion in words.words():
-        score = edit_distance(word, suggestion, transpositions = True)
-        if score < best_score:
-            best_match = [suggestion]
-            best_score = score
-        elif score == best_score:
-            best_match.append(suggestion)
-    return best_match
-
-def is_correct(word):
-    return word in nlp.vocab
+#nlp = spacy.load('en')
+checker = enchant.Dict("en_US")
 
 def correct_sentence(sent):
     tagged = pos_tag(sent)
     ret = []
     for word, tag in tagged:
-        if not is_correct(word):
-            suggestions = pos_tag(spell_check(word))
+        if not checker.check(word):
+            suggestions = pos_tag(checker.suggest(word))
             for suggestion, stag in suggestions:
                 if tag == stag:
                     ret.append(suggestion)
